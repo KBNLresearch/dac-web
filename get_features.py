@@ -19,6 +19,7 @@ for i in ids:
 
 # Regular features
 features = [
+        'quotes',
         'solr_pos',
         'solr_score',
         'inlinks',
@@ -37,8 +38,8 @@ features = [
         'name_conflict',
         'date_match',
         'type_match',
-        'cos_sim',
-        'quotes'
+        'entity_match',
+        'cos_sim'
         ]
 
 for f in features:
@@ -57,9 +58,9 @@ for inst in data['instances']:
     if inst['link'] != '':
         print 'Link found, getting Solr results', inst['link']
 
-        linker = disambiguation.Linker()
-        result = linker.link(inst['ne_string'].encode('utf-8'), inst['ne_type'], inst['url'])
-        solr_response = linker.solr_response
+        linker = disambiguation.EntityLinker()
+        result = linker.link(inst['url'], inst['ne_string'].encode('utf-8'))
+        solr_response = linker.to_link.solr_response
 
         # Check if DBpedia canadidates have been retrieved
         if hasattr(solr_response, 'numFound') and solr_response.numFound > 0:
@@ -78,7 +79,7 @@ for inst in data['instances']:
 
                 # Regular features
                 for f in features:
-                    value = getattr(linker.matches[index], f)
+                    value = getattr(linker.to_link.descriptions[index], f)
                     line += str(value) + '\t'
 
                 # Label
