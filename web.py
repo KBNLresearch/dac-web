@@ -17,7 +17,6 @@ import urllib
 
 @post('/<name>')
 def save(name):
-
     os.chdir(os.path.dirname(__file__))
 
     index = int(request.forms.get('index'))
@@ -47,8 +46,7 @@ def save(name):
         os.chmod(temp_file, 0777)
         os.remove(orig_file)
         os.rename(temp_file, orig_file)
-        while not os.path.exists(orig_file):
-            time.sleep(.1)
+
         # Redirect to next page
         if action == 'last':
             redirect('/training/' + name)
@@ -63,7 +61,6 @@ def save(name):
 
 @get('/<name>')
 def training(name):
-
     os.chdir(os.path.dirname(__file__))
 
     # Load json data from file
@@ -94,24 +91,29 @@ def training(name):
     ne_type = data['instances'][index]['ne_type']
     link = data['instances'][index]['link']
 
-    #return ne_string
+    linker = disambiguation.EntityLinker()
+    result = linker.link(url, ne_string.encode('utf-8'))
+
+    # Article date
+    publ_date = linker.document.publ_date
 
     # Get ocr
-    linker = disambiguation.Linker()
-    result = linker.link(url, ne_string.encode('utf-8'))
-    ocr = linker.context.ocr
+    ocr = linker.document.ocr
     if not ocr:
         abort(500, "Error retrieving ocr.")
     ocr = ocr.decode('utf-8')
 
     # Mark the named entity string in the ocr text
-    ocr = re.sub('(?P<pf>(^|\W|:punct:))' + re.escape(ne_string) + '(?P<sf>(\W|$|:punct:))', '\g<pf>' + '<span style="background-color:yellow;">' + ne_string + '</span>' + '\g<sf>', ocr)
+    ocr = re.sub('(?P<pf>(^|\W|:punct:))' + re.escape(ne_string) +
+            '(?P<sf>(\W|$|:punct:))', '\g<pf>' +
+            '<span style="background-color:yellow;">' +
+            ne_string + '</span>' + '\g<sf>', ocr)
 
     # Get Solr results
-    solr_results = linker.to_link[0].solr_response
+    solr_results = linker.to_link.solr_response
 
     # Get current dac prediction
-    dac_link = linker.to_link[0].link if linker.to_link[0].link else 'none'
+    dac_link = linker.to_link.link if linker.to_link.link else 'none'
 
     # Current da prediction
     da_url = 'http://145.100.59.226/da/link?ne="' + ne_string.encode('utf-8') + '"'
@@ -119,7 +121,10 @@ def training(name):
     da_data = json.loads(da_str)
     da_link = da_data['link'] if 'link' in da_data else 'none'
 
-    return template('index', last_instance=last_instance, index=index, ocr=ocr, ne=ne_string, solr_results=solr_results, link=link, url=url, da_link=da_link, dac_link=dac_link)
+    return template('index', last_instance=last_instance, index=index,
+            url=url, publ_date=publ_date, ocr=ocr, ne=ne_string,
+            ne_type=ne_type, solr_results=solr_results, link=link,
+            da_link=da_link, dac_link=dac_link)
 
 #run(host='localhost', port=5001)
 application = default_app()
