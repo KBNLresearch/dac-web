@@ -101,7 +101,7 @@ def training(name):
     ocr = linker.document.ocr
     if not ocr:
         abort(500, "Error retrieving ocr.")
-    ocr = ocr.decode('utf-8')
+    #ocr = ocr.decode('utf-8')
 
     # Mark the named entity string in the ocr text
     ocr = re.sub('(?P<pf>(^|\W|:punct:))' + re.escape(ne_string) +
