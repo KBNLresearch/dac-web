@@ -18,24 +18,18 @@ candidate_count = 0
 correct_pred = 0
 pos_label = 0
 
+linker = disambiguation.EntityLinker()
+
 for i in data['instances']:
 
-    print('Reviewing instance', i['url'], instance_count)
+    print 'Reviewing instance ' + str(instance_count) + ': ' + i['ne_string']
 
     # Check if instance has been properly labeled
     if not i['link'] == '':
 
-        print 'Link found, getting Solr results', i['link']
-
-        linker = disambiguation.EntityLinker()
         result = linker.link(i['url'], i['ne_string'].encode('utf-8'))[0]
-        solr_response = linker.to_link.solr_response
+        solr_response = linker.linked[0].solr_response
         print result
-
-        if 'link' in result:
-            print 'Prediction', result['link']
-        else:
-            print 'No prediction'
 
         # Check if DBpedia canadidates have been retrieved
         if hasattr(solr_response, 'numFound') and solr_response.numFound > 0:
@@ -50,21 +44,18 @@ for i in data['instances']:
                     pos_label += 1
                     if 'link' in result and result['link'] == r['id'][1:-1]:
                         correct_pred += 1
-                        print('correct prediction')
                     else:
-                        print 'wrong prediction'
+                        print 'Wrong prediction! This is a link.'
 
                 # Label 0
                 else:
                     if 'link' in result:
                         if result['link'] != r['id'][1:-1]:
                             correct_pred += 1
-                            print('correct prediction')
                         else:
-                            print 'wrong prediction'
+                            print 'Wrong prediction! This is NOT a link.'
                     else:
                         correct_pred += 1
-                        print('correct prediction')
 
                 candidate_count += 1
 
