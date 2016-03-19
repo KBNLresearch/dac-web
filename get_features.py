@@ -11,13 +11,12 @@ with open("users/tve/art.json") as data_file:
     data = json.load(data_file)
 out = open('features_training.csv', 'w')
 
-# Header row
-# Identifiers
+# Header row: identifiers
 ids = ['id', 'ne', 'type', 'url', 'dpb']
 for i in ids:
     out.write(i + '\t')
 
-# Regular features
+# Header row: regular features
 features = [
         'quotes',
         'solr_pos',
@@ -38,29 +37,28 @@ features = [
         'name_conflict',
         'date_match',
         'type_match',
-        'entity_match',
-        'cos_sim'
+        'entity_match'
         ]
 
 for f in features:
     out.write(f + '\t')
 
-# Label
+# Header row: label
 out.write('label\n')
 
 # Instance rows
 instance_count = 0
 candidate_count = 0
+
+linker = disambiguation.EntityLinker()
+
 for inst in data['instances']:
-    print 'Reviewing instance', inst['url'], instance_count
+    print 'Reviewing instance ' + str(instance_count) + ': ' + inst['ne_string']
 
-    # Check if instance has been labeled in either of the two file
+    # Check if instance has been labeled
     if inst['link'] != '':
-        print 'Link found, getting Solr results', inst['link']
-
-        linker = disambiguation.EntityLinker()
         result = linker.link(inst['url'], inst['ne_string'].encode('utf-8'))
-        solr_response = linker.to_link.solr_response
+        solr_response = linker.linked[0].solr_response
 
         # Check if DBpedia canadidates have been retrieved
         if hasattr(solr_response, 'numFound') and solr_response.numFound > 0:
@@ -79,7 +77,7 @@ for inst in data['instances']:
 
                 # Regular features
                 for f in features:
-                    value = getattr(linker.to_link.descriptions[index], f)
+                    value = getattr(linker.linked[0].descriptions[index], f)
                     line += str(value) + '\t'
 
                 # Label
