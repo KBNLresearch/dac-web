@@ -95,10 +95,10 @@ def training(name):
     result = linker.link(url, ne_string.encode('utf-8'))
 
     # Article date
-    publ_date = linker.document.publ_date
+    publ_date = linker.context.document.publ_date
 
     # Get ocr
-    ocr = linker.document.ocr
+    ocr = linker.context.document.ocr
     if not ocr:
         abort(500, "Error retrieving ocr.")
     #ocr = ocr.decode('utf-8')
@@ -110,10 +110,10 @@ def training(name):
             ne_string + '</span>' + '\g<sf>', ocr)
 
     # Get Solr results
-    solr_results = linker.to_link.solr_response
+    solr_results = linker.linked[0].solr_response
 
     # Get current dac prediction
-    dac_link = linker.to_link.link if linker.to_link.link else 'none'
+    dac_link = result[0]['link'] if result[0]['link'] else 'none'
 
     # Current da prediction
     da_url = 'http://145.100.59.226/da/link?ne="' + ne_string.encode('utf-8') + '"'
