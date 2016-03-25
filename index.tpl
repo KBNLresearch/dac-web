@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <style>
         * {margin: 0; padding: 0; border: 0;}
-        body {font-family: verdana, sans-serif; color: #3B3131;}
+        body {font-family: verdana, sans-serif; color: #3B3131; overflow-y: scroll;}
         h1 {float: left; line-height: 80px;}
         h2 {margin-bottom: 20px;}
         input[type=radio] {margin-right: 10px;}
-        input#other_input {width: 90%; border: 1px solid #eee; padding: 5px; margin-top: 5px; font-family: verdana, sans-serif;}
-        p.label {font-weight: bold; margin-bottom: 5px;}
+        input#other_input {width: 90%; border: 1px solid #eee; padding: 5px; margin-top: 5px; font-family: helvetica, sans-serif;}
         ul {list-style-type: none;}
         div#heading {position: absolute; width: 90%; height: 80px; padding: 0 5%; background-color: #ddd;}
         div#ocr {width: 44%; position: absolute; top: 80px; right: 50%; padding: 2% 1% 2% 5%;}
         div#dbp {width: 44%; position: absolute; top: 80px; left: 50%; padding: 2% 5% 2% 1%;}
         div.info {margin-bottom: 20px; line-height: 30px;}
-        div.candidate {margin-bottom: 15px;}
+        div.candidate {margin-bottom: 20px;}
+        p.label, p.abstract, p.panel_header, div.panel {margin-bottom: 10px;}
+        a, a.visited {color: blue;}
         a.link {float: right; display: block; height: 80px; line-height: 80px; padding: 0 10px;}
     </style>
 </head>
@@ -33,9 +34,10 @@
     <div id="ocr">
         <h2>Newspaper article</h2>
         <div class="info">
-            <p>Current entity: {{ne}} ({{ne_type}})</p>
-            <p>Article url: {{url}}</p>
-            <p>Publication date: {{publ_date}}</p>
+            <p><b>Url</b>: <a href={{"http://www.kbresearch.nl/dac/?url=" + url + "&debug=1"}} target="_blank">{{url}}</a></p>
+            <p><b>Date</b>: {{publ_date}}</p>
+            <p><b>Type</b>: {{ne_type}}</p>
+            <p><b>Entity</b>: {{ne}}</p> 
         </div>
         <div>
             <p>{{!ocr}}</p>
@@ -45,23 +47,29 @@
     <div id="dbp">
         <h2>DBpedia candidates</h2>
         <div class="info">
-            <p>Da: {{da_link}}</p>
-            <p>Dac: {{dac_link}}</p>
-            <p>Current: {{link}}</p>
+            <p><b>Selection</b>: {{link}}</p>
+            <p><b>Prediction</b>: {{dac_result['link'] if dac_result['link'] else 'none'}}</p>
+            <p><b>Reason</b>: {{dac_result['reason']}}</p>
+            <p><b>Probability</b>: {{dac_result['prob']}}</p>
         </div>
         <div>
         <form id="form" method="post" action="">
+        % solr_results = linker.linked[0].solr_response
         % if hasattr(solr_results, 'numFound'):
+        % i = 0
         % for res in solr_results:
             <div class="candidate">
                 % id_parts = res['id'].split('/')
                 % display_name = id_parts[-1][:-1]
                 <p class="label">
-                    <input type="radio" name="link" value="{{res['id'][1:-1]}}" {{!"checked" if link == res['id'][1:-1] else ""}} />
-                    {{display_name}}{{' (' + str(res['yob']) + ')' if 'yob' in res else ''}}
+                    <input type="radio" name="link" value="{{res['id'][1:-1]}}" {{!"checked" if link == res['id'][1:-1] else ""}} /><b>{{display_name}}</b> ({{res['lang']}})
                 </p>
+                % if 'abstract' in res:
+                <p class="abstract">{{res['abstract']}}</p>
+                <p class="panel_header"><a href="javascript:toggle('descr_panel_{{i}}');">Description</a></p>
+                <div id="descr_panel_{{i}}" style="display: none;" class="panel">
                 % if 'title' in res:
-                <p>Titles:
+                <p><b>Titles</b>:
                     <ul>
                     % for t in res['title']:
                         % if len(t) > 1:  
@@ -72,7 +80,7 @@
                 </p>
                 % end
                 % if 'schemaorgtype' in res:
-                <p>Types:
+                <p><b>Types</b>:
                     <ul>
                     % for t in res['schemaorgtype']:
                         % if len(t) > 1:  
@@ -82,10 +90,20 @@
                     </ul>
                 </p>
                 % end
-                <p>Abstract: {{res['abstract'] if 'abstract' in res else ''}}</p>
-                <p>Language: {{res['lang']}}</p>
-                <p>Inlinks: {{res['inlinks']}}</p>    
-            </div>
+                <p><b>Year of birth</b>: {{res['yob'] if 'yob' in res else ''}}</p>
+                <p><b>Inlinks</b>: {{res['inlinks']}}</p>
+                <p><b>Score</b>: {{res['score']}}</p>
+                </div>
+                <p class="panel_header"><a href="javascript:toggle('feat_panel_{{i}}');">Features</a></p>
+                <div id="feat_panel_{{i}}" style="display: none;" class="panel">
+                % d = linker.linked[0].descriptions[i]
+                <p>prob: {{d.prob}}</p>
+                % for j in range(len(linker.model.features)):
+                <p>{{linker.model.features[j]}}: {{getattr(d, linker.model.features[j])}}</p>
+                % end
+                </div>
+           </div>
+        % i += 1
         % end
         % end
         <div class="candidate">
@@ -113,10 +131,19 @@
         </form>
         </div>
     </div>
-    <script>
+    <script language="javascript">
         document.getElementById("other_input").onfocus = function(){
             document.getElementById("other_radio").checked = true;
         };
+        function toggle(id) {
+            var element = document.getElementById(id);
+            if(element.style.display == "block") {
+                element.style.display = "none";
+            }
+            else {
+                element.style.display = "block";
+            }
+        } 
     </script>
 </body>
 </html>

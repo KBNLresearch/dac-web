@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, '/var/www/dac')
 
 from bottle import redirect, abort, route, get, post, run, template, request, default_app
+
 import disambiguation
 import hashlib
 import json
@@ -86,22 +87,23 @@ def training(name):
     if index <= -1:
         index = last_instance
 
+    # Get training example data
     url = data['instances'][index]['url']
     ne_string = data['instances'][index]['ne_string']
     ne_type = data['instances'][index]['ne_type']
     link = data['instances'][index]['link']
 
+    # Get current dac prediction
     linker = disambiguation.EntityLinker()
-    result = linker.link(url, ne_string.encode('utf-8'))
+    result = linker.link(url, ne_string.encode('utf-8'))[0]
 
-    # Article date
+    # Get article publication date
     publ_date = linker.context.document.publ_date
 
     # Get ocr
     ocr = linker.context.document.ocr
     if not ocr:
         abort(500, "Error retrieving ocr.")
-    #ocr = ocr.decode('utf-8')
 
     # Mark the named entity string in the ocr text
     ocr = re.sub('(?P<pf>(^|\W|:punct:))' + re.escape(ne_string) +
@@ -109,22 +111,15 @@ def training(name):
             '<span style="background-color:yellow;">' +
             ne_string + '</span>' + '\g<sf>', ocr)
 
-    # Get Solr results
-    solr_results = linker.linked[0].solr_response
-
-    # Get current dac prediction
-    dac_link = result[0]['link'] if result[0]['link'] else 'none'
-
     # Current da prediction
-    da_url = 'http://145.100.59.226/da/link?ne="' + ne_string.encode('utf-8') + '"'
-    da_str = urllib.urlopen(da_url).read()
-    da_data = json.loads(da_str)
-    da_link = da_data['link'] if 'link' in da_data else 'none'
+    #da_url = 'http://145.100.59.226/da/link?ne="' + ne_string.encode('utf-8') + '"'
+    #da_str = urllib.urlopen(da_url).read()
+    #da_data = json.loads(da_str)
+    #da_link = 'none'
 
     return template('index', last_instance=last_instance, index=index,
-            url=url, publ_date=publ_date, ocr=ocr, ne=ne_string,
-            ne_type=ne_type, solr_results=solr_results, link=link,
-            da_link=da_link, dac_link=dac_link)
+            url=url, publ_date=publ_date, ne=ne_string, ne_type=ne_type,
+            ocr=ocr, link=link, dac_result=result, linker=linker)
 
 #run(host='localhost', port=5001)
 application = default_app()
