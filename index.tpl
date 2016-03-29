@@ -45,6 +45,7 @@
     </div>
     <!-- DBpedia candidates -->
     <div id="dbp">
+
         <h2>DBpedia candidates</h2>
         <div class="info">
             <p><b>Selection</b>: {{link}}</p>
@@ -52,84 +53,87 @@
             <p><b>Reason</b>: {{dac_result['reason']}}</p>
             <p><b>Probability</b>: {{dac_result['prob']}}</p>
         </div>
+
         <div>
-        <form id="form" method="post" action="">
-        % solr_results = linker.linked[0].solr_response
-        % if hasattr(solr_results, 'numFound'):
-        % i = 0
-        % for res in solr_results:
-            <div class="candidate">
-                % id_parts = res['id'].split('/')
-                % display_name = id_parts[-1][:-1]
-                <p class="label">
-                    <input type="radio" name="link" value="{{res['id'][1:-1]}}" {{!"checked" if link == res['id'][1:-1] else ""}} /><b>{{display_name}}</b> ({{res['lang']}})
-                </p>
-                % if 'abstract' in res:
-                <p class="abstract">{{res['abstract']}}</p>
-                <p class="panel_header"><a href="javascript:toggle('descr_panel_{{i}}');">Description</a></p>
-                <div id="descr_panel_{{i}}" style="display: none;" class="panel">
-                % if 'title' in res:
-                <p><b>Titles</b>:
-                    <ul>
-                    % for t in res['title']:
-                        % if len(t) > 1:  
-                        <li>{{t}}</li>
-                        % end
-                    % end
-                    </ul>
-                </p>
-                % end
-                % if 'schemaorgtype' in res:
-                <p><b>Types</b>:
-                    <ul>
-                    % for t in res['schemaorgtype']:
-                        % if len(t) > 1:  
-                        <li>{{t}}</li>
-                        % end
-                    % end
-                    </ul>
-                </p>
-                % end
-                <p><b>Year of birth</b>: {{res['yob'] if 'yob' in res else ''}}</p>
-                <p><b>Inlinks</b>: {{res['inlinks']}}</p>
-                <p><b>Score</b>: {{res['score']}}</p>
-                </div>
-                <p class="panel_header"><a href="javascript:toggle('feat_panel_{{i}}');">Features</a></p>
-                <div id="feat_panel_{{i}}" style="display: none;" class="panel">
-                % d = linker.linked[0].descriptions[i]
-                <p>prob: {{d.prob}}</p>
-                % for j in range(len(linker.model.features)):
-                <p>{{linker.model.features[j]}}: {{getattr(d, linker.model.features[j])}}</p>
-                % end
-                </div>
-           </div>
-        % i += 1
-        % end
-        % end
-        <div class="candidate">
-            % other_link = True
-            % if hasattr(solr_results, 'numFound'):
+            <form id="form" method="post" action="">
+            % solr_results = linker.linked[0].solr_response
+            % if solr_results and hasattr(solr_results, 'numFound'):
+            % i = 0
             % for res in solr_results:
-            % if link == res['id'][1:-1]:
-            % other_link = False
+                <div class="candidate">
+                    % id_parts = res['id'].split('/')
+                    % display_name = id_parts[-1][:-1]
+                    <p class="label">
+                        <input type="radio" name="link" value="{{res['id'][1:-1]}}" {{!"checked" if link == res['id'][1:-1] else ""}} /><b>{{display_name}}</b> ({{res['lang']}})
+                    </p>
+                    % if 'abstract' in res:
+                    <p class="abstract">{{res['abstract']}}</p>
+                    <p class="panel_header"><a href="javascript:toggle('descr_panel_{{i}}');">Description</a></p>
+                    <div id="descr_panel_{{i}}" style="display: none;" class="panel">
+                    % end
+                    % if 'title' in res:
+                    <p><b>Titles</b>:
+                        <ul>
+                        % for t in res['title']:
+                            % if len(t) > 1:  
+                            <li>{{t}}</li>
+                            % end
+                        % end
+                        </ul>
+                    </p>
+                    % end
+                    % if 'schemaorgtype' in res:
+                    <p><b>Types</b>:
+                        <ul>
+                        % for t in res['schemaorgtype']:
+                            % if len(t) > 1:  
+                            <li>{{t}}</li>
+                            % end
+                        % end
+                        </ul>
+                    </p>
+                    % end
+                    <p><b>Year of birth</b>: {{res['yob'] if 'yob' in res else ''}}</p>
+                    <p><b>Inlinks</b>: {{res['inlinks']}}</p>
+                    <p><b>Score</b>: {{res['score']}}</p>
+                    </div>
+                    <p class="panel_header"><a href="javascript:toggle('feat_panel_{{i}}');">Features</a></p>
+                    <div id="feat_panel_{{i}}" style="display: none;" class="panel">
+                    % d = linker.linked[0].descriptions[i]
+                    <p>prob: {{d.prob}}</p>
+                    % for j in range(len(linker.model.features)):
+                    <p>{{linker.model.features[j]}}: {{getattr(d, linker.model.features[j])}}</p>
+                    % end
+                    </div>
+               </div>
+            % i += 1
             % end
             % end
-            % end
-            % if link == 'none' or link == '':
-            % other_link = False
-            % end
-            <p class="label"><input id="other_radio" type="radio" name="link" value="other" {{!"checked" if other_link else ""}} />Other</p>
-            <p>Enter a DBpedia identifier not shown in the list above <br/>(e.g. http://dbpedia.org/resource/Ruskie_Business):</p>
-            <input id="other_input" type="text" name="other_link" value="{{!link if other_link else ""}}"></input>
+            <div class="candidate">
+                % other_link = True
+                % if solr_results and hasattr(solr_results, 'numFound'):
+                % for res in solr_results:
+                % if link == res['id'][1:-1]:
+                % other_link = False
+                % end
+                % end
+                % end
+                % if link == 'none' or link == '':
+                % other_link = False
+                % end
+                <p class="label"><input id="other_radio" type="radio" name="link" value="other" {{!"checked" if other_link else ""}} />Other</p>
+                <p>Enter a DBpedia identifier not shown in the list above <br/>(e.g. http://dbpedia.org/resource/Ruskie_Business):</p>
+                <input id="other_input" type="text" name="other_link" value="{{!link if other_link else ""}}"></input>
+            </div>
+            <div class="candidate">
+                <p class="label"><input type="radio" name="link" value="none" {{!"checked" if (link == 'none' or link == '') else ""}} />Not found</p>
+                <p>Select this option if no matching candidate can be found.</p>
+            </div>
+            <input type="hidden" name="index" value="{{index}}" />
+            <input type="hidden" name="action" id="action" value="" />
+            </form>
         </div>
-        <div class="candidate">
-            <p class="label"><input type="radio" name="link" value="none" {{!"checked" if (link == 'none' or link == '') else ""}} />Not found</p>
-            <p>Select this option if no matching candidate can be found.</p>
-        </div>
-        <input type="hidden" name="index" value="{{index}}" />
-        <input type="hidden" name="action" id="action" value="" />
-        </form>
-        </div>
+
     </div>
     <script language="javascript">
         document.getElementById("other_input").onfocus = function(){
