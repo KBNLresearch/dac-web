@@ -22,6 +22,7 @@
     </style>
 </head>
 <body>
+
     <!-- Header -->
     <div id="heading">
         <h1>Training instance {{index}} of {{last_instance}}</h1>
@@ -30,6 +31,7 @@
         <a class="link" href="javascript: document.getElementById('action').value='next'; document.forms['form'].submit();">next</a>
         <a class="link" href="javascript: document.getElementById('action').value='prev'; document.forms['form'].submit();">prev</a>
     </div>
+
     <!-- Named entity, article OCR -->
     <div id="ocr">
         <h2>Newspaper article</h2>
@@ -43,6 +45,7 @@
             <p>{{!ocr}}</p>
         </div>
     </div>
+
     <!-- DBpedia candidates -->
     <div id="dbp">
 
@@ -64,13 +67,13 @@
                     % id_parts = res['id'].split('/')
                     % display_name = id_parts[-1][:-1]
                     <p class="label">
-                        <input type="radio" name="link" value="{{res['id'][1:-1]}}" {{!"checked" if link == res['id'][1:-1] else ""}} /><b>{{display_name}}</b> ({{res['lang']}})
+                        <input type="radio" name="link" value="{{res['id'][1:-1]}}" {{!"checked" if link == res['id'][1:-1] else ''}} /><b>{{display_name}}</b> ({{res['lang'] if 'lang' in res else ''}})
                     </p>
                     % if 'abstract' in res:
                     <p class="abstract">{{res['abstract']}}</p>
+                    % end
                     <p class="panel_header"><a href="javascript:toggle('descr_panel_{{i}}');">Description</a></p>
                     <div id="descr_panel_{{i}}" style="display: none;" class="panel">
-                    % end
                     % if 'title' in res:
                     <p><b>Titles</b>:
                         <ul>
@@ -94,7 +97,7 @@
                     </p>
                     % end
                     <p><b>Year of birth</b>: {{res['yob'] if 'yob' in res else ''}}</p>
-                    <p><b>Inlinks</b>: {{res['inlinks']}}</p>
+                    <p><b>Inlinks</b>: {{res['inlinks'] if 'inlinks' in res else ''}}</p>
                     <p><b>Score</b>: {{res['score']}}</p>
                     </div>
                     <p class="panel_header"><a href="javascript:toggle('feat_panel_{{i}}');">Features</a></p>
