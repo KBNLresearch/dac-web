@@ -37,6 +37,7 @@ features = [
         'name_conflict',
         'date_match',
         'type_match',
+        'role_match',
         'entity_match'
         ]
 
