@@ -37,8 +37,10 @@ features = [
         'name_conflict',
         'date_match',
         'type_match',
+        'alt_type_match',
         'role_match',
-        'entity_match'
+        'entity_match',
+        'spec_match'
         ]
 
 for f in features:
@@ -79,7 +81,10 @@ for inst in data['instances']:
                 # Regular features
                 for f in features:
                     value = getattr(linker.linked[0].descriptions[index], f)
-                    line += str(value) + '\t'
+                    if isinstance(value, float):
+                        line += "{0:.5f}".format(value) + '\t'
+                    else:
+                        line += str(value) + '\t'
 
                 # Label
                 if r['id'][1:-1] == inst['link']:
