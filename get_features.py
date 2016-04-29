@@ -19,7 +19,9 @@ for i in ids:
 # Header row: regular features
 features = [
         'quotes',
+        'found_more',
         'solr_pos',
+        'cand_pos',
         'solr_score',
         'inlinks',
         'lang',
@@ -37,7 +39,6 @@ features = [
         'name_conflict',
         'date_match',
         'type_match',
-        'alt_type_match',
         'role_match',
         'entity_match',
         'spec_match'
