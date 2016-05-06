@@ -18,8 +18,6 @@ for i in ids:
 
 # Header row: regular features
 features = [
-        'solr_fraction',
-        'cand_fraction',
         'solr_pos',
         'cand_pos',
         'solr_score',
@@ -28,7 +26,6 @@ features = [
         'cand_inlinks',
         'quotes',
         'lang',
-        'disambig',
         'main_title_exact_match',
         'main_title_start_match',
         'main_title_end_match',
