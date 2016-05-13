@@ -1,0 +1,273 @@
+Id	Entity	Link	Prediction	Correct
+0	NAC	http://nl.dbpedia.org/resource/NAC_Breda	http://nl.dbpedia.org/resource/NAC_Breda	1	
+1	Ton van Engelen	none	none	1	
+3	Feyenoord	http://nl.dbpedia.org/resource/Feyenoord	http://nl.dbpedia.org/resource/Feyenoord	1	
+4	Rotterdammers	none	http://nl.dbpedia.org/resource/Lijst_van_Rotterdammers	0	
+5	Dinamo Tiflis	none	none	1	
+6	Joop Hiele	http://nl.dbpedia.org/resource/Joop_Hiele	http://nl.dbpedia.org/resource/Joop_Hiele	1	
+8	Peter Stephan	none	none	1	
+9	Van Engelen	none	http://nl.dbpedia.org/resource/Yvo_van_Engelen	0	
+10	JULIETTE GRECO	http://nl.dbpedia.org/resource/Juliette_Gréco	http://nl.dbpedia.org/resource/Juliette_Gréco	1	
+11	DPA	http://nl.dbpedia.org/resource/Deutsche_Presse-Agentur	none	0	
+12	Franse	http://nl.dbpedia.org/resource/Frankrijk	http://nl.dbpedia.org/resource/Frankrijk	1	
+13	Juliette Greco	http://nl.dbpedia.org/resource/Juliette_Gréco	http://nl.dbpedia.org/resource/Juliette_Gréco	1	
+14	Franco Soir	http://dbpedia.org/resource/France_Soir	none	0	
+15	Michel Piccoli	http://nl.dbpedia.org/resource/Michel_Piccoli	http://nl.dbpedia.org/resource/Michel_Piccoli	1	
+16	Noord	none	none	1	
+17	Verderonne	http://nl.dbpedia.org/resource/Verderonne	http://nl.dbpedia.org/resource/Verderonne	1	
+19	Eleonore Hirt	none	none	1	
+20	Sovjet	http://nl.dbpedia.org/resource/Sovjet-Unie	http://nl.dbpedia.org/resource/Sovjet-Unie	1	
+21	Juliette	http://nl.dbpedia.org/resource/Juliette_Gréco	none	0	
+23	Unitas	none	none	1	
+24	St. Lambertus	none	http://nl.dbpedia.org/resource/Lambertus_van_Maastricht	0	
+26	„ De Eendracht	none	http://nl.dbpedia.org/resource/De_Eendracht_(Amsterdam)	0	
+27	Huysman	none	none	1	
+28	Eindhoven	http://nl.dbpedia.org/resource/Eindhoven	http://nl.dbpedia.org/resource/Eindhoven	1	
+29	Limburg	http://nl.dbpedia.org/resource/Limburg_(Nederland)	http://nl.dbpedia.org/resource/Limburg_(Nederland)	1	
+30	Beel	http://nl.dbpedia.org/resource/Louis_Beel	none	0	
+31	Schmutzer	http://nl.dbpedia.org/resource/Josef_Ignaz_Julius_Maria_Schmutzer	http://nl.dbpedia.org/resource/Josef_Ignaz_Julius_Maria_Schmutzer	1	
+32	Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	none	0	
+33	Indische-Katholieke Partij	none	none	1	
+34	Gestapo	http://nl.dbpedia.org/resource/Gestapo	http://nl.dbpedia.org/resource/Gestapo	1	
+36	Gispen	http://nl.dbpedia.org/resource/Hans_Gispen	http://nl.dbpedia.org/resource/Gispen	0	
+37	Economische Zaken	http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken_(Nederland)	http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken_(Nederland)	1	
+38	Oss	http://nl.dbpedia.org/resource/Oss	http://nl.dbpedia.org/resource/Oss	1	
+39	Youri Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	1	
+40	Rien Frölich	none	none	1	
+41	Carnegïe Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	1	
+42	New Yorkse	none	none	1	
+43	Daily News	http://nl.dbpedia.org/resource/New_York_Daily_News	none	0	
+44	Amerika	http://nl.dbpedia.org/resource/Verenigde_Staten	http://nl.dbpedia.org/resource/Verenigde_Staten	1	
+45	Russische	http://nl.dbpedia.org/resource/Rusland	http://nl.dbpedia.org/resource/Rusland	1	
+46	Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	1	
+47	Chicago	http://nl.dbpedia.org/resource/Chicago	http://nl.dbpedia.org/resource/Chicago	1	
+48	Horowitz	http://nl.dbpedia.org/resource/Vladimir_Horowitz	none	0	
+49	Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	1	
+50	Van Cliburg Concours	none	none	1	
+51	Musical America	none	none	1	
+52	Alice Tully Hall	none	none	1	
+53	Lincoln Centre	http://nl.dbpedia.org/resource/Lincoln_Center	http://nl.dbpedia.org/resource/Lincoln_Center	1	
+55	Carnegie Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	1	
+56	Amerikaanse	http://nl.dbpedia.org/resource/Verenigde_Staten	http://nl.dbpedia.org/resource/Verenigde_Staten	1	
+57	Nederlandse	http://nl.dbpedia.org/resource/Nederland	http://nl.dbpedia.org/resource/Nederland	1	
+58	Pianospel	none	http://nl.dbpedia.org/resource/Quatre-mains	0	
+59	Klaas Postema	none	none	1	
+60	Allan Tucker	none	none	1	
+61	Bach	http://nl.dbpedia.org/resource/Johann_Sebastian_Bach	http://nl.dbpedia.org/resource/Johann_Sebastian_Bach	1	
+62	Chromatische Fantasie	none	none	1	
+63	Fuga	http://nl.dbpedia.org/resource/Fuga	http://nl.dbpedia.org/resource/Fuga	1	
+64	Fantasie KV 475	none	none	1	
+65	Mozart	http://nl.dbpedia.org/resource/Wolfgang_Amadeus_Mozart	http://nl.dbpedia.org/resource/Wolfgang_Amadeus_Mozart	1	
+66	Fantasie	http://nl.dbpedia.org/resource/Fantasie_(muziek)	http://nl.dbpedia.org/resource/Fantasie_(muziek)	1	
+67	Chopin	http://nl.dbpedia.org/resource/Frédéric_Chopin	http://nl.dbpedia.org/resource/Frédéric_Chopin	1	
+68	Etudes in Ges	none	none	1	
+71	Rotterdamse Doelen	http://nl.dbpedia.org/resource/De_Doelen	http://nl.dbpedia.org/resource/De_Doelen	1	
+73	Purmerend	http://nl.dbpedia.org/resource/Purmerend	http://nl.dbpedia.org/resource/Purmerend	1	
+74	Rotterdamse	none	none	1	
+76	ASSEN De Bolhoed	none	none	1	
+77	Robert Brouwer	none	none	1	
+79	De Stoep	none	http://nl.dbpedia.org/resource/Daniël_van_der_Stoep	0	
+80	Diagonaal	none	http://nl.dbpedia.org/resource/Diagonaal	0	
+81	Andrè Westra	none	none	1	
+82	Oosterpoort	http://nl.dbpedia.org/resource/De_Oosterpoort	http://nl.dbpedia.org/resource/Oosterpoort_(Hoorn)	0	
+83	Jeugdkomedie Amsterdam	none	none	1	
+84	Grandioos Joop	none	none	1	
+85	Joop	http://nl.dbpedia.org/resource/Joop_Zoetemelk	none	0	
+86	Wereldgezondheidsorganisatie	http://nl.dbpedia.org/resource/Wereldgezondheidsorganisatie	http://nl.dbpedia.org/resource/Wereldgezondheidsorganisatie	1	
+87	WHO	http://nl.dbpedia.org/resource/Wereldgezondheidsorganisatie	none	0	
+89	HIV-virus	http://nl.dbpedia.org/resource/Hiv	none	0	
+90	Derde Wereld	http://nl.dbpedia.org/resource/Derde_wereld	http://nl.dbpedia.org/resource/Derde_wereld	1	
+91	Afrika	http://nl.dbpedia.org/resource/Afrika	http://nl.dbpedia.org/resource/Afrika	1	
+92	Sahara	http://nl.dbpedia.org/resource/Sahara	http://nl.dbpedia.org/resource/Sahara	1	
+93	Zuid	none	none	1	
+94	Zuidoost-Azië	http://nl.dbpedia.org/resource/Zuidoost-Azië	http://nl.dbpedia.org/resource/Zuidoost-Azië	1	
+95	Latijns-Amerika	http://nl.dbpedia.org/resource/Latijns-Amerika	http://nl.dbpedia.org/resource/Latijns-Amerika	1	
+96	Europa	http://nl.dbpedia.org/resource/Europa_(werelddeel)	http://nl.dbpedia.org/resource/Europa_(werelddeel)	1	
+97	Amerikaanse	http://nl.dbpedia.org/resource/Verenigde_Staten	http://nl.dbpedia.org/resource/Verenigde_Staten	1	
+98	James Salhany	none	none	1	
+99	Nebraska	http://nl.dbpedia.org/resource/Nebraska	http://nl.dbpedia.org/resource/Nebraska	1	
+100	Salhany	none	none	1	
+101	PLP	http://dbpedia.org/resource/Cys/Met_metabolism_PLP-dependent_enzyme_family	http://dbpedia.org/resource/Palpa_language	0	
+102	Stephen Coburn	none	none	1	
+103	Seiters	http://dbpedia.org/resource/Rudolf_Seiters	http://dbpedia.org/resource/Rudolf_Seiters	1	
+104	BONN	http://nl.dbpedia.org/resource/Bonn	http://nl.dbpedia.org/resource/Bonn	1	
+105	DPA	http://nl.dbpedia.org/resource/Deutsche_Presse-Agentur	none	0	
+106	Duitse	http://nl.dbpedia.org/resource/Duitsland	http://nl.dbpedia.org/resource/Duitsland	1	
+107	Rudolf Seiters	http://dbpedia.org/resource/Rudolf_Seiters	http://dbpedia.org/resource/Rudolf_Seiters	1	
+108	Karlsruhe	http://nl.dbpedia.org/resource/Karlsruhe_(stad)	http://nl.dbpedia.org/resource/Karlsruhe_(stad)	1	
+109	Duitsland	http://nl.dbpedia.org/resource/Duitsland	http://nl.dbpedia.org/resource/Duitsland	1	
+110	; Wehrsportgruppe Werwolf	none	none	1	
+111	Jagdeinheit Senftenberg	none	none	1	
+112	Brandenburg	http://nl.dbpedia.org/resource/Brandenburg_(deelstaat)	http://nl.dbpedia.org/resource/Brandenburg_(deelstaat)	1	
+113	Berlijn	http://nl.dbpedia.org/resource/Berlijn	http://nl.dbpedia.org/resource/Berlijn	1	
+114	Berliner Zeitung	http://nl.dbpedia.org/resource/Berliner_Zeitung	http://nl.dbpedia.org/resource/Berliner_Zeitung	1	
+115	Bundes Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	1	
+116	Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	1	
+118	Viking	none	none	1	
+119	Hitler-Jugend	http://nl.dbpedia.org/resource/Hitlerjugend	http://nl.dbpedia.org/resource/Hitlerjugend	1	
+120	SPD	none	none	1	
+121	CDU	http://nl.dbpedia.org/resource/Christlich_Demokratische_Union_Deutschlands_(Bondsrepubliek)	http://nl.dbpedia.org/resource/Christlich_Demokratische_Union_Deutschlands_(Bondsrepubliek)	1	
+122	FDP	http://nl.dbpedia.org/resource/Freie_Demokratische_Partei	none	0	
+123	Königs Wusterhausen	http://nl.dbpedia.org/resource/Königs_Wusterhausen	http://nl.dbpedia.org/resource/Königs_Wusterhausen	1	
+127	Abraham Bredius	http://nl.dbpedia.org/resource/Abraham_Bredius	http://nl.dbpedia.org/resource/Abraham_Bredius	1	
+128	Rembrandt	http://nl.dbpedia.org/resource/Rembrandt_van_Rijn	http://nl.dbpedia.org/resource/Rembrandt_van_Rijn	1	
+129	Dudok	http://nl.dbpedia.org/resource/Bas_Dudok_van_Heel	http://nl.dbpedia.org/resource/Willem_Dudok	0	
+130	Amsterdamse Gemeentearchief	none	none	1	
+131	Dossier Rembrandt	none	none	1	
+132	Rembrandthuis	http://nl.dbpedia.org/resource/Rembrandthuis	http://nl.dbpedia.org/resource/Rembrandthuis	1	
+133	Jodenbreestraat	http://nl.dbpedia.org/resource/Jodenbreestraat	http://nl.dbpedia.org/resource/Jodenbreestraat	1	
+134	Rembrandts	none	none	1	
+135	De Nachtwacht	http://nl.dbpedia.org/resource/De_Nachtwacht	http://nl.dbpedia.org/resource/De_Nachtwacht	1	
+138	Saskia	http://nl.dbpedia.org/resource/Saskia_van_Uylenburgh	none	0	
+139	Geertje Dircx	http://nl.dbpedia.org/resource/Geertje_Dircx	http://nl.dbpedia.org/resource/Geertje_Dircx	1	
+140	Hcndrickje Stoffels	http://nl.dbpedia.org/resource/Hendrickje_Stoffels	http://nl.dbpedia.org/resource/Hendrickje_Stoffels	1	
+141	Rubens	http://nl.dbpedia.org/resource/Peter_Paul_Rubens	http://nl.dbpedia.org/resource/Peter_Paul_Rubens	1	
+142	Lucas van Leyden	http://nl.dbpedia.org/resource/Lucas_van_Leyden	http://nl.dbpedia.org/resource/Lucas_van_Leyden	1	
+143	Goltzius	http://nl.dbpedia.org/resource/Hendrick_Goltzius	http://nl.dbpedia.org/resource/Hendrick_Goltzius	1	
+144	Gefantaseerd Italiaans	none	none	1	
+145	Jacob van der Ulft	http://dbpedia.org/resource/Jacob_van_der_Ulft	none	0	
+146	JOACHIM VAN PRUISEN	none	http://nl.dbpedia.org/resource/Joachim_van_Pruisen	0	
+147	Residentie-orkest	http://nl.dbpedia.org/resource/Residentie_Orkest	http://nl.dbpedia.org/resource/Residentie_Orkest	1	
+148	Berlijn	http://nl.dbpedia.org/resource/Berlijn	http://nl.dbpedia.org/resource/Berlijn	1	
+149	Joachim van Pruisen	none	http://nl.dbpedia.org/resource/Joachim_van_Pruisen	0	
+151	Prins Albrecht	none	none	1	
+152	Brunswijk	http://nl.dbpedia.org/resource/Hertogdom_Brunswijk	http://nl.dbpedia.org/resource/Hertogdom_Brunswijk	1	
+153	Prinses Marianne	http://nl.dbpedia.org/resource/Marianne_van_Oranje-Nassau	http://nl.dbpedia.org/resource/Marianne_van_Oranje-Nassau	1	
+154	Willem I	http://nl.dbpedia.org/resource/Willem_I_der_Nederlanden	http://nl.dbpedia.org/resource/Willem_van_Oranje	0	
+155	Albrecht van Pruisen	http://nl.dbpedia.org/resource/Albert_van_Pruisen_(1809-1872)	none	0	
+156	Wilhelm I	http://nl.dbpedia.org/resource/Wilhelm_I_van_Duitsland	http://nl.dbpedia.org/resource/Wilhelm_I_van_Duitsland	1	
+157	Wilhelm Friedrich	none	http://nl.dbpedia.org/resource/Georg_Wilhelm_Friedrich_Hegel	0	
+158	Karl	none	http://nl.dbpedia.org/resource/Karl_Marx	0	
+159	Ernst Joachim	none	none	1	
+160	Albrecht	none	none	1	
+161	Hannover	http://nl.dbpedia.org/resource/Hannover_(stad)	http://nl.dbpedia.org/resource/Hannover_(stad)	1	
+162	Kamenz	none	http://nl.dbpedia.org/resource/Kamenz_(stad)	0	
+163	Silezië	http://nl.dbpedia.org/resource/Silezië	http://nl.dbpedia.org/resource/Silezië	1	
+164	Friedrich Heinrich	none	none	1	
+165	Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	1	
+166	Nijmeegse Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	1	
+167	Zevenheuvelenweg	http://nl.dbpedia.org/resource/Provinciale_weg_841	http://nl.dbpedia.org/resource/Provinciale_weg_841	1	
+168	Groesbeek	http://nl.dbpedia.org/resource/Groesbeek	http://nl.dbpedia.org/resource/Groesbeek	1	
+169	Berg	none	none	1	
+170	Dal	none	http://nl.dbpedia.org/resource/Dal_(aardrijkskunde)	0	
+171	Nederland	http://nl.dbpedia.org/resource/Nederland	http://nl.dbpedia.org/resource/Nederland	1	
+172	Duitse	http://nl.dbpedia.org/resource/Duitsland	http://nl.dbpedia.org/resource/Duitsland	1	
+174	Galibier voor Tour	none	none	1	
+176	Mook	http://nl.dbpedia.org/resource/Mook	http://nl.dbpedia.org/resource/Mook	1	
+178	Germany	http://nl.dbpedia.org/resource/Duitsland	http://nl.dbpedia.org/resource/Duitsland	1	
+179	Rotterdamse	none	none	1	
+180	A. Zee	none	none	1	
+181	B. J.	none	none	1	
+182	Beest	none	none	1	
+184	Rotterdam	http://nl.dbpedia.org/resource/Rotterdam	http://nl.dbpedia.org/resource/Rotterdam	1	
+186	G. de Zeeuw	none	none	1	
+188	Jan de Jong	none	none	1	
+193	Plasmolen	http://nl.dbpedia.org/resource/Plasmolen	http://nl.dbpedia.org/resource/Plasmolen	1	
+194	C. A. Polak	none	none	1	
+195	Den Haag	http://nl.dbpedia.org/resource/Den_Haag	http://nl.dbpedia.org/resource/Den_Haag	1	
+196	D. Stam	none	http://nl.dbpedia.org/resource/Danny_Stam	0	
+197	Hardinxveld	http://nl.dbpedia.org/resource/Hardinxveld	http://nl.dbpedia.org/resource/Hardinxveld	1	
+198	Hagenaar Polak	none	none	1	
+199	Polak	none	none	1	
+200	Israëli	http://nl.dbpedia.org/resource/Israël	http://nl.dbpedia.org/resource/Israël	1	
+202	WEK	none	none	1	
+203	Hermans	http://nl.dbpedia.org/resource/Willem_Frederik_Hermans	http://nl.dbpedia.org/resource/Willem_Frederik_Hermans	1	
+204	W.F. Hermans	http://nl.dbpedia.org/resource/Willem_Frederik_Hermans	http://nl.dbpedia.org/resource/Willem_Frederik_Hermans	1	
+205	Franstalige	none	none	1	
+206	Luik	http://nl.dbpedia.org/resource/Luik_(stad)	http://nl.dbpedia.org/resource/Luik_(stad)	1	
+207	De Bezige	http://nl.dbpedia.org/resource/De_Bezige_Bij	none	0	
+208	A. Hamming	none	none	1	
+209	Hamming	none	none	1	
+210	Parijs	http://nl.dbpedia.org/resource/Parijs	http://nl.dbpedia.org/resource/Parijs	1	
+211	Frans	http://nl.dbpedia.org/resource/Frans	http://nl.dbpedia.org/resource/Frans	1	
+212	Actes Sud	none	none	1	
+213	Arles	http://nl.dbpedia.org/resource/Arles	http://nl.dbpedia.org/resource/Arles	1	
+214	Mach	none	none	1	
+215	Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	1	
+216	Amsterdamsche Universiteit	none	none	1	
+219	Réti	http://nl.dbpedia.org/resource/Richárd_Réti	http://nl.dbpedia.org/resource/Réti_(schaakopening)	0	
+221	St. Petersburg	http://nl.dbpedia.org/resource/Sint-Petersburg	none	0	
+223	Mannheim	http://nl.dbpedia.org/resource/Mannheim	http://nl.dbpedia.org/resource/Mannheim	1	
+224	Zweden	http://nl.dbpedia.org/resource/Zweden	http://nl.dbpedia.org/resource/Zweden	1	
+225	Roode Kruis	http://nl.dbpedia.org/resource/Rode_Kruis	http://nl.dbpedia.org/resource/Rode_Kruis	1	
+226	Parijs	http://nl.dbpedia.org/resource/Parijs	http://nl.dbpedia.org/resource/Parijs	1	
+228	Sorbonne	http://nl.dbpedia.org/resource/Sorbonne_(gebouw)	http://nl.dbpedia.org/resource/Sorbonne_(gebouw)	1	
+233	Rem	none	none	1	
+236	Tanger	http://nl.dbpedia.org/resource/Tanger	http://nl.dbpedia.org/resource/Tanger	1	
+237	Panama	http://nl.dbpedia.org/resource/Panama_(land)	http://nl.dbpedia.org/resource/Panama_(land)	1	
+240	Rome	http://nl.dbpedia.org/resource/Rome_(stad)	http://nl.dbpedia.org/resource/Rome_(stad)	1	
+242	R. K. W. V.	none	none	1	
+243	Patronaat	http://nl.dbpedia.org/resource/Patronaat_(rooms-katholicisme)	http://nl.dbpedia.org/resource/Patronaat_(Haarlem)	0	
+244	Jacobs	none	none	1	
+245	Nederland	http://nl.dbpedia.org/resource/Nederland	http://nl.dbpedia.org/resource/Nederland	1	
+246	Zwolle	http://nl.dbpedia.org/resource/Zwolle	http://nl.dbpedia.org/resource/Zwolle	1	
+247	Sassenpoort	http://nl.dbpedia.org/resource/Sassenpoort	http://nl.dbpedia.org/resource/Sassenpoort	1	
+248	Wall Street	http://nl.dbpedia.org/resource/Wall_Street	http://nl.dbpedia.org/resource/Wall_Street	1	
+249	NEW YORK	http://nl.dbpedia.org/resource/New_York_City	http://nl.dbpedia.org/resource/New_York_City	1	
+251	Noord	none	none	1	
+252	Vietnam	http://nl.dbpedia.org/resource/Vietnam	http://nl.dbpedia.org/resource/Vietnam	1	
+253	Litton Industries	http://nl.dbpedia.org/resource/Litton_Industries	none	0	
+254	Litton	http://nl.dbpedia.org/resource/Litton_Industries	none	0	
+255	McDonnell-Douglas	http://nl.dbpedia.org/resource/McDonnell_Douglas	http://nl.dbpedia.org/resource/McDonnell_Douglas	1	
+257	Boeing	http://nl.dbpedia.org/resource/Boeing	http://nl.dbpedia.org/resource/Boeing	1	
+258	HAAG	http://nl.dbpedia.org/resource/Den_Haag	http://nl.dbpedia.org/resource/Den_Haag	1	
+259	Den Haag	http://nl.dbpedia.org/resource/Den_Haag	http://nl.dbpedia.org/resource/Den_Haag	1	
+261	H. B. S.	none	none	1	
+262	A. v. Poelje	http://nl.dbpedia.org/resource/Gerrit_van_Poelje	http://nl.dbpedia.org/resource/Gerrit_van_Poelje	1	
+263	W. Boer	none	none	1	
+264	P. Dekker	none	none	1	
+265	M. de Haan	none	none	1	
+266	C. J. Hage	none	none	1	
+267	J. F. Kröner	none	none	1	
+269	O. Reijs	none	none	1	
+271	Joh	none	none	1	
+272	Vorrink	none	http://nl.dbpedia.org/resource/Koos_Vorrink	0	
+273	Stokroosplein	none	http://nl.dbpedia.org/resource/Eerste_Gemeentelijk_Lyceum_in_Den_Haag	0	
+274	RESIDENTIENIEUWS Haagsch Crisis Comité	none	none	1	
+275	De Bron	none	none	1	
+277	Haagsdie Crisis Comité	none	none	1	
+279	Haagsche Crisis Comité	none	none	1	
+280	P. N. de Charro	none	none	1	
+281	Kempen	none	http://nl.dbpedia.org/resource/Kempen_(streek)	0	
+282	J. V.	none	none	1	
+283	Haagsche Crisis Co	none	none	1	
+284	Statenkwartier	http://nl.dbpedia.org/resource/Geuzen-_en_Statenkwartier	http://nl.dbpedia.org/resource/Geuzen-_en_Statenkwartier	1	
+286	Nederlandsch-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	1	
+287	Volksraad	http://nl.dbpedia.org/resource/Volksraad_(Nederlands-Indië)	http://nl.dbpedia.org/resource/Volksraad_(Nederlands-Indië)	1	
+288	Gouvernement	http://nl.dbpedia.org/resource/Gouvernement_(bestuur)	http://nl.dbpedia.org/resource/Gouvernement_(bestuur)	1	
+290	Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	1	
+292	Hamer	none	http://nl.dbpedia.org/resource/Piano_(instrument)	0	
+294	IX A	none	http://nl.dbpedia.org/resource/Serie_A	0	
+297	IXA	none	none	1	
+298	Rochussen	http://nl.dbpedia.org/resource/Jan_Jacob_Rochussen	none	0	
+299	Bom	none	none	1	
+301	Rappard	http://nl.dbpedia.org/resource/Frederik_van_Rappard	none	0	
+302	r-ttn Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	none	0	
+303	von Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	none	0	
+304	Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	none	0	
+306	Weldadigheid	http://nl.dbpedia.org/resource/Maatschappij_van_Weldadigheid	http://nl.dbpedia.org/resource/Maatschappij_van_Weldadigheid	1	
+307	Boste	none	none	1	
+311	IX A. Eerst	none	none	1	
+315	Zuylen	http://nl.dbpedia.org/resource/Jacob_Pieter_Pompejus_van_Zuylen_van_Nijevelt	http://nl.dbpedia.org/resource/Slot_Zuylen	0	
+318	XII	none	none	1	
+320	Memorie van Toelichting	http://nl.dbpedia.org/resource/Memorie_van_toelichting	http://nl.dbpedia.org/resource/Memorie_van_toelichting	1	
+324	Essen	http://nl.dbpedia.org/resource/Essen_(Noordrijn-Westfalen)	http://nl.dbpedia.org/resource/Essen_(Noordrijn-Westfalen)	1	
+325	Vossische Zei	none	none	1	
+326	Dusseldorf	http://nl.dbpedia.org/resource/Düsseldorf	http://nl.dbpedia.org/resource/Düsseldorf	1	
+327	Vereinigte Stahl	none	none	1	
+328	Mei	none	none	1	
+330	Aussi	none	none	1	
+331	Italianen	http://nl.dbpedia.org/resource/Italianen	http://nl.dbpedia.org/resource/Italianen	1	
+332	Chili	http://nl.dbpedia.org/resource/Chili	http://nl.dbpedia.org/resource/Chili	1	
+333	ROME	http://nl.dbpedia.org/resource/Rome_(stad)	http://nl.dbpedia.org/resource/Rome_(stad)	1	
+334	Italiaanse	http://nl.dbpedia.org/resource/Italië	http://nl.dbpedia.org/resource/Italië	1	
+335	Santiago	http://nl.dbpedia.org/resource/Santiago_(Chili)	http://nl.dbpedia.org/resource/Santiago_(Chili)	1	
+336	Davisbeker	http://nl.dbpedia.org/resource/Davis_Cup	http://nl.dbpedia.org/resource/Davis_Cup	1	
+337	Chileense	none	none	1	
+341	Antonio	none	none	1	
+342	Buenos	http://nl.dbpedia.org/resource/Buenos_Aires_(stad)	none	0	
+343	Adriano Panetta	none	none	1	
+344	Las Vegas	http://nl.dbpedia.org/resource/Las_Vegas_(Nevada)	http://nl.dbpedia.org/resource/Las_Vegas_(Nevada)	1	
+346	Buenos Aires	http://nl.dbpedia.org/resource/Buenos_Aires_(stad)	http://nl.dbpedia.org/resource/Buenos_Aires_(stad)	1	
+347	Paolo Bertolucci	http://dbpedia.org/resource/Paolo_Bertolucci	none	0	
+348	Santia	none	none	1	
