@@ -45,7 +45,8 @@ def save(name):
     fh.close()
 
     # Check temp file existence and size
-    if os.path.exists(temp_file) and (os.path.getsize(orig_file) - os.path.getsize(temp_file) < 200):
+    if os.path.exists(temp_file) and (abs(os.path.getsize(orig_file) -
+            os.path.getsize(temp_file)) < 200):
         os.chmod(temp_file, 0777)
         os.remove(orig_file)
         os.rename(temp_file, orig_file)
@@ -141,7 +142,16 @@ def get_update(name):
         # If so display error
         for i in data['instances']:
             if i['url'] == url:
-                abort(500, "Url " + url + " is already part of the training data.")
+                abort(500, "Url " + url + " is already part of this data set.")
+
+        # Keep test and training data seperate
+        alt_name = 'tve' if name == 'test' else 'test'
+        alt_file = '/var/www/training/users/' + alt_name + '/art.json'
+        with open(alt_file) as fh:
+            alt_data = json.load(fh)
+            for i in alt_data['instances']:
+                if i['url'] == url:
+                    abort(500, "Url " + url + " is already part of another data set.")
 
         # If not, retrieve entities and add them to the training data
         tpta_file = urllib.urlopen('http://145.100.59.224:8080/tpta/analyse?lang=nl&url=' + url)
@@ -177,18 +187,17 @@ def get_update(name):
             for i in to_remove:
                 data['instances'].remove(i)
 
-
     # Save json data to temp file
     fh = open(temp_file, 'w')
     fh.write(json.dumps(data))
     fh.close()
 
     # Check temp file existence and size
-    if os.path.exists(temp_file) and (os.path.getsize(orig_file) - os.path.getsize(temp_file) < 1000):
+    if os.path.exists(temp_file) and (abs(os.path.getsize(orig_file) -
+            os.path.getsize(temp_file)) < 10000):
         os.chmod(temp_file, 0777)
         os.remove(orig_file)
         os.rename(temp_file, orig_file)
-
     else:
         abort(500, "Error saving data.")
 
