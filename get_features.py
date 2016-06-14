@@ -45,6 +45,7 @@ features = [
         'date_match',
         'type_match',
         'role_match',
+        'subject_match',
         'entity_match',
         'spec_match'
         ]
