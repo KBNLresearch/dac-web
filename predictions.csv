@@ -6,7 +6,7 @@ Id	Entity	Link	Prediction	Correct
 5	Dinamo Tiflis	none	none	1	
 6	Joop Hiele	http://nl.dbpedia.org/resource/Joop_Hiele	http://nl.dbpedia.org/resource/Joop_Hiele	1	
 8	Peter Stephan	none	none	1	
-9	Van Engelen	none	http://nl.dbpedia.org/resource/Yvo_van_Engelen	0	
+9	Van Engelen	none	none	1	
 10	JULIETTE GRECO	http://nl.dbpedia.org/resource/Juliette_Gréco	http://nl.dbpedia.org/resource/Juliette_Gréco	1	
 11	DPA	http://nl.dbpedia.org/resource/Deutsche_Presse-Agentur	none	0	
 12	Franse	http://nl.dbpedia.org/resource/Frankrijk	http://nl.dbpedia.org/resource/Frankrijk	1	
@@ -37,7 +37,7 @@ Id	Entity	Link	Prediction	Correct
 41	Carnegïe Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	1	
 42	New Yorkse	none	none	1	
 43	Daily News	http://nl.dbpedia.org/resource/New_York_Daily_News	none	0	
-44	Amerika	http://nl.dbpedia.org/resource/Verenigde_Staten	http://nl.dbpedia.org/resource/Verenigde_Staten	1	
+44	Amerika	http://nl.dbpedia.org/resource/Verenigde_Staten	none	0	
 45	Russische	http://nl.dbpedia.org/resource/Rusland	http://nl.dbpedia.org/resource/Rusland	1	
 46	Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	1	
 47	Chicago	http://nl.dbpedia.org/resource/Chicago	http://nl.dbpedia.org/resource/Chicago	1	
@@ -50,7 +50,7 @@ Id	Entity	Link	Prediction	Correct
 55	Carnegie Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	1	
 56	Amerikaanse	http://nl.dbpedia.org/resource/Verenigde_Staten	http://nl.dbpedia.org/resource/Verenigde_Staten	1	
 57	Nederlandse	http://nl.dbpedia.org/resource/Nederland	http://nl.dbpedia.org/resource/Nederland	1	
-58	Pianospel	none	http://nl.dbpedia.org/resource/Quatre-mains	0	
+58	Pianospel	none	none	1	
 59	Klaas Postema	none	none	1	
 60	Allan Tucker	none	none	1	
 61	Bach	http://nl.dbpedia.org/resource/Johann_Sebastian_Bach	http://nl.dbpedia.org/resource/Johann_Sebastian_Bach	1	
@@ -87,7 +87,7 @@ Id	Entity	Link	Prediction	Correct
 98	James Salhany	none	none	1	
 99	Nebraska	http://nl.dbpedia.org/resource/Nebraska	http://nl.dbpedia.org/resource/Nebraska	1	
 100	Salhany	none	none	1	
-101	PLP	http://dbpedia.org/resource/Cys/Met_metabolism_PLP-dependent_enzyme_family	http://dbpedia.org/resource/Palpa_language	0	
+101	PLP	http://dbpedia.org/resource/Cys/Met_metabolism_PLP-dependent_enzyme_family	none	0	
 102	Stephen Coburn	none	none	1	
 103	Seiters	http://dbpedia.org/resource/Rudolf_Seiters	http://dbpedia.org/resource/Rudolf_Seiters	1	
 104	BONN	http://nl.dbpedia.org/resource/Bonn	http://nl.dbpedia.org/resource/Bonn	1	
@@ -123,7 +123,7 @@ Id	Entity	Link	Prediction	Correct
 140	Hcndrickje Stoffels	http://nl.dbpedia.org/resource/Hendrickje_Stoffels	http://nl.dbpedia.org/resource/Hendrickje_Stoffels	1	
 141	Rubens	http://nl.dbpedia.org/resource/Peter_Paul_Rubens	http://nl.dbpedia.org/resource/Peter_Paul_Rubens	1	
 142	Lucas van Leyden	http://nl.dbpedia.org/resource/Lucas_van_Leyden	http://nl.dbpedia.org/resource/Lucas_van_Leyden	1	
-143	Goltzius	http://nl.dbpedia.org/resource/Hendrick_Goltzius	http://nl.dbpedia.org/resource/Hendrick_Goltzius	1	
+143	Goltzius	http://nl.dbpedia.org/resource/Hendrick_Goltzius	none	0	
 144	Gefantaseerd Italiaans	none	none	1	
 145	Jacob van der Ulft	http://dbpedia.org/resource/Jacob_van_der_Ulft	none	0	
 146	JOACHIM VAN PRUISEN	none	http://nl.dbpedia.org/resource/Joachim_van_Pruisen	0	
@@ -131,17 +131,17 @@ Id	Entity	Link	Prediction	Correct
 148	Berlijn	http://nl.dbpedia.org/resource/Berlijn	http://nl.dbpedia.org/resource/Berlijn	1	
 149	Joachim van Pruisen	none	http://nl.dbpedia.org/resource/Joachim_van_Pruisen	0	
 151	Prins Albrecht	none	none	1	
-152	Brunswijk	http://nl.dbpedia.org/resource/Hertogdom_Brunswijk	http://nl.dbpedia.org/resource/Hertogdom_Brunswijk	1	
+152	Brunswijk	http://nl.dbpedia.org/resource/Hertogdom_Brunswijk	none	0	
 153	Prinses Marianne	http://nl.dbpedia.org/resource/Marianne_van_Oranje-Nassau	http://nl.dbpedia.org/resource/Marianne_van_Oranje-Nassau	1	
 154	Willem I	http://nl.dbpedia.org/resource/Willem_I_der_Nederlanden	http://nl.dbpedia.org/resource/Willem_van_Oranje	0	
 155	Albrecht van Pruisen	http://nl.dbpedia.org/resource/Albert_van_Pruisen_(1809-1872)	none	0	
 156	Wilhelm I	http://nl.dbpedia.org/resource/Wilhelm_I_van_Duitsland	http://nl.dbpedia.org/resource/Wilhelm_I_van_Duitsland	1	
 157	Wilhelm Friedrich	none	http://nl.dbpedia.org/resource/Georg_Wilhelm_Friedrich_Hegel	0	
-158	Karl	none	http://nl.dbpedia.org/resource/Karl_Marx	0	
+158	Karl	none	none	1	
 159	Ernst Joachim	none	none	1	
 160	Albrecht	none	none	1	
 161	Hannover	http://nl.dbpedia.org/resource/Hannover_(stad)	http://nl.dbpedia.org/resource/Hannover_(stad)	1	
-162	Kamenz	none	http://nl.dbpedia.org/resource/Kamenz_(stad)	0	
+162	Kamenz	none	none	1	
 163	Silezië	http://nl.dbpedia.org/resource/Silezië	http://nl.dbpedia.org/resource/Silezië	1	
 164	Friedrich Heinrich	none	none	1	
 165	Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	1	
@@ -221,7 +221,7 @@ Id	Entity	Link	Prediction	Correct
 267	J. F. Kröner	none	none	1	
 269	O. Reijs	none	none	1	
 271	Joh	none	none	1	
-272	Vorrink	none	http://nl.dbpedia.org/resource/Koos_Vorrink	0	
+272	Vorrink	none	none	1	
 273	Stokroosplein	none	http://nl.dbpedia.org/resource/Eerste_Gemeentelijk_Lyceum_in_Den_Haag	0	
 274	RESIDENTIENIEUWS Haagsch Crisis Comité	none	none	1	
 275	De Bron	none	none	1	
@@ -234,17 +234,17 @@ Id	Entity	Link	Prediction	Correct
 284	Statenkwartier	http://nl.dbpedia.org/resource/Geuzen-_en_Statenkwartier	http://nl.dbpedia.org/resource/Geuzen-_en_Statenkwartier	1	
 286	Nederlandsch-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	1	
 287	Volksraad	http://nl.dbpedia.org/resource/Volksraad_(Nederlands-Indië)	http://nl.dbpedia.org/resource/Volksraad_(Nederlands-Indië)	1	
-288	Gouvernement	http://nl.dbpedia.org/resource/Gouvernement_(bestuur)	http://nl.dbpedia.org/resource/Gouvernement_(bestuur)	1	
+288	Gouvernement	http://nl.dbpedia.org/resource/Gouvernement_(bestuur)	http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)	0	
 290	Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	1	
 292	Hamer	none	http://nl.dbpedia.org/resource/Piano_(instrument)	0	
 294	IX A	none	http://nl.dbpedia.org/resource/Serie_A	0	
 297	IXA	none	none	1	
 298	Rochussen	http://nl.dbpedia.org/resource/Jan_Jacob_Rochussen	none	0	
 299	Bom	none	none	1	
-301	Rappard	http://nl.dbpedia.org/resource/Frederik_van_Rappard	none	0	
+301	Rappard	http://nl.dbpedia.org/resource/Frederik_van_Rappard	http://nl.dbpedia.org/resource/Anthony_Gerhard_Alexander_van_Rappard	0	
 302	r-ttn Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	none	0	
 303	von Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	none	0	
-304	Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	none	0	
+304	Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	1	
 306	Weldadigheid	http://nl.dbpedia.org/resource/Maatschappij_van_Weldadigheid	http://nl.dbpedia.org/resource/Maatschappij_van_Weldadigheid	1	
 307	Boste	none	none	1	
 311	IX A. Eerst	none	none	1	
