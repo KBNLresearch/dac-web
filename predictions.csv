@@ -131,13 +131,13 @@ Id	Entity	Link	Prediction	Correct
 148	Berlijn	http://nl.dbpedia.org/resource/Berlijn	http://nl.dbpedia.org/resource/Berlijn	1	
 149	Joachim van Pruisen	none	http://nl.dbpedia.org/resource/Joachim_van_Pruisen	0	
 151	Prins Albrecht	none	http://nl.dbpedia.org/resource/Keizer_Karel_VII_Albrecht	0	
-152	Brunswijk	http://nl.dbpedia.org/resource/Hertogdom_Brunswijk	http://nl.dbpedia.org/resource/Hertogdom_Brunswijk	1	
+152	Brunswijk	http://nl.dbpedia.org/resource/Hertogdom_Brunswijk	none	0	
 153	Prinses Marianne	http://nl.dbpedia.org/resource/Marianne_van_Oranje-Nassau	http://nl.dbpedia.org/resource/Marianne_van_Oranje-Nassau	1	
 154	Willem I	http://nl.dbpedia.org/resource/Willem_I_der_Nederlanden	http://nl.dbpedia.org/resource/Willem_van_Oranje	0	
 155	Albrecht van Pruisen	http://nl.dbpedia.org/resource/Albert_van_Pruisen_(1809-1872)	none	0	
 156	Wilhelm I	http://nl.dbpedia.org/resource/Wilhelm_I_van_Duitsland	http://nl.dbpedia.org/resource/Wilhelm_I_van_Duitsland	1	
-157	Wilhelm Friedrich	none	http://nl.dbpedia.org/resource/Georg_Wilhelm_Friedrich_Hegel	0	
-158	Karl	none	http://nl.dbpedia.org/resource/Karl_Marx	0	
+157	Wilhelm Friedrich	none	none	1	
+158	Karl	none	none	1	
 159	Ernst Joachim	none	none	1	
 160	Albrecht	none	http://nl.dbpedia.org/resource/Keizer_Karel_VII_Albrecht	0	
 161	Hannover	http://nl.dbpedia.org/resource/Hannover_(stad)	http://nl.dbpedia.org/resource/Hannover_(stad)	1	
@@ -237,7 +237,7 @@ Id	Entity	Link	Prediction	Correct
 288	Gouvernement	http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)	http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)	1	
 290	Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	1	
 292	Hamer	none	none	1	
-294	IX A	none	http://nl.dbpedia.org/resource/Serie_A	0	
+294	IX A	none	none	1	
 297	IXA	none	none	1	
 298	Rochussen	http://nl.dbpedia.org/resource/Jan_Jacob_Rochussen	none	0	
 299	Bom	none	none	1	
@@ -264,7 +264,7 @@ Id	Entity	Link	Prediction	Correct
 335	Santiago	http://nl.dbpedia.org/resource/Santiago_(Chili)	http://nl.dbpedia.org/resource/Santiago_(Chili)	1	
 336	Davisbeker	http://nl.dbpedia.org/resource/Davis_Cup	http://nl.dbpedia.org/resource/Davis_Cup	1	
 337	Chileense	none	none	1	
-341	Antonio	none	none	1	
+341	Antonio	none	http://nl.dbpedia.org/resource/San_Antonio_(Texas)	0	
 342	Buenos	http://nl.dbpedia.org/resource/Buenos_Aires_(stad)	none	0	
 343	Adriano Panetta	none	none	1	
 344	Las Vegas	http://nl.dbpedia.org/resource/Las_Vegas_(Nevada)	http://nl.dbpedia.org/resource/Las_Vegas_(Nevada)	1	
