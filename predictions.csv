@@ -30,14 +30,14 @@ Id	Entity	Link	Prediction	Correct
 33	Indische-Katholieke Partij	none	none	1	
 34	Gestapo	http://nl.dbpedia.org/resource/Gestapo	http://nl.dbpedia.org/resource/Gestapo	1	
 36	Gispen	http://nl.dbpedia.org/resource/Hans_Gispen	http://nl.dbpedia.org/resource/Gispen	0	
-37	Economische Zaken	http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken_(Nederland)	http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken_(Nederland)	1	
+37	Economische Zaken	http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken_(Nederland)	none	0	
 38	Oss	http://nl.dbpedia.org/resource/Oss	http://nl.dbpedia.org/resource/Oss	1	
 39	Youri Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	1	
 40	Rien Frölich	none	none	1	
 41	Carnegïe Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	1	
 42	New Yorkse	none	none	1	
 43	Daily News	http://nl.dbpedia.org/resource/New_York_Daily_News	none	0	
-44	Amerika	http://nl.dbpedia.org/resource/Verenigde_Staten	http://nl.dbpedia.org/resource/Verenigde_Staten	1	
+44	Amerika	http://nl.dbpedia.org/resource/Verenigde_Staten	none	0	
 45	Russische	http://nl.dbpedia.org/resource/Rusland	http://nl.dbpedia.org/resource/Rusland	1	
 46	Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	1	
 47	Chicago	http://nl.dbpedia.org/resource/Chicago	http://nl.dbpedia.org/resource/Chicago	1	
@@ -66,7 +66,7 @@ Id	Entity	Link	Prediction	Correct
 74	Rotterdamse	none	none	1	
 76	ASSEN De Bolhoed	none	none	1	
 77	Robert Brouwer	none	none	1	
-79	De Stoep	none	http://nl.dbpedia.org/resource/Daniël_van_der_Stoep	0	
+79	De Stoep	none	none	1	
 80	Diagonaal	none	http://nl.dbpedia.org/resource/Diagonaal	0	
 81	Andrè Westra	none	none	1	
 82	Oosterpoort	http://nl.dbpedia.org/resource/De_Oosterpoort	http://nl.dbpedia.org/resource/Oosterpoort_(Hoorn)	0	
@@ -100,7 +100,7 @@ Id	Entity	Link	Prediction	Correct
 111	Jagdeinheit Senftenberg	none	none	1	
 112	Brandenburg	http://nl.dbpedia.org/resource/Brandenburg_(deelstaat)	http://nl.dbpedia.org/resource/Brandenburg_(deelstaat)	1	
 113	Berlijn	http://nl.dbpedia.org/resource/Berlijn	http://nl.dbpedia.org/resource/Berlijn	1	
-114	Berliner Zeitung	http://nl.dbpedia.org/resource/Berliner_Zeitung	none	0	
+114	Berliner Zeitung	http://nl.dbpedia.org/resource/Berliner_Zeitung	http://nl.dbpedia.org/resource/Berliner_Zeitung	1	
 115	Bundes Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	1	
 116	Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	1	
 118	Viking	none	none	1	
@@ -141,14 +141,14 @@ Id	Entity	Link	Prediction	Correct
 159	Ernst Joachim	none	none	1	
 160	Albrecht	none	http://nl.dbpedia.org/resource/Keizer_Karel_VII_Albrecht	0	
 161	Hannover	http://nl.dbpedia.org/resource/Hannover_(stad)	http://nl.dbpedia.org/resource/Hannover_(stad)	1	
-162	Kamenz	none	none	1	
+162	Kamenz	none	http://nl.dbpedia.org/resource/Kamenz_(stad)	0	
 163	Silezië	http://nl.dbpedia.org/resource/Silezië	http://nl.dbpedia.org/resource/Silezië	1	
 164	Friedrich Heinrich	none	none	1	
 165	Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	1	
 166	Nijmeegse Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	1	
 167	Zevenheuvelenweg	http://nl.dbpedia.org/resource/Provinciale_weg_841	http://nl.dbpedia.org/resource/Provinciale_weg_841	1	
 168	Groesbeek	http://nl.dbpedia.org/resource/Groesbeek	http://nl.dbpedia.org/resource/Groesbeek	1	
-169	Berg	none	http://nl.dbpedia.org/resource/Berg_(aardrijkskunde)	0	
+169	Berg	none	none	1	
 170	Dal	none	http://nl.dbpedia.org/resource/Dal_(aardrijkskunde)	0	
 171	Nederland	http://nl.dbpedia.org/resource/Nederland	http://nl.dbpedia.org/resource/Nederland	1	
 172	Duitse	http://nl.dbpedia.org/resource/Duitsland	http://nl.dbpedia.org/resource/Duitsland	1	
@@ -165,7 +165,7 @@ Id	Entity	Link	Prediction	Correct
 193	Plasmolen	http://nl.dbpedia.org/resource/Plasmolen	http://nl.dbpedia.org/resource/Plasmolen	1	
 194	C. A. Polak	none	none	1	
 195	Den Haag	http://nl.dbpedia.org/resource/Den_Haag	http://nl.dbpedia.org/resource/Den_Haag	1	
-196	D. Stam	none	http://nl.dbpedia.org/resource/Danny_Stam	0	
+196	D. Stam	none	none	1	
 197	Hardinxveld	http://nl.dbpedia.org/resource/Hardinxveld	http://nl.dbpedia.org/resource/Hardinxveld	1	
 198	Hagenaar Polak	none	none	1	
 199	Polak	none	none	1	
@@ -192,7 +192,7 @@ Id	Entity	Link	Prediction	Correct
 225	Roode Kruis	http://nl.dbpedia.org/resource/Rode_Kruis	http://nl.dbpedia.org/resource/Rode_Kruis	1	
 226	Parijs	http://nl.dbpedia.org/resource/Parijs	http://nl.dbpedia.org/resource/Parijs	1	
 228	Sorbonne	http://nl.dbpedia.org/resource/Sorbonne_(gebouw)	http://nl.dbpedia.org/resource/Sorbonne_(gebouw)	1	
-233	Rem	none	none	1	
+233	Rem	none	http://nl.dbpedia.org/resource/Rem	0	
 236	Tanger	http://nl.dbpedia.org/resource/Tanger	http://nl.dbpedia.org/resource/Tanger	1	
 237	Panama	http://nl.dbpedia.org/resource/Panama_(land)	http://nl.dbpedia.org/resource/Panama_(land)	1	
 240	Rome	http://nl.dbpedia.org/resource/Rome_(stad)	http://nl.dbpedia.org/resource/Rome_(stad)	1	
@@ -202,11 +202,11 @@ Id	Entity	Link	Prediction	Correct
 245	Nederland	http://nl.dbpedia.org/resource/Nederland	http://nl.dbpedia.org/resource/Nederland	1	
 246	Zwolle	http://nl.dbpedia.org/resource/Zwolle	http://nl.dbpedia.org/resource/Zwolle	1	
 247	Sassenpoort	http://nl.dbpedia.org/resource/Sassenpoort	http://nl.dbpedia.org/resource/Sassenpoort	1	
-248	Wall Street	http://nl.dbpedia.org/resource/Wall_Street	none	0	
+248	Wall Street	http://nl.dbpedia.org/resource/Wall_Street	http://nl.dbpedia.org/resource/Wall_Street	1	
 249	NEW YORK	http://nl.dbpedia.org/resource/New_York_City	http://nl.dbpedia.org/resource/New_York_City	1	
 251	Noord	none	none	1	
 252	Vietnam	http://nl.dbpedia.org/resource/Vietnam	http://nl.dbpedia.org/resource/Vietnam	1	
-253	Litton Industries	http://nl.dbpedia.org/resource/Litton_Industries	none	0	
+253	Litton Industries	http://nl.dbpedia.org/resource/Litton_Industries	http://nl.dbpedia.org/resource/Litton_Industries	1	
 254	Litton	http://nl.dbpedia.org/resource/Litton_Industries	none	0	
 255	McDonnell-Douglas	http://nl.dbpedia.org/resource/McDonnell_Douglas	http://nl.dbpedia.org/resource/McDonnell_Douglas	1	
 257	Boeing	http://nl.dbpedia.org/resource/Boeing	http://nl.dbpedia.org/resource/Boeing	1	
@@ -234,9 +234,9 @@ Id	Entity	Link	Prediction	Correct
 284	Statenkwartier	http://nl.dbpedia.org/resource/Geuzen-_en_Statenkwartier	http://nl.dbpedia.org/resource/Geuzen-_en_Statenkwartier	1	
 286	Nederlandsch-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	1	
 287	Volksraad	http://nl.dbpedia.org/resource/Volksraad_(Nederlands-Indië)	http://nl.dbpedia.org/resource/Volksraad_(Nederlands-Indië)	1	
-288	Gouvernement	http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)	http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)	1	
+288	Gouvernement	http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)	http://nl.dbpedia.org/resource/Gouvernement_(bestuur)	0	
 290	Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	1	
-292	Hamer	none	none	1	
+292	Hamer	none	http://nl.dbpedia.org/resource/Piano_(instrument)	0	
 294	IX A	none	none	1	
 297	IXA	none	none	1	
 298	Rochussen	http://nl.dbpedia.org/resource/Jan_Jacob_Rochussen	none	0	
@@ -264,7 +264,7 @@ Id	Entity	Link	Prediction	Correct
 335	Santiago	http://nl.dbpedia.org/resource/Santiago_(Chili)	http://nl.dbpedia.org/resource/Santiago_(Chili)	1	
 336	Davisbeker	http://nl.dbpedia.org/resource/Davis_Cup	http://nl.dbpedia.org/resource/Davis_Cup	1	
 337	Chileense	none	none	1	
-341	Antonio	none	http://nl.dbpedia.org/resource/San_Antonio_(Texas)	0	
+341	Antonio	none	none	1	
 342	Buenos	http://nl.dbpedia.org/resource/Buenos_Aires_(stad)	none	0	
 343	Adriano Panetta	none	none	1	
 344	Las Vegas	http://nl.dbpedia.org/resource/Las_Vegas_(Nevada)	http://nl.dbpedia.org/resource/Las_Vegas_(Nevada)	1	
