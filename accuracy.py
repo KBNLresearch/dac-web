@@ -1,94 +1,86 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
-import sys
-sys.path.insert(0, '../dac')
-
-import disambiguation
 import json
+import sys
 import urllib
 
 
-pred_fields = ['Id', 'Entity', 'Link', 'Prediction', 'Correct']
-pred = open('predictions.csv', 'w')
-pred.write('\t'.join(pred_fields) + '\n')
+SERVICE = 'DAC'
 
+if SERVICE == 'DAC':
+    base_url = 'http://ww.kbresearch.nl/dac/?'
+elif SERVICE == 'DA':
+    base_url = 'http://145.100.59.226:8002/?'
+
+
+# Load test data set
 with open('users/test/art.json') as data_file:
     data = json.load(data_file)
 
-instance_count = 0
-candidate_count = 0
-correct_pred = 0
-pos_label = 0
+# Init results file
+fh = open('results.csv', 'w+')
+fields = ['Id', 'Entity', 'Link', 'Prediction', 'Correct']
+fh.write('\t'.join(fields) + '\n')
 
-linker = disambiguation.EntityLinker()
+# Get and evaluate results
+instances = 0
+links = 0
+correct = 0
+correct_links = 0
 
 for i in data['instances']:
-
-    print 'Reviewing instance ' + str(instance_count) + ': ' + i['ne_string']
 
     # Check if instance has been properly labeled
     if not i['link'] == '':
 
-        # Get the DAC Solr result and current predection
-        result = linker.link(i['url'], i['ne_string'].encode('utf-8'))[0]
-        solr_response = linker.linked[0].solr_response
+        print 'Evaluating: ' + i['link']
 
-        # Check if any Solr results
-        if hasattr(solr_response, 'numFound') and solr_response.numFound > 0:
+        # Get result for current instance
+        url = base_url + 'ne=' + i['ne_string'].encode('utf-8')
+        if SERVICE == 'DAC':
+            url += '&url=' + i['url'].encode('utf-8')
+            url += '&debug=1'
+        result = urllib.urlopen(url).read()
+        result = json.loads(result)
+        if SERVICE == 'DAC':
+            result = result['linkedNEs'][0]
 
-            pred.write(str(instance_count) + '\t')
-            pred.write(i['ne_string'].encode('utf-8') + '\t')
-            pred.write(i['link'].encode('utf-8') + '\t')
-            if result['link']:
-                pred.write(result['link'].encode('utf-8') + '\t')
-            else:
-                pred.write('none' + '\t')
+        # Save result data
+        fh.write(str(instances) + '\t')
+        fh.write(i['ne_string'].encode('utf-8') + '\t')
+        fh.write(i['link'].encode('utf-8') + '\t')
+        if 'link' in result:
+            fh.write(result['link'].encode('utf-8') + '\t')
+        else:
+            fh.write('none' + '\t')
 
-            if i['link'] != 'none' and 'link' in result and result['link'] == i['link']:
-                pred.write('1\t')
-            elif i['link'] == 'none' and not result['link']:
-                pred.write('1\t')
-            else:
-                pred.write('0\t')
-            pred.write('\n')
+        # Evaluate result
+        if i['link'] != 'none' and 'link' in result and result['link'] == i['link']:
+            fh.write('1\t')
+            correct_links += 1
+            correct += 1
+        elif i['link'] == 'none' and not 'link' in result:
+            fh.write('1\t')
+            correct += 1
+        else:
+            fh.write('0\t')
+        fh.write('\n')
 
-            index = 0
+        if i['link'] != 'none':
+            links += 1
+        instances += 1
 
-            for r in solr_response:
-                print 'solr_link', r['id'][1:-1]
+fh.close()
 
-                # Label 1
-                if r['id'][1:-1] == i['link']:
-                    pos_label += 1
-                    if 'link' in result and result['link'] == r['id'][1:-1]:
-                        correct_pred += 1
-                    else:
-                        print 'Wrong prediction! This is a link.'
+print '--'
+print 'Instances: ' + str(instances)
+print 'Correct: ' + str(correct)
+print 'Accuracy: ' + str(correct / float(instances))
+print '--'
+print 'Links: ' + str(links)
+print 'Correct links: ' + str(correct_links)
+print 'Link recall: ' + str(correct_links / float(links))
+print '--'
 
-                # Label 0
-                else:
-                    if 'link' in result:
-                        if result['link'] != r['id'][1:-1]:
-                            correct_pred += 1
-                        else:
-                            print 'Wrong prediction! This is NOT a link.'
-                    else:
-                        correct_pred += 1
-
-                candidate_count += 1
-
-            index += 1
-
-    instance_count += 1
-
-accuracy = float(correct_pred) / float(candidate_count)
-
-print('number of candidates', candidate_count)
-print('number of positive labels', pos_label)
-print('number of correct predictions', correct_pred)
-print('accuracy', accuracy)
-
-pred.close()
 
