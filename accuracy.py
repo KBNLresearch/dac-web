@@ -9,7 +9,7 @@ import urllib
 SERVICE = 'DAC'
 
 if SERVICE == 'DAC':
-    base_url = 'http://ww.kbresearch.nl/dac/?'
+    base_url = 'http://www.kbresearch.nl/dac/?'
 elif SERVICE == 'DA':
     base_url = 'http://145.100.59.226:8002/?'
 
@@ -41,6 +41,7 @@ for i in data['instances']:
         if SERVICE == 'DAC':
             url += '&url=' + i['url'].encode('utf-8')
             url += '&debug=1'
+        print url
         result = urllib.urlopen(url).read()
         result = json.loads(result)
         if SERVICE == 'DAC':
