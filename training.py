@@ -18,6 +18,7 @@ for i in ids:
 
 # Header row: regular features
 features = [
+        'solr_iteration',
         'solr_pos',
         'cand_pos',
         'solr_score',

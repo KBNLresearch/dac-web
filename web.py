@@ -154,7 +154,8 @@ def get_update(name):
                     abort(500, "Url " + url + " is already part of another data set.")
 
         # If not, retrieve entities and add them to the training data
-        tpta_file = urllib.urlopen('http://145.100.59.224:8080/tpta/analyse?lang=nl&url=' + url)
+        #tpta_file = urllib.urlopen('http://145.100.59.224:8080/tpta/analyse?lang=nl&url=' + url)
+        tpta_file = urllib.urlopen('http://192.87.165.5:8080/tpta/analyse?lang=nl&url=' + url)
         tpta_string = tpta_file.read()
         tpta_file.close()
 
