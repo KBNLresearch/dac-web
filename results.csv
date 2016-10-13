@@ -1,6 +1,6 @@
 Id	Entity	Link	Prediction	Correct
 0	NAC	http://nl.dbpedia.org/resource/NAC_Breda	http://nl.dbpedia.org/resource/NAC_Breda	1	
-1	Ton van Engelen	none	http://dbpedia.org/resource/Ton_van_Engelen	0	
+1	Ton van Engelen	http://dbpedia.org/resource/Ton_van_Engelen	http://dbpedia.org/resource/Ton_van_Engelen	1	
 2	Telesportredactie BREDA	none	none	1	
 3	Feyenoord	http://nl.dbpedia.org/resource/Feyenoord	http://nl.dbpedia.org/resource/Feyenoord	1	
 4	Rotterdammers	none	http://nl.dbpedia.org/resource/Lijst_van_Rotterdammers	0	
@@ -31,7 +31,7 @@ Id	Entity	Link	Prediction	Correct
 29	Limburg	http://nl.dbpedia.org/resource/Limburg_(Nederland)	http://nl.dbpedia.org/resource/Limburg_(Nederland)	1	
 30	Beel	http://nl.dbpedia.org/resource/Louis_Beel	http://nl.dbpedia.org/resource/Louis_Beel	1	
 31	Schmutzer	http://nl.dbpedia.org/resource/Josef_Ignaz_Julius_Maria_Schmutzer	http://nl.dbpedia.org/resource/Josef_Ignaz_Julius_Maria_Schmutzer	1	
-32	Indië	http://nl.dbpedia.org/resource/Indië_(regio)	none	0	
+32	Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	none	0	
 33	Indische-Katholieke Partij	none	none	1	
 34	Gestapo	http://nl.dbpedia.org/resource/Gestapo	http://nl.dbpedia.org/resource/Gestapo	1	
 35	Russenberg	none	none	1	
@@ -51,7 +51,7 @@ Id	Entity	Link	Prediction	Correct
 49	Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	1	
 50	Van Cliburg Concours	none	none	1	
 51	Musical America	none	none	1	
-52	Alice Tully Hall	none	http://dbpedia.org/resource/Alice_Tully_Hall	0	
+52	Alice Tully Hall	http://dbpedia.org/resource/Alice_Tully_Hall	http://dbpedia.org/resource/Alice_Tully_Hall	1	
 53	Lincoln Centre	http://nl.dbpedia.org/resource/Lincoln_Center	none	0	
 54	Musicus van de Maand &amp; quot ;	none	none	1	
 55	Carnegie Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	1	
