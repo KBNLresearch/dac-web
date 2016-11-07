@@ -155,7 +155,7 @@ def get_update(name):
 
         # If not, retrieve entities and add them to the training data
         #tpta_file = urllib.urlopen('http://145.100.59.224:8080/tpta/analyse?lang=nl&url=' + url)
-        tpta_file = urllib.urlopen('http://192.87.165.5:8080/tpta/analyse?lang=nl&url=' + url)
+        tpta_file = urllib.urlopen('http://192.87.165.3:8080/tpta2/analyse?lang=nl&url=' + url)
         tpta_string = tpta_file.read()
         tpta_file.close()
 
@@ -195,7 +195,7 @@ def get_update(name):
 
     # Check temp file existence and size
     if os.path.exists(temp_file) and (abs(os.path.getsize(orig_file) -
-            os.path.getsize(temp_file)) < 10000):
+            os.path.getsize(temp_file)) < 15000):
         os.chmod(temp_file, 0777)
         os.remove(orig_file)
         os.rename(temp_file, orig_file)
