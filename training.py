@@ -63,7 +63,7 @@ for inst in data['instances']:
     print 'Reviewing instance ' + str(instance_count) + ': ' + inst['ne_string']
 
     # Check if instance has been labeled
-    if inst['link'] != '':
+    if inst['link'] != '' and inst['link'] != 'none':
         result = linker.link(inst['url'], inst['ne_string'].encode('utf-8'))
         solr_response = linker.linked[0].solr_response
 

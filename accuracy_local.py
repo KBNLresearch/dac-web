@@ -5,14 +5,10 @@ import json
 import sys
 import urllib
 
+sys.path.insert(0, "../dac")
+import disambiguation
 
-SERVICE = 'DAC'
-
-if SERVICE == 'DAC':
-    base_url = 'http://www.kbresearch.nl/dac/?'
-elif SERVICE == 'DA':
-    base_url = 'http://145.100.59.226:8002/?'
-
+linker = disambiguation.EntityLinker()
 
 # Load test data set
 with open('users/test/art.json') as data_file:
@@ -37,31 +33,24 @@ for i in data['instances']:
         print 'Evaluating: ' + str(instances) + ' - ' + i['link']
 
         # Get result for current instance
-        url = base_url + 'ne=' + i['ne_string'].encode('utf-8')
-        if SERVICE == 'DAC':
-            url += '&url=' + i['url'].encode('utf-8')
-            url += '&debug=1'
-        #print url
-        result = urllib.urlopen(url).read()
-        result = json.loads(result)
-        if SERVICE == 'DAC':
-            result = result['linkedNEs'][0]
+        result = linker.link(i['url'], i['ne_string'].encode('utf-8'))[0]
+        #print result
 
         # Save result data
         fh.write(str(instances) + '\t')
         fh.write(i['ne_string'].encode('utf-8') + '\t')
         fh.write(i['link'].encode('utf-8') + '\t')
-        if 'link' in result:
+        if result['link']:
             fh.write(result['link'].encode('utf-8') + '\t')
         else:
             fh.write('none' + '\t')
 
         # Evaluate result
-        if i['link'] != 'none' and 'link' in result and result['link'] == i['link']:
+        if i['link'] != 'none' and result['link'] and result['link'] == i['link']:
             fh.write('1\t')
             correct_links += 1
             correct += 1
-        elif i['link'] == 'none' and not 'link' in result:
+        elif i['link'] == 'none' and not result['link']:
             fh.write('1\t')
             correct += 1
         else:
