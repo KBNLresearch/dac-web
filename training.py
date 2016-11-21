@@ -9,7 +9,7 @@ import json
 # Input and output files
 with open("users/tve/art.json") as data_file:
     data = json.load(data_file)
-out = open('features_training.csv', 'w')
+out = open('training.csv', 'w')
 
 # Header row: identifiers
 ids = ['id', 'ne', 'type', 'url', 'dpb']
@@ -44,7 +44,8 @@ features = [
         'role_match',
         'subject_match',
         'entity_match',
-        'spec_match'
+        'spec_match',
+        'cat_match'
         ]
 
 for f in features:
@@ -63,15 +64,14 @@ for inst in data['instances']:
     print 'Reviewing instance ' + str(instance_count) + ': ' + inst['ne_string']
 
     # Check if instance has been labeled
-    if inst['link'] != '' and inst['link'] != 'none':
+    if inst['link'] != '':
         result = linker.link(inst['url'], inst['ne_string'].encode('utf-8'))
         solr_response = linker.linked[0].solr_response
 
         # Check if DBpedia canadidates have been retrieved
         if hasattr(solr_response, 'numFound') and solr_response.numFound > 0:
 
-            index = 0
-            for r in solr_response:
+            for i, r in enumerate(solr_response):
 
                 line = ''
 
@@ -84,7 +84,7 @@ for inst in data['instances']:
 
                 # Regular features
                 for f in features:
-                    value = getattr(linker.linked[0].descriptions[index], f)
+                    value = getattr(linker.linked[0].descriptions[i], f)
                     if isinstance(value, float):
                         line += "{0:.5f}".format(value) + '\t'
                     else:
@@ -97,10 +97,14 @@ for inst in data['instances']:
                     line += str(0) + '\n'
                 line = line.encode('utf-8')
 
-                out.write(line)
-
-                index += 1
-                candidate_count += 1
+		# Exclude name and date conflicts
+		if getattr(linker.linked[0].descriptions[i], 'name_conflict') == 1:
+		    continue
+		elif getattr(linker.linked[0].descriptions[i], 'date_match') == -1:
+		    continue
+		else:
+                    candidate_count += 1
+                    out.write(line)
 
     instance_count += 1
 
