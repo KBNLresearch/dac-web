@@ -15,7 +15,7 @@ Id	Entity	Link	Prediction	Correct
 13	Juliette Greco	http://nl.dbpedia.org/resource/Juliette_Gréco	http://nl.dbpedia.org/resource/Juliette_Gréco	1	
 14	Franco Soir	http://dbpedia.org/resource/France_Soir	none	0	
 15	Michel Piccoli	http://nl.dbpedia.org/resource/Michel_Piccoli	http://nl.dbpedia.org/resource/Michel_Piccoli	1	
-16	Noord	none	none	1	
+16	Noord	none	http://nl.dbpedia.org/resource/Noorderdepartement	0	
 17	Verderonne	http://nl.dbpedia.org/resource/Verderonne	http://nl.dbpedia.org/resource/Verderonne	1	
 18	Philippe Lcmaire	none	none	1	
 19	Eleonore Hirt	none	none	1	
@@ -28,27 +28,27 @@ Id	Entity	Link	Prediction	Correct
 26	„ De Eendracht	none	http://nl.dbpedia.org/resource/De_Eendracht_(Amsterdam)	0	
 27	Huysman	none	none	1	
 28	Eindhoven	http://nl.dbpedia.org/resource/Eindhoven	http://nl.dbpedia.org/resource/Eindhoven	1	
-29	Limburg	http://nl.dbpedia.org/resource/Limburg_(Nederland)	http://nl.dbpedia.org/resource/Limburg_(Nederland)	1	
-30	Beel	http://nl.dbpedia.org/resource/Louis_Beel	http://nl.dbpedia.org/resource/Louis_Beel	1	
+29	Limburg	http://nl.dbpedia.org/resource/Limburg_(Nederland)	none	0	
+30	Beel	http://nl.dbpedia.org/resource/Louis_Beel	none	0	
 31	Schmutzer	http://nl.dbpedia.org/resource/Josef_Ignaz_Julius_Maria_Schmutzer	http://nl.dbpedia.org/resource/Josef_Ignaz_Julius_Maria_Schmutzer	1	
 32	Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	none	0	
 33	Indische-Katholieke Partij	none	none	1	
-34	Gestapo	http://nl.dbpedia.org/resource/Gestapo	http://nl.dbpedia.org/resource/Gestapo	1	
+34	Gestapo	http://nl.dbpedia.org/resource/Gestapo	none	0	
 35	Russenberg	none	none	1	
 36	Gispen	http://nl.dbpedia.org/resource/Hans_Gispen	http://nl.dbpedia.org/resource/Gispen	0	
 37	Economische Zaken	http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken_(Nederland)	none	0	
-38	Oss	http://nl.dbpedia.org/resource/Oss	http://nl.dbpedia.org/resource/Oss	1	
+38	Oss	http://nl.dbpedia.org/resource/Oss	none	0	
 39	Youri Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	1	
 40	Rien Frölich	none	none	1	
 41	Carnegïe Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	1	
 42	New Yorkse	none	none	1	
 43	Daily News	http://nl.dbpedia.org/resource/New_York_Daily_News	none	0	
-44	Amerika	http://nl.dbpedia.org/resource/Verenigde_Staten	none	0	
-45	Russische	http://nl.dbpedia.org/resource/Rusland	none	0	
+44	Amerika	http://nl.dbpedia.org/resource/Verenigde_Staten	http://nl.dbpedia.org/resource/Verenigde_Staten	1	
+45	Russische	http://nl.dbpedia.org/resource/Rusland	http://nl.dbpedia.org/resource/Rusland	1	
 46	Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	http://nl.dbpedia.org/resource/Amsterdam	1	
-47	Chicago	http://nl.dbpedia.org/resource/Chicago	http://nl.dbpedia.org/resource/Chicago	1	
-48	Horowitz	http://nl.dbpedia.org/resource/Vladimir_Horowitz	http://nl.dbpedia.org/resource/Vladimir_Horowitz	1	
-49	Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	1	
+47	Chicago	http://nl.dbpedia.org/resource/Chicago	http://nl.dbpedia.org/resource/Universiteit_van_Chicago	0	
+48	Horowitz	http://nl.dbpedia.org/resource/Vladimir_Horowitz	none	0	
+49	Egorov	http://nl.dbpedia.org/resource/Youri_Egorov	none	0	
 50	Van Cliburg Concours	none	none	1	
 51	Musical America	none	none	1	
 52	Alice Tully Hall	http://dbpedia.org/resource/Alice_Tully_Hall	none	0	
@@ -57,7 +57,7 @@ Id	Entity	Link	Prediction	Correct
 55	Carnegie Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	http://nl.dbpedia.org/resource/Carnegie_Hall	1	
 56	Amerikaanse	http://nl.dbpedia.org/resource/Verenigde_Staten	http://nl.dbpedia.org/resource/Verenigde_Staten	1	
 57	Nederlandse	http://nl.dbpedia.org/resource/Nederland	http://nl.dbpedia.org/resource/Nederland	1	
-58	Pianospel	none	http://nl.dbpedia.org/resource/Quatre-mains	0	
+58	Pianospel	none	none	1	
 59	Klaas Postema	none	none	1	
 60	Allan Tucker	none	none	1	
 61	Bach	http://nl.dbpedia.org/resource/Johann_Sebastian_Bach	none	0	
@@ -81,7 +81,7 @@ Id	Entity	Link	Prediction	Correct
 79	De Stoep	none	none	1	
 80	Diagonaal	none	http://nl.dbpedia.org/resource/Diagonaal	0	
 81	Andrè Westra	none	none	1	
-82	Oosterpoort	http://nl.dbpedia.org/resource/De_Oosterpoort	http://nl.dbpedia.org/resource/Oosterpoort_(Groningen)	0	
+82	Oosterpoort	http://nl.dbpedia.org/resource/De_Oosterpoort	http://nl.dbpedia.org/resource/Oosterpoort_(Hoorn)	0	
 83	Jeugdkomedie Amsterdam	none	none	1	
 84	Grandioos Joop	none	none	1	
 85	Joop	http://nl.dbpedia.org/resource/Joop_Zoetemelk	none	0	
@@ -99,8 +99,8 @@ Id	Entity	Link	Prediction	Correct
 97	Amerikaanse	http://nl.dbpedia.org/resource/Verenigde_Staten	http://nl.dbpedia.org/resource/Verenigde_Staten	1	
 98	James Salhany	none	none	1	
 99	Nebraska	http://nl.dbpedia.org/resource/Nebraska	http://nl.dbpedia.org/resource/Nebraska	1	
-100	Salhany	none	http://dbpedia.org/resource/Lucie_Salhany	0	
-101	PLP	http://dbpedia.org/resource/Cys/Met_metabolism_PLP-dependent_enzyme_family	http://dbpedia.org/resource/Palpa_language	0	
+100	Salhany	none	none	1	
+101	PLP	http://dbpedia.org/resource/Cys/Met_metabolism_PLP-dependent_enzyme_family	none	0	
 102	Stephen Coburn	none	none	1	
 103	Seiters	http://dbpedia.org/resource/Rudolf_Seiters	http://dbpedia.org/resource/Rudolf_Seiters	1	
 104	BONN	http://nl.dbpedia.org/resource/Bonn	http://nl.dbpedia.org/resource/Bonn	1	
@@ -113,7 +113,7 @@ Id	Entity	Link	Prediction	Correct
 111	Jagdeinheit Senftenberg	none	none	1	
 112	Brandenburg	http://nl.dbpedia.org/resource/Brandenburg_(deelstaat)	http://nl.dbpedia.org/resource/Brandenburg_(deelstaat)	1	
 113	Berlijn	http://nl.dbpedia.org/resource/Berlijn	http://nl.dbpedia.org/resource/Berlijn	1	
-114	Berliner Zeitung	http://nl.dbpedia.org/resource/Berliner_Zeitung	http://nl.dbpedia.org/resource/Berliner_Zeitung	1	
+114	Berliner Zeitung	http://nl.dbpedia.org/resource/Berliner_Zeitung	none	0	
 115	Bundes Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	1	
 116	Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	http://nl.dbpedia.org/resource/Bundesamt_für_Verfassungsschutz	1	
 117	Heinz Annussek	none	none	1	
@@ -140,17 +140,17 @@ Id	Entity	Link	Prediction	Correct
 138	Saskia	http://nl.dbpedia.org/resource/Saskia_van_Uylenburgh	none	0	
 139	Geertje Dircx	http://nl.dbpedia.org/resource/Geertje_Dircx	http://nl.dbpedia.org/resource/Geertje_Dircx	1	
 140	Hcndrickje Stoffels	http://nl.dbpedia.org/resource/Hendrickje_Stoffels	http://nl.dbpedia.org/resource/Hendrickje_Stoffels	1	
-141	Rubens	http://nl.dbpedia.org/resource/Peter_Paul_Rubens	none	0	
+141	Rubens	http://nl.dbpedia.org/resource/Peter_Paul_Rubens	http://nl.dbpedia.org/resource/Peter_Paul_Rubens	1	
 142	Lucas van Leyden	http://nl.dbpedia.org/resource/Lucas_van_Leyden	http://nl.dbpedia.org/resource/Lucas_van_Leyden	1	
-143	Goltzius	http://nl.dbpedia.org/resource/Hendrick_Goltzius	http://nl.dbpedia.org/resource/Hendrick_Goltzius	1	
+143	Goltzius	http://nl.dbpedia.org/resource/Hendrick_Goltzius	none	0	
 144	Gefantaseerd Italiaans	none	none	1	
-145	Jacob van der Ulft	http://dbpedia.org/resource/Jacob_van_der_Ulft	http://dbpedia.org/resource/Jacob_van_der_Ulft	1	
+145	Jacob van der Ulft	http://dbpedia.org/resource/Jacob_van_der_Ulft	none	0	
 146	JOACHIM VAN PRUISEN	none	none	1	
 147	Residentie-orkest	http://nl.dbpedia.org/resource/Residentie_Orkest	http://nl.dbpedia.org/resource/Residentie_Orkest	1	
 148	Berlijn	http://nl.dbpedia.org/resource/Berlijn	http://nl.dbpedia.org/resource/Berlijn	1	
 149	Joachim van Pruisen	none	none	1	
 150	Kurhausconcert	none	none	1	
-151	Prins Albrecht	none	http://nl.dbpedia.org/resource/Keizer_Karel_VII_Albrecht	0	
+151	Prins Albrecht	none	none	1	
 152	Brunswijk	http://nl.dbpedia.org/resource/Hertogdom_Brunswijk	none	0	
 153	Prinses Marianne	http://nl.dbpedia.org/resource/Marianne_van_Oranje-Nassau	http://nl.dbpedia.org/resource/Marianne_van_Oranje-Nassau	1	
 154	Willem I	http://nl.dbpedia.org/resource/Willem_I_der_Nederlanden	http://nl.dbpedia.org/resource/Willem_van_Oranje	0	
@@ -159,10 +159,10 @@ Id	Entity	Link	Prediction	Correct
 157	Wilhelm Friedrich	none	none	1	
 158	Karl	none	none	1	
 159	Ernst Joachim	none	none	1	
-160	Albrecht	none	http://nl.dbpedia.org/resource/Keizer_Karel_VII_Albrecht	0	
+160	Albrecht	none	none	1	
 161	Hannover	http://nl.dbpedia.org/resource/Hannover_(stad)	http://nl.dbpedia.org/resource/Hannover_(stad)	1	
 162	Kamenz	none	none	1	
-163	Silezië	http://nl.dbpedia.org/resource/Silezië	http://nl.dbpedia.org/resource/Silezië	1	
+163	Silezië	http://nl.dbpedia.org/resource/Silezië	none	0	
 164	Friedrich Heinrich	none	none	1	
 165	Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	1	
 166	Nijmeegse Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	http://nl.dbpedia.org/resource/Nijmeegse_Vierdaagse	1	
@@ -180,7 +180,7 @@ Id	Entity	Link	Prediction	Correct
 178	Germany	http://nl.dbpedia.org/resource/Duitsland	http://nl.dbpedia.org/resource/Duitsland	1	
 179	Rotterdamse	none	none	1	
 180	A. Zee	none	none	1	
-181	B. J.	none	http://nl.dbpedia.org/resource/Lyndon_B._Johnson	0	
+181	B. J.	none	none	1	
 182	Beest	none	none	1	
 183	v. Cittersstraat	none	none	1	
 184	Rotterdam	http://nl.dbpedia.org/resource/Rotterdam	http://nl.dbpedia.org/resource/Rotterdam	1	
@@ -195,7 +195,7 @@ Id	Entity	Link	Prediction	Correct
 193	Plasmolen	http://nl.dbpedia.org/resource/Plasmolen	http://nl.dbpedia.org/resource/Plasmolen	1	
 194	C. A. Polak	none	none	1	
 195	Den Haag	http://nl.dbpedia.org/resource/Den_Haag	http://nl.dbpedia.org/resource/Den_Haag	1	
-196	D. Stam	none	http://nl.dbpedia.org/resource/Danny_Stam	0	
+196	D. Stam	none	none	1	
 197	Hardinxveld	http://nl.dbpedia.org/resource/Hardinxveld	http://nl.dbpedia.org/resource/Hardinxveld	1	
 198	Hagenaar Polak	none	none	1	
 199	Polak	none	none	1	
@@ -218,7 +218,7 @@ Id	Entity	Link	Prediction	Correct
 216	Amsterdamsche Universiteit	none	none	1	
 217	„ Differentiaalvarianten	none	none	1	
 218	Amsterdamsche Meisjeslyceum	none	none	1	
-219	Réti	http://nl.dbpedia.org/resource/Richárd_Réti	http://nl.dbpedia.org/resource/Réti_(schaakopening)	0	
+219	Réti	http://nl.dbpedia.org/resource/Richárd_Réti	none	0	
 220	Hoogeschool voor Rechtswetenschappen	none	none	1	
 221	St. Petersburg	http://nl.dbpedia.org/resource/Sint-Petersburg	none	0	
 222	Meestertitel	none	none	1	
@@ -227,12 +227,12 @@ Id	Entity	Link	Prediction	Correct
 225	Roode Kruis	http://nl.dbpedia.org/resource/Rode_Kruis	http://nl.dbpedia.org/resource/Rode_Kruis	1	
 226	Parijs	http://nl.dbpedia.org/resource/Parijs	http://nl.dbpedia.org/resource/Parijs	1	
 227	Franschman	none	none	1	
-228	Sorbonne	http://nl.dbpedia.org/resource/Sorbonne_(gebouw)	http://nl.dbpedia.org/resource/Sorbonne_(gebouw)	1	
+228	Sorbonne	http://nl.dbpedia.org/resource/Sorbonne_(gebouw)	none	0	
 229	Kischinew	none	none	1	
 230	Ferdmann	none	none	1	
 231	tinnL-natoiin	none	none	1	
 232	Ttosino	none	none	1	
-233	Rem	none	http://nl.dbpedia.org/resource/Rem	0	
+233	Rem	none	none	1	
 234	Chrtaten	none	none	1	
 235	Marokk	none	none	1	
 236	Tanger	http://nl.dbpedia.org/resource/Tanger	http://nl.dbpedia.org/resource/Tanger	1	
@@ -247,16 +247,16 @@ Id	Entity	Link	Prediction	Correct
 245	Nederland	http://nl.dbpedia.org/resource/Nederland	http://nl.dbpedia.org/resource/Nederland	1	
 246	Zwolle	http://nl.dbpedia.org/resource/Zwolle	http://nl.dbpedia.org/resource/Zwolle	1	
 247	Sassenpoort	http://nl.dbpedia.org/resource/Sassenpoort	http://nl.dbpedia.org/resource/Sassenpoort	1	
-248	Wall Street	http://nl.dbpedia.org/resource/Wall_Street	http://nl.dbpedia.org/resource/Wall_Street	1	
+248	Wall Street	http://nl.dbpedia.org/resource/Wall_Street	none	0	
 249	NEW YORK	http://nl.dbpedia.org/resource/New_York_City	http://nl.dbpedia.org/resource/New_York_City	1	
 250	Wall tSreet	none	none	1	
 251	Noord	none	none	1	
 252	Vietnam	http://nl.dbpedia.org/resource/Vietnam	http://nl.dbpedia.org/resource/Vietnam	1	
-253	Litton Industries	http://nl.dbpedia.org/resource/Litton_Industries	http://nl.dbpedia.org/resource/Litton_Industries	1	
+253	Litton Industries	http://nl.dbpedia.org/resource/Litton_Industries	none	0	
 254	Litton	http://nl.dbpedia.org/resource/Litton_Industries	none	0	
 255	McDonnell-Douglas	http://nl.dbpedia.org/resource/McDonnell_Douglas	http://nl.dbpedia.org/resource/McDonnell_Douglas	1	
 256	Lockheted	none	none	1	
-257	Boeing	http://nl.dbpedia.org/resource/Boeing	http://nl.dbpedia.org/resource/Boeing	1	
+257	Boeing	http://nl.dbpedia.org/resource/Boeing	none	0	
 258	HAAG	http://nl.dbpedia.org/resource/Den_Haag	http://nl.dbpedia.org/resource/Den_Haag	1	
 259	Den Haag	http://nl.dbpedia.org/resource/Den_Haag	http://nl.dbpedia.org/resource/Den_Haag	1	
 260	Haagsche Gymnasiasten	none	none	1	
@@ -287,9 +287,9 @@ Id	Entity	Link	Prediction	Correct
 285	Lloemnckuurt	none	none	1	
 286	Nederlandsch-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	1	
 287	Volksraad	http://nl.dbpedia.org/resource/Volksraad_(Nederlands-Indië)	http://nl.dbpedia.org/resource/Provincies_van_Vietnam	0	
-288	Gouvernement	http://nl.dbpedia.org/resource/Gouvernement_(bestuur)	http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)	0	
+288	Gouvernement	http://nl.dbpedia.org/resource/Gouvernement_(bestuur)	http://nl.dbpedia.org/resource/Gouvernement_(bestuur)	1	
 289	Gouvernement van Nederlandsch	none	none	1	
-290	Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	none	0	
+290	Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	http://nl.dbpedia.org/resource/Nederlands-Indië	1	
 291	Gouvernementslanden	none	none	1	
 292	Hamer	none	http://nl.dbpedia.org/resource/Piano_(instrument)	0	
 293	Zaturd-ig 13 December	none	none	1	
@@ -297,13 +297,13 @@ Id	Entity	Link	Prediction	Correct
 295	Bchuld	none	none	1	
 296	Happard	none	none	1	
 297	IXA	none	none	1	
-298	Rochussen	http://nl.dbpedia.org/resource/Jan_Jacob_Rochussen	http://nl.dbpedia.org/resource/Jan_Jacob_Rochussen	1	
+298	Rochussen	http://nl.dbpedia.org/resource/Jan_Jacob_Rochussen	none	0	
 299	Bom	none	none	1	
 300	Botse	none	none	1	
-301	Rappard	http://nl.dbpedia.org/resource/Frederik_van_Rappard	http://nl.dbpedia.org/resource/Anthony_Gerhard_Alexander_van_Rappard	0	
+301	Rappard	http://nl.dbpedia.org/resource/Frederik_van_Rappard	none	0	
 302	r-ttn Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	none	0	
-303	von Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	1	
-304	Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	1	
+303	von Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	none	0	
+304	Bosse	http://nl.dbpedia.org/resource/Pieter_Philip_van_Bosse	none	0	
 305	Sondtol	none	none	1	
 306	Weldadigheid	http://nl.dbpedia.org/resource/Maatschappij_van_Weldadigheid	http://nl.dbpedia.org/resource/Maatschappij_van_Weldadigheid	1	
 307	Boste	none	none	1	
@@ -331,8 +331,8 @@ Id	Entity	Link	Prediction	Correct
 329	Noord ^ West * Duitschland	none	none	1	
 330	Aussi	none	none	1	
 331	Italianen	http://nl.dbpedia.org/resource/Italianen	http://nl.dbpedia.org/resource/Italianen	1	
-332	Chili	http://nl.dbpedia.org/resource/Chili	http://nl.dbpedia.org/resource/Wijnbouw_in_Chili	0	
-333	ROME	http://nl.dbpedia.org/resource/Rome_(stad)	http://nl.dbpedia.org/resource/Rome_(stad)	1	
+332	Chili	http://nl.dbpedia.org/resource/Chili	http://nl.dbpedia.org/resource/Chili	1	
+333	ROME	http://nl.dbpedia.org/resource/Rome_(stad)	none	0	
 334	Italiaanse	http://nl.dbpedia.org/resource/Italië	http://nl.dbpedia.org/resource/Italië	1	
 335	Santiago	http://nl.dbpedia.org/resource/Santiago_(Chili)	http://nl.dbpedia.org/resource/Santiago_(Chili)	1	
 336	Davisbeker	http://nl.dbpedia.org/resource/Davis_Cup	http://nl.dbpedia.org/resource/Davis_Cup	1	
