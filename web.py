@@ -16,6 +16,8 @@ import dac
 
 import xml.etree.ElementTree as etree
 
+import bottle
+
 from bottle import redirect
 from bottle import abort
 from bottle import route
@@ -26,6 +28,7 @@ from bottle import template
 from bottle import request
 from bottle import default_app
 
+bottle.TEMPLATE_PATH.insert(0, abs_path)
 application = default_app()
 
 TPTA_URL = 'http://tpta.kbresearch.nl/analyse?lang=nl&url='
