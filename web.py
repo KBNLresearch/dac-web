@@ -1,37 +1,41 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import hashlib
-import json
 import os
-import re
 import sys
-import time
-import urllib
 
+# Add DAC directory to the Python path
 abs_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, abs_path + '/../dac')
 
+import bottle
+
+# Add absolute path to the Bottle template path
+bottle.TEMPLATE_PATH.insert(0, abs_path)
+bottle.TEMPLATE_PATH.insert(0, abs_path + '/templates')
+
+# Import DAC scripts
 import dac
+import solr
+import utilities
+
+import hashlib
+import json
+import re
+import time
+import urllib
 
 import xml.etree.ElementTree as etree
 
-import bottle
-
-from bottle import redirect
 from bottle import abort
-from bottle import route
+from bottle import default_app
 from bottle import get
 from bottle import post
-from bottle import run
 from bottle import template
+from bottle import redirect
 from bottle import request
-from bottle import default_app
-
-bottle.TEMPLATE_PATH.insert(0, abs_path)
-application = default_app()
-
-TPTA_URL = 'http://tpta.kbresearch.nl/analyse?lang=nl&url='
+from bottle import route
+from bottle import run
 
 @get('/<name>')
 def show_candidates(name):
@@ -65,24 +69,26 @@ def show_candidates(name):
     ne_type = data['instances'][index]['ne_type']
     link = data['instances'][index]['link']
 
-    # Get current dac prediction
-    linker = dac.EntityLinker()
-    result = linker.link(url, ne_string.encode('utf-8'))[0]
-
-    # Get article publication date
-    publ_date = linker.context.document.publ_date
-
-    # Get ocr and mark entity
-    ocr = linker.context.document.ocr
+    # Get ocr, publication date
+    context = dac.Context(url, dac.TPTA_URL)
+    publ_date = context.publ_date
+    ocr = context.ocr
     ocr = re.sub('(?P<pf>(^|\W|:punct:))' + re.escape(ne_string) +
-            '(?P<sf>(\W|$|:punct:))', '\g<pf>' +
-            '<span style="background-color:yellow;">' +
-            ne_string + '</span>' + '\g<sf>', ocr)
+        '(?P<sf>(\W|$|:punct:))', '\g<pf>' +
+        '<span style="background-color:yellow;">' +
+        ne_string + '</span>' + '\g<sf>', ocr)
 
-    return template('index', last_instance=last_instance, index=index,
-            url=url, publ_date=publ_date, ne=ne_string, ne_type=ne_type,
-            ocr=ocr, link=link, dac_result=result, linker=linker)
+    # Get Solr response
+    norm = utilities.normalize(ne_string)
+    last_part = utilities.get_last_name(norm)
+    solr_connection = solr.SolrConnection(dac.SOLR_URL)
+    cand_list = dac.CandidateList(solr_connection, dac.SOLR_ROWS,
+        norm, last_part)
+    solr_response = cand_list.solr_response
 
+    return template('index', last_instance=last_instance, index=index, url=url,
+            ne=ne_string, ne_type=ne_type, link=link, publ_date=publ_date,
+            ocr=ocr, norm=norm, solr_response=solr_response)
 
 @post('/<name>')
 def save_link(name):
@@ -127,7 +133,6 @@ def save_link(name):
     else:
         abort(500, 'Error saving data.')
 
-
 @get('/<name>/edit')
 def update_training_set(name):
     '''
@@ -160,10 +165,11 @@ def update_training_set(name):
             alt_data = json.load(fh)
             for i in alt_data['instances']:
                 if i['url'] == url:
-                    abort(500, 'Url ' + url + ' is already part of another data set.')
+                    abort(500, 'Url ' + url +
+                        ' is already part of another data set.')
 
         # If not, retrieve entities and add them to the training data
-        tpta_file = urllib.urlopen(TPTA_URL + url)
+        tpta_file = urllib.urlopen(dac.TPTA_URL + url)
         tpta_string = tpta_file.read()
         tpta_file.close()
 
@@ -211,6 +217,8 @@ def update_training_set(name):
 
     return 'Success'
 
-
 if __name__ == '__main__':
     run(host='localhost', port=5001)
+else:
+    application = default_app()
+

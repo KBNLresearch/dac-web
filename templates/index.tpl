@@ -50,7 +50,7 @@
             <p><b>Url</b>: <a href={{dac_url}} target="_blank">{{url}}</a></p>
             <p><b>Date</b>: {{publ_date}}</p>
             <p><b>Type</b>: {{ne_type}}</p>
-            <p><b>Entity</b>: {{ne}}</p>
+            <p><b>Entity</b>: {{ne + ' (' + norm +')'}}</p>
         </div>
         <div>
             <p>{{!ocr}}</p>
@@ -63,18 +63,16 @@
         <h2>DBpedia candidates</h2>
         <div class="info">
             <p><b>Selection</b>: {{link}}</p>
-            % pred = dac_result['link'] if 'link' in dac_result else 'none'
-            <p><b>Prediction</b>: {{pred}}</p>
-            <p><b>Reason</b>: {{dac_result['reason']}}</p>
-            <p><b>Probability</b>: {{dac_result['prob']}}</p>
+            <p><b>Prediction</b>: </p>
+            <p><b>Reason</b>: </p>
+            <p><b>Probability</b>: </p>
         </div>
 
         <div>
             <form id="form" method="post" action="">
-            % solr_results = linker.linked[0].solr_response
-            % if solr_results and hasattr(solr_results, 'numFound'):
+            % if solr_response and hasattr(solr_response, 'numFound'):
             % i = 0
-            % for res in solr_results:
+            % for res in solr_response:
                 <div class="candidate">
                     <p class="label">
                         <input type="radio" name="link" value="{{res['id']}}"
@@ -117,12 +115,7 @@
                         <a href="javascript:toggle('feat_panel_{{i}}');">Features</a>
                     </p>
                     <div id="feat_panel_{{i}}" style="display: none;" class="panel">
-                        % d = linker.linked[0].descriptions[i]
-                        <p>prob: {{d.prob}}</p>
-                        % for j in range(len(linker.model.features)):
-                        <p>{{linker.model.features[j]}}:
-                            {{getattr(d, linker.model.features[j])}}</p>
-                        % end
+
                     </div>
 
                </div>
@@ -133,8 +126,8 @@
             <!-- Other options -->
             <div class="candidate">
                 % other_link = True
-                % if solr_results and hasattr(solr_results, 'numFound'):
-                %   for res in solr_results:
+                % if solr_response and hasattr(solr_response, 'numFound'):
+                %   for res in solr_response:
                 %     if link == res['id']:
                 %       other_link = False
                 %     end
