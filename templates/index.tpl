@@ -1,31 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Training named entities</title>
     <meta charset="UTF-8">
-    <style>
-        * {margin: 0; padding: 0; border: 0;}
-        body {font-family: verdana, sans-serif; color: #3B3131;
-            overflow-y: scroll;}
-        h1 {float: left; line-height: 80px;}
-        h2 {margin-bottom: 20px;}
-        input[type=radio] {margin-right: 10px;}
-        input#other_input {width: 90%; border: 1px solid #eee; padding: 5px;
-            margin-top: 5px; font-family: helvetica, sans-serif;}
-        ul {list-style-type: none;}
-        div#heading {position: absolute; width: 90%; height: 80px;
-            padding: 0 5%; background-color: #ddd;}
-        div#ocr {width: 44%; position: absolute; top: 80px; right: 50%;
-            padding: 2% 1% 2% 5%;}
-        div#dbp {width: 44%; position: absolute; top: 80px; left: 50%;
-            padding: 2% 5% 2% 1%;}
-        div.info {margin-bottom: 20px; line-height: 30px;}
-        div.candidate {margin-bottom: 20px;}
-        p.label, p.abstract, p.panel_header, div.panel {margin-bottom: 10px;}
-        a, a.visited {color: blue;}
-        a.link {float: right; display: block; height: 80px; line-height: 80px;
-            padding: 0 10px;}
-    </style>
+    <title>Training named entities</title>
+    <link rel="stylesheet" type="text/css" href="/static/global.css">
 </head>
 <body>
 
@@ -163,20 +141,7 @@
 
     </div>
 
-    <script language="javascript">
-        document.getElementById("other_input").onfocus = function(){
-            document.getElementById("other_radio").checked = true;
-        };
-        function toggle(id) {
-            var element = document.getElementById(id);
-            if(element.style.display == "block") {
-                element.style.display = "none";
-            }
-            else {
-                element.style.display = "block";
-            }
-        }
-    </script>
+    <script src="/static/global.js"></script>
 
 </body>
 </html>

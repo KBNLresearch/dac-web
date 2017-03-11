@@ -36,6 +36,7 @@ from bottle import redirect
 from bottle import request
 from bottle import route
 from bottle import run
+from bottle import static_file
 
 @get('/<name>')
 def show_candidates(name):
@@ -216,6 +217,13 @@ def update_training_set(name):
         abort(500, 'Error saving data.')
 
     return 'Success'
+
+@route('/static/<filename:path>')
+def static(filename):
+    '''
+    Load static css, js files.
+    '''
+    return static_file(filename, root=abs_path + '/static')
 
 if __name__ == '__main__':
     run(host='localhost', port=5001)
