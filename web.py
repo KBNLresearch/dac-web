@@ -34,9 +34,20 @@ from bottle import post
 from bottle import template
 from bottle import redirect
 from bottle import request
+from bottle import response
 from bottle import route
 from bottle import run
 from bottle import static_file
+
+@get('/predict')
+def predict():
+    '''
+    Get the current DAC prediction.
+    '''
+    linker = dac.EntityLinker()
+    result = linker.link(request.query.url, request.query.ne.encode('utf-8'))[0]
+    response.set_header('Content-Type', 'application/json')
+    return result
 
 @get('/<name>')
 def show_candidates(name):

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Training named entities</title>
     <link rel="stylesheet" type="text/css" href="/static/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -41,9 +42,9 @@
         <h2>DBpedia candidates</h2>
         <div class="info">
             <p><b>Selection</b>: {{link}}</p>
-            <p><b>Prediction</b>: </p>
-            <p><b>Reason</b>: </p>
-            <p><b>Probability</b>: </p>
+            <p><b>Prediction</b>: <span id="prediction"></span></p>
+            <p><b>Reason</b>: <span id="reason"></span></p>
+            <p><b>Probability</b>: <span id="prob"></span></p>
         </div>
 
         <div>
@@ -142,6 +143,7 @@
     </div>
 
     <script src="/static/global.js"></script>
+    <script>predict("{{url}}", "{{ne}}");</script>
 
 </body>
 </html>
