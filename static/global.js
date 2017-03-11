@@ -28,6 +28,14 @@ function predict(url, ne) {
             $('#prediction').html(pred);
             $('#reason').html(data.reason);
             $('#prob').html(data.prob);
+            for (var res in data.candidates) {
+                var str = JSON.stringify(data.candidates[res].features);
+                str = str.replace(/,/g, '<br/>')
+                    .replace(/:/g, ': ')
+                    .replace('{', '<p>')
+                    .replace('}', '</p>');
+                $('#feat_panel_' + res).html(str);
+            }
         }
     });
 

@@ -64,30 +64,30 @@
                         <a href="javascript:toggle('descr_panel_{{i}}');">Description</a>
                     </p>
                     <div id="descr_panel_{{i}}" style="display: none;" class="panel">
-                        <p><b>Identifier</b>: {{res['id']}}</p>
+                        <p>"id": {{res['id']}}
                         % if 'last_part' in res:
-                        <p><b>Last part</b>: {{res['last_part']}}</p>
+                        "last_part": {{res['last_part']}}<br/>
                         % end
                         % if 'alt_label' in res:
-                        <p><b>Alt labels</b>: {{', '.join(res['alt_label'])}}</p>
+                        "alt_label": {{', '.join(res['alt_label'])}}<br/>
                         % end
                         % if 'schema_type' in res:
-                        <p><b>Schema.org types</b>: {{', '.join(res['schema_type'])}}</p>
+                        "schema_type": {{', '.join(res['schema_type'])}}<br/>
                         % end
                         % if 'dbo_type' in res:
-                        <p><b>DBpedia ontology types</b>: {{', '.join(res['dbo_type'])}}</p>
+                        "dbo_type": {{', '.join(res['dbo_type'])}}<br/>
                         % end
                         % if 'keyword' in res:
-                        <p><b>Keywords</b>: {{', '.join(res['keyword'])}}</p>
+                        "keyword": {{', '.join(res['keyword'])}}<br/>
                         % end
                         % if 'birth_year' in res:
-                        <p><b>Birth year</b>: {{res['birth_year']}}</p>
+                        "birth_year": {{res['birth_year']}}<br/>
                         % end
                         % if 'death_year' in res:
-                        <p><b>Death year</b>: {{res['death_year']}}</p>
+                        "death_year": {{res['death_year']}}<br/>
                         % end
-                        <p><b>Inlinks</b>: {{res['inlinks']}}</p>
-                        <p><b>Score</b>: {{res['score']}}</p>
+                        "inlinks": {{res['inlinks']}}<br/>
+                        <p>"score": {{res['score']}}</p>
                     </div>
 
                     <p class="panel_header">
