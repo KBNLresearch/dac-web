@@ -16,7 +16,7 @@ function predict(url, ne) {
 
     var ajax_url = "predict";
     var ajax_url = ajax_url + "?url=" + url;
-    var ajax_url = ajax_url + "&ne=" + ne;
+    var ajax_url = ajax_url + "&ne=" + encodeURIComponent(ne)
 
     $.ajax({
         type: "GET",
