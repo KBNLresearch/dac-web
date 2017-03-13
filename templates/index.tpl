@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Training named entities</title>
-    <link rel="stylesheet" type="text/css" href="/static/global.css">
+    <link rel="stylesheet" type="text/css" href="static/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
@@ -42,9 +42,9 @@
         <h2>DBpedia candidates</h2>
         <div class="info">
             <p><b>Selection</b>: {{link}}</p>
-            <p><b>Prediction</b>: <span id="prediction"></span></p>
-            <p><b>Reason</b>: <span id="reason"></span></p>
-            <p><b>Probability</b>: <span id="prob"></span></p>
+            <p><b>Prediction</b>: <span id="prediction">Loading...</span></p>
+            <p><b>Reason</b>: <span id="reason">Loading...</span></p>
+            <p><b>Probability</b>: <span id="prob">Loading...</span></p>
         </div>
 
         <div>
@@ -94,9 +94,8 @@
                         <a href="javascript:toggle('feat_panel_{{i}}');">Features</a>
                     </p>
                     <div id="feat_panel_{{i}}" style="display: none;" class="panel">
-
+                        <p>Loading...</p>
                     </div>
-
                </div>
             % i += 1
             % end
@@ -142,7 +141,7 @@
 
     </div>
 
-    <script src="/static/global.js"></script>
+    <script src="static/global.js"></script>
     <script>predict("{{url}}", "{{ne}}");</script>
 
 </body>
