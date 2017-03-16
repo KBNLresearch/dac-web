@@ -44,7 +44,7 @@ def predict():
     '''
     Get the current DAC prediction.
     '''
-    linker = dac.EntityLinker()
+    linker = dac.EntityLinker(debug=True, candidates=True)
     result = linker.link(request.query.url,
         request.query.ne.encode('utf-8'))[0]
     response.set_header('Content-Type', 'application/json')
