@@ -23,7 +23,7 @@ import json
 import os
 import sys
 
-sys.path.insert(0, "../dac")
+sys.path.insert(0, "../../dac")
 
 import dac
 
@@ -47,7 +47,7 @@ def generate():
     Generate a training data set based on the manually labeled examples from
     the training web interface.
     '''
-    with open("users/tve/art.json") as fh:
+    with open("../users/tve/art.json") as fh:
         data = json.load(fh)
 
     with open('training.csv', 'w') as fh:
@@ -78,9 +78,9 @@ def generate():
                         # Metadata
                         row.append(str(instance_count))
                         row.append(str(candidate_count))
-                        row.append(inst['url'])
+                        row.append(inst['url'].encode('utf-8'))
                         row.append(inst['ne_string'].encode('utf-8'))
-                        row.append(inst['ne_type'])
+                        row.append(inst['ne_type'].encode('utf-8'))
                         row.append(cand['id'].encode('utf-8'))
 
                         # Features
