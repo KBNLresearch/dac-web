@@ -1,24 +1,24 @@
-document.getElementById("other_input").onfocus = function(){
-    document.getElementById("other_radio").checked = true;
+document.getElementById('other_input').onfocus = function(){
+    document.getElementById('other_radio').checked = true;
 };
 
 function toggle(id) {
     var element = document.getElementById(id);
-    if(element.style.display == "block") {
-        element.style.display = "none";
+    if(element.style.display == 'block') {
+        element.style.display = 'none';
     }
     else {
-        element.style.display = "block";
+        element.style.display = 'block';
     }
 }
 
 function predict(url, ne) {
-    var ajax_url = "predict";
-    var ajax_url = ajax_url + "?url=" + url;
-    var ajax_url = ajax_url + "&ne=" + encodeURIComponent(ne)
+    var ajax_url = 'predict';
+    var ajax_url = ajax_url + '?url=' + url;
+    var ajax_url = ajax_url + '&ne=' + encodeURIComponent(ne)
 
     $.ajax({
-        type: "GET",
+        type: 'GET',
         url: ajax_url,
         success: function(data) {
             console.log(data);
@@ -40,6 +40,8 @@ function predict(url, ne) {
                         .replace(/:/g, ': ')
                         .replace('{', '<p>')
                         .replace('}', '</p>');
+                    str = '<p>"prob": ' + data.candidates[res].prob +
+                        '</p>' + str;
                     $('#feat_panel_' + res).html(str);
                 }
             }
