@@ -20,10 +20,9 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 import json
-import os
 import sys
 
-sys.path.insert(0, "../../dac")
+sys.path.insert(0, '../../dac')
 
 import dac
 
@@ -59,14 +58,27 @@ def generate():
         instance_count = 0
         candidate_count = 0
 
+        url = None
+        url_result = None
+
         for inst in data['instances']:
-            print('Reviewing instance ' + str(instance_count) + ':')
-            print(inst['ne_string'].encode('utf-8'))
+            print('Reviewing instance ' + str(instance_count) + ': ' +
+                inst['ne_string'].encode('utf-8'))
 
             # Check if instance has been labeled
             if inst['link'] != '':
-                result = linker.link(inst['url'],
-                    inst['ne_string'].encode('utf-8'))[0]
+                if inst['url'] != url:
+                    print('Getting result for url: ' + inst['url'])
+                    url = inst['url']
+                    url_result = linker.link(inst['url'])
+
+                result = [r for r in url_result
+                    if r['text'] == inst['ne_string']]
+                if len(result) != 1:
+                    print('No result for: ' + inst['ne_string'])
+                    continue
+                else:
+                    result = result[0]
 
                 # Check if DBpedia canadidates have been retrieved
                 if 'candidates' in result:

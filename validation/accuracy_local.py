@@ -1,77 +1,95 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#
+# DAC Entity Linker
+#
+# Copyright (C) 2017 Koninklijke Bibliotheek, National Library of
+# the Netherlands
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 import json
 import sys
-import urllib
 
-sys.path.insert(0, "../dac")
-import disambiguation
+sys.path.insert(0, "../../dac")
 
-linker = disambiguation.EntityLinker()
+import dac
 
-# Load test data set
-with open('users/test/art.json') as data_file:
-    data = json.load(data_file)
+import unicodecsv as csv
 
-# Init results file
-fh = open('results.csv', 'w+')
-fields = ['Id', 'Entity', 'Link', 'Prediction', 'Correct']
-fh.write('\t'.join(fields) + '\n')
+linker = dac.EntityLinker(debug=True)
 
-# Get and evaluate results
-nr_instances = 0 # Total number of test examples
-nr_correct_instances = 0 # Number of correctly predicted examples
-nr_links = 0 # Number of examples where correct answer is a link
-nr_correct_links = 0 # Number of link examples that were predicted correctly
-nr_false_links = 0 # Number of link or non-link examples where incorrect link was predicted
+with open('../users/test/art.json') as fh:
+    data = json.load(fh)
 
-for i in data['instances']:
+keys = ['Id', 'Entity', 'Link', 'Prediction', 'Correct']
 
-    # Check if instance has been properly labeled
-    if not i['link'] == '':
+with open('results.csv', 'w') as fh:
+    csv_writer = csv.writer(fh, delimiter='\t', encoding='utf-8')
+    csv_writer.writerow(keys)
 
-        print 'Evaluating: ' + str(nr_instances) + ' - ' + i['link']
+    # Get and evaluate results
+    nr_instances = 0 # Total number of test examples
+    nr_correct_instances = 0 # Number of correctly predicted examples
+    nr_links = 0 # Number of examples where correct answer is a link
+    nr_correct_links = 0 # Number of link examples that were predicted correctly
+    nr_false_links = 0 # Number of examples where incorrect link was predicted
 
-        # Get result for current instance
-        result = linker.link(i['url'], i['ne_string'].encode('utf-8'))[0]
-        #print result
+    for i in data['instances']:
 
-        # Save result data
-        fh.write(str(nr_instances) + '\t')
-        fh.write(i['ne_string'].encode('utf-8') + '\t')
-        fh.write(i['link'].encode('utf-8') + '\t')
-        if result['link']:
-            fh.write(result['link'].encode('utf-8') + '\t')
-        else:
-            fh.write('none' + '\t')
+        # Check if instance has been properly labeled
+        if i['link'] != '':
 
-        # Evaluate result
-        if i['link'] != 'none':
-            nr_links += 1
-            if result['link']:
-                if result['link'] == i['link']:
-                    nr_correct_instances += 1
-                    nr_correct_links += 1
-                    fh.write('1\t')
+            print('Evaluating instance ' + str(nr_instances) + ': ' +
+                i['ne_string'].encode('utf-8'))
+
+            # Get result for current instance
+            result = linker.link(i['url'], i['ne_string'].encode('utf-8'))[0]
+
+            row = []
+            row.append(str(nr_instances))
+            row.append(i['ne_string'].encode('utf-8'))
+            row.append(i['link'].encode('utf-8'))
+            row.append(result['link'].encode('utf-8') if 'link' in result
+                else result['reason'])
+
+            # Evaluate result
+            # A link should be predicted
+            if i['link'] != 'none':
+                nr_links += 1
+                if 'link' in result:
+                    if result['link'] == i['link']:
+                        nr_correct_instances += 1
+                        nr_correct_links += 1
+                        row.append('1')
+                    else:
+                        nr_false_links += 1
+                        row.append('0')
                 else:
+                    row.append('0')
+            # A link should not be predicted
+            elif i['link'] == 'none':
+                if 'link' in result:
                     nr_false_links += 1
-                    fh.write('0\t')
-            else:
-                fh.write('0\t')
-        elif i['link'] == 'none':
-            if result['link']:
-                nr_false_links += 1
-                fh.write('0\t')
-            else:
-                nr_correct_instances += 1
-                fh.write('1\t')
+                    row.append('0')
+                else:
+                    nr_correct_instances += 1
+                    row.append('1')
 
-        fh.write('\n')
+            csv_writer.writerow(row)
 
-        nr_instances += 1
-
-fh.close()
+            nr_instances += 1
 
 accuracy = nr_correct_instances / float(nr_instances)
 link_recall = nr_correct_links / float(nr_links)
@@ -94,4 +112,3 @@ print 'Link precision: ' + str(link_precision)
 print '---'
 print 'Link F1-measure: ' + str(link_f_measure)
 print '---'
-
