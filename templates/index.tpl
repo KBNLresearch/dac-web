@@ -64,7 +64,7 @@
                         <a href="javascript:toggle('descr_panel_{{i}}');">Description</a>
                     </p>
                     <div id="descr_panel_{{i}}" style="display: none;" class="panel">
-                        <p>"id": {{res['id']}}
+                        <p>"id": {{res['id']}}<br/>
                         % if 'last_part' in res:
                         "last_part": {{res['last_part']}}<br/>
                         % end
@@ -87,7 +87,7 @@
                         "death_year": {{res['death_year']}}<br/>
                         % end
                         "inlinks": {{res['inlinks']}}<br/>
-                        <p>"score": {{res['score']}}</p>
+                        "score": {{res['score']}}</p>
                     </div>
 
                     <p class="panel_header">
