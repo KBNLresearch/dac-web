@@ -62,7 +62,7 @@ def predict():
     '''
     Get the current DAC prediction.
     '''
-    linker = dac.EntityLinker(debug=True, candidates=True)
+    linker = dac.EntityLinker(debug=True, candidates=True, model='svm')
     result = linker.link(request.query.url,
         request.query.ne.encode('utf-8'))[0]
     response.set_header('Content-Type', 'application/json')
@@ -96,30 +96,25 @@ def show_candidates(name):
 
     # Get instance data
     url = data['instances'][index]['url']
-    ne_string = data['instances'][index]['ne_string']
+    ne = data['instances'][index]['ne_string']
     ne_type = data['instances'][index]['ne_type']
     link = data['instances'][index]['link']
 
-    # Get ocr, publication date
+    # Get context
     context = dac.Context(url, dac.TPTA_URL)
-    publ_date = context.publ_date
-    ocr = context.ocr
-    ocr = re.sub('(?P<pf>(^|\W|:punct:))' + re.escape(ne_string) +
-        '(?P<sf>(\W|$|:punct:))', '\g<pf>' +
-        '<span style="background-color:yellow;">' +
-        ne_string + '</span>' + '\g<sf>', ocr)
+    ocr = re.sub(
+        '(?P<pf>(^|\W|:punct:))' + re.escape(ne) + '(?P<sf>(\W|$|:punct:))',
+        '\g<pf>' + '<span style="background-color:yellow;">' + ne + '</span>' +
+        '\g<sf>', context.ocr)
 
-    # Get Solr response
-    norm = utilities.normalize(ne_string)
-    last_part = utilities.get_last_name(norm)
+    # Get candidates
     solr_connection = solr.SolrConnection(dac.SOLR_URL)
-    cand_list = dac.CandidateList(solr_connection, dac.SOLR_ROWS,
-        norm, last_part)
-    solr_response = cand_list.solr_response
+    cluster = dac.Cluster([dac.Entity(ne, ne_type, context)])
+    cand_list = dac.CandidateList(solr_connection, dac.SOLR_ROWS, cluster)
 
     return template('index', last_instance=last_instance, index=index, url=url,
-            ne=ne_string, ne_type=ne_type, link=link, publ_date=publ_date,
-            ocr=ocr, norm=norm, solr_response=solr_response)
+            ne=ne, ne_type=ne_type, link=link, publ_date=context.publ_date,
+            ocr=ocr, candidates=cand_list.candidates)
 
 @post('/<name>')
 def save_link(name):
