@@ -29,7 +29,7 @@
             <p><b>Url</b>: <a href={{dac_url}} target="_blank">{{url}}</a></p>
             <p><b>Date</b>: {{publ_date}}</p>
             <p><b>Type</b>: {{ne_type}}</p>
-            <p><b>Entity</b>: {{ne + ' (' + norm +')'}}</p>
+            <p><b>Entity</b>: {{ne}}</p>
         </div>
         <div>
             <p>{{!ocr}}</p>
@@ -49,10 +49,10 @@
 
         <div>
             <form id="form" method="post" action="">
-            % if solr_response and hasattr(solr_response, 'numFound'):
+            % if candidates:
             % i = 0
-            % for res in solr_response:
-                <div class="candidate">
+            % for res in [c.document for c in candidates]:
+                <div class="candidate" id="{{res['id']}}">
                     <p class="label">
                         <input type="radio" name="link" value="{{res['id']}}"
                             {{!"checked" if link == res['id'] else ''}} />
@@ -93,7 +93,7 @@
                     <p class="panel_header">
                         <a href="javascript:toggle('feat_panel_{{i}}');">Features</a>
                     </p>
-                    <div id="feat_panel_{{i}}" style="display: none;" class="panel">
+                    <div id="feat_panel_{{i}}" style="display: none;" class="panel feat_panel">
                         <p>Loading...</p>
                     </div>
                </div>
@@ -104,8 +104,8 @@
             <!-- Other options -->
             <div class="candidate">
                 % other_link = True
-                % if solr_response and hasattr(solr_response, 'numFound'):
-                %   for res in solr_response:
+                % if candidates:
+                %   for res in [c.document for c in candidates]:
                 %     if link == res['id']:
                 %       other_link = False
                 %     end
