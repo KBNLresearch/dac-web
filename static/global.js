@@ -34,17 +34,26 @@ function predict(url, ne) {
             $('#prob').html(p);
 
             if (data.candidates) {
-                for (var res in data.candidates) {
-                    var str = JSON.stringify(data.candidates[res].features);
-                    str = str.replace(/,/g, '<br/>')
-                        .replace(/:/g, ': ')
-                        .replace('{', '<p>')
-                        .replace('}', '</p>');
-                    str = '<p>"prob": ' + data.candidates[res].prob +
-                        '</p>' + str;
-                    $('#feat_panel_' + res).html(str);
-                }
+                $('.candidate').each(function(i, obj) {
+                    $(obj).find('.feat_panel').html('Not available');
+                    for (var res in data.candidates) {
+                        //console.log(data.candidates[res].id);
+                        if (obj.id == data.candidates[res].id) {
+                            console.log(obj.id);
+                            var str = JSON.stringify(data.candidates[res].features);
+                            str = str.replace(/,/g, '<br/>')
+                                .replace(/:/g, ': ')
+                                .replace('{', '<p>')
+                                .replace('}', '</p>');
+                            str = '<p>"prob": ' + data.candidates[res].prob +
+                                '</p>' + str;
+                            console.log(str);
+                            $(obj).find('.feat_panel').html(str);
+                        }
+                    }
+                });
             }
+
         }
     });
 
