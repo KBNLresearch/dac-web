@@ -110,11 +110,15 @@ def show_candidates(name):
     # Get candidates
     solr_connection = solr.SolrConnection(dac.SOLR_URL)
     cluster = dac.Cluster([dac.Entity(ne, ne_type, context)])
-    cand_list = dac.CandidateList(solr_connection, dac.SOLR_ROWS, cluster)
+    if cluster.entities[0].valid:
+        cand_list = dac.CandidateList(solr_connection, dac.SOLR_ROWS, cluster)
+        candidates = cand_list.candidates
+    else:
+        candidates = []
 
     return template('index', last_instance=last_instance, index=index, url=url,
             ne=ne, ne_type=ne_type, link=link, publ_date=context.publ_date,
-            ocr=ocr, candidates=cand_list.candidates)
+            ocr=ocr, candidates=candidates)
 
 @post('/<name>')
 def save_link(name):

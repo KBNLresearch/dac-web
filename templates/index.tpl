@@ -71,6 +71,9 @@
                         % if 'alt_label' in res:
                         "alt_label": {{', '.join(res['alt_label'])}}<br/>
                         % end
+                        % if 'spec' in res:
+                        "spec": {{res['spec']}}<br/>
+                        % end
                         % if 'schema_type' in res:
                         "schema_type": {{', '.join(res['schema_type'])}}<br/>
                         % end

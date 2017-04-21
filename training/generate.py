@@ -36,7 +36,8 @@ features = [
     'last_part_match', 'levenshtein_ratio', 'name_conflict', 'date_match',
     'solr_iteration', 'solr_position', 'solr_score', 'inlinks', 'lang',
     'ambig', 'quotes', 'type_match', 'role_match', 'spec_match',
-    'keyword_match', 'subject_match', 'entity_match'
+    'keyword_match', 'subject_match', 'max_vec_sim', 'mean_vec_sim',
+    'vec_match', 'entity_match'
 ]
 metadata = ['inst_id', 'cand_id', 'url', 'ne', 'type', 'link']
 label = ['label']
@@ -53,7 +54,7 @@ def generate():
         csv_writer = csv.writer(fh, delimiter='\t', encoding='utf-8')
         csv_writer.writerow(metadata + features + label)
 
-        linker = dac.EntityLinker(debug=True, candidates=True, training=True)
+        linker = dac.EntityLinker(debug=True, candidates=True, train=True)
 
         instance_count = 0
         candidate_count = 0
