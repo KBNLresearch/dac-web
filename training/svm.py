@@ -84,7 +84,12 @@ def train(data, labels):
     clf.fit(data, labels)
     joblib.dump(clf, 'model.pkl')
 
+    df = pd.read_csv('training.csv', sep='\t')
+    df = df.ix[:, 6:-1]
+    for i, feature in enumerate(df.columns.values):
+        print(feature, clf.coef_[:, i][0])
+
 if __name__ == '__main__':
     data, labels = load_csv()
-    validate(data, labels)
-    #train(data, labels)
+    #validate(data, labels)
+    train(data, labels)
