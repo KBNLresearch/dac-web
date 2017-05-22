@@ -44,7 +44,7 @@ def load_csv():
     data = df.ix[:, 6:-1].as_matrix()
     labels = df.ix[:, -1:].as_matrix()
 
-    print('Features:', data.shape)
+    print('Data:', data.shape)
     print('Labels:', labels.shape)
 
     return data, labels
@@ -88,7 +88,7 @@ def validate(data, labels):
     print('Recall', np.mean(recall_scores))
     print('F1-measure', np.mean(f1_scores))
 
-def train(X, y):
+def train(data, labels):
     '''
     Train and save model.
     '''
@@ -102,7 +102,7 @@ def train(X, y):
     model.compile(optimizer='rmsprop', loss='binary_crossentropy',
         metrics=['accuracy'])
 
-    model.fit(X, y, epochs=10, batch_size=128,
+    model.fit(data, labels, epochs=50, batch_size=128,
             class_weight=class_weight)
 
     model.save('model.h5')
@@ -116,5 +116,5 @@ def predict(data):
 if __name__ == '__main__':
     data, labels = load_csv()
     #validate(data, labels)
-    #train(data, labels)
-    predict(data)
+    train(data, labels)
+    #predict(data)
