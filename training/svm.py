@@ -24,12 +24,12 @@ import pandas as pd
 
 from sklearn import preprocessing
 from sklearn import svm
+from sklearn.externals import joblib
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
-from sklearn.externals import joblib
 
 class_weight = {0: 0.25, 1: 0.75}
 clf = svm.SVC(kernel='linear', C=1.0, decision_function_shape='ovr',
@@ -41,18 +41,18 @@ def load_csv():
     '''
     df = pd.read_csv('training.csv', sep='\t')
 
-    X = df.ix[:, 6:-1].as_matrix()
-    y = df.ix[:, -1:].as_matrix().reshape(-1)
+    data = df.ix[:, 6:-1].as_matrix()
+    labels = df.ix[:, -1:].as_matrix().reshape(-1)
 
     lb = preprocessing.LabelBinarizer()
-    lb.fit(y)
+    lb.fit(labels)
 
-    print('Features:', X.shape)
-    print('Labels:', y.shape)
+    print('Data:', data.shape)
+    print('Labels:', labels.shape)
 
-    return X, y
+    return data, labels
 
-def validate(X, y):
+def validate(data, labels):
     '''
     Ten-fold cross-validation with stratified sampling.
     '''
@@ -62,11 +62,11 @@ def validate(X, y):
     f1_scores = []
 
     sss = StratifiedShuffleSplit(n_splits=10)
-    for train_index, test_index in sss.split(X, y):
-        X_train, X_test = X[train_index], X[test_index]
-        y_train, y_test = y[train_index], y[test_index]
-        clf.fit(X_train, y_train)
-        y_pred = clf.predict(X_test)
+    for train_index, test_index in sss.split(data, labels):
+        x_train, x_test = data[train_index], data[test_index]
+        y_train, y_test = labels[train_index], labels[test_index]
+        clf.fit(x_train, y_train)
+        y_pred = clf.predict(x_test)
         accuracy_scores.append(accuracy_score(y_test, y_pred))
         precision_scores.append(precision_score(y_test, y_pred))
         recall_scores.append(recall_score(y_test, y_pred))
@@ -77,14 +77,14 @@ def validate(X, y):
     print('Recall', np.mean(recall_scores))
     print('F1-measure', np.mean(f1_scores))
 
-def train(X, y):
+def train(data, labels):
     '''
     Train and save model.
     '''
-    clf.fit(X, y)
+    clf.fit(data, labels)
     joblib.dump(clf, 'model.pkl')
 
 if __name__ == '__main__':
-    X, y = load_csv()
-    validate(X, y)
-    #train(X, y)
+    data, labels = load_csv()
+    validate(data, labels)
+    #train(data, labels)
