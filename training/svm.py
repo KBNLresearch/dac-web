@@ -31,7 +31,7 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
-class_weight = {0: 0.25, 1: 0.75}
+class_weight = {0: 0.2, 1: 0.8}
 clf = svm.SVC(kernel='linear', C=1.0, decision_function_shape='ovr',
         class_weight=class_weight, probability=True)
 
