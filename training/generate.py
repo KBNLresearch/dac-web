@@ -39,7 +39,7 @@ features = [
     'keyword_match', 'subject_match', 'max_vec_sim', 'mean_vec_sim',
     'vec_match', 'entity_match'
 ]
-metadata = ['inst_id', 'cand_id', 'url', 'ne', 'type', 'link']
+metadata = ['entity_id', 'cand_id', 'url', 'ne', 'type', 'cand_uri']
 label = ['label']
 
 def generate():
@@ -47,7 +47,7 @@ def generate():
     Generate a training data set based on the manually labeled examples from
     the training web interface.
     '''
-    with open("../users/tve/art.json") as fh:
+    with open('../users/tve/art.json') as fh:
         data = json.load(fh)
 
     with open('training.csv', 'w') as fh:
@@ -67,7 +67,7 @@ def generate():
                 inst['ne_string'].encode('utf-8'))
 
             # Check if instance has been labeled
-            if inst['link'] != '':
+            if inst['links']:
                 if inst['url'] != url:
                     print('Getting result for url: ' + inst['url'])
                     url = inst['url']
@@ -89,7 +89,7 @@ def generate():
                         row = []
 
                         # Metadata
-                        row.append(str(instance_count))
+                        row.append(str(inst['id']))
                         row.append(str(candidate_count))
                         row.append(inst['url'].encode('utf-8'))
                         row.append(inst['ne_string'].encode('utf-8'))
@@ -102,7 +102,7 @@ def generate():
                             row.append("{0:.3f}".format(float(value)))
 
                         # Label
-                        if cand['id'] == inst['link']:
+                        if cand['id'] in inst['links']:
                             row.append(str(1))
                         else:
                             row.append(str(0))

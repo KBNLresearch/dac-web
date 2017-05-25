@@ -10,7 +10,7 @@
 
     <!-- Header -->
     <div id="heading">
-        <h1>Training instance {{index}} of {{last_instance}}</h1>
+        <h1>Training instance #{{instance_id}} <small>({{index}} of {{last_instance}})</small></h1>
         <a class="link" href="javascript: document.getElementById('action').value='last';
             document.forms['form'].submit();">last</a>
         <a class="link" href="javascript: document.getElementById('action').value='first';
@@ -28,7 +28,7 @@
             % dac_url = 'http://www.kbresearch.nl/dac/?debug=1&url=' + url
             <p><b>Url</b>: <a href={{dac_url}} target="_blank">{{url}}</a></p>
             <p><b>Date</b>: {{publ_date}}</p>
-            <p><b>Type</b>: {{ne_type}}</p>
+            <p><b>Type</b>: {{ne_type if ne_type else ''}}</p>
             <p><b>Entity</b>: {{ne}}</p>
         </div>
         <div>
@@ -41,7 +41,7 @@
 
         <h2>DBpedia candidates</h2>
         <div class="info">
-            <p><b>Selection</b>: {{link}}</p>
+            <p><b>Selection</b>: {{', '.join(links)}}</p>
             <p><b>Prediction</b>: <span id="prediction">Loading...</span></p>
             <p><b>Reason</b>: <span id="reason">Loading...</span></p>
             <p><b>Probability</b>: <span id="prob">Loading...</span></p>
@@ -54,8 +54,8 @@
             % for res in [c.document for c in candidates]:
                 <div class="candidate" id="{{res['id']}}">
                     <p class="label">
-                        <input type="radio" name="link" value="{{res['id']}}"
-                            {{!"checked" if link == res['id'] else ''}} />
+                        <input type="checkbox" name="links" value="{{res['id']}}"
+                            {{!"checked" if res['id'] in links else ""}} />
                         <b>{{res['label']}}</b> ({{res['lang']}})
                     </p>
                     <p class="abstract">{{res['abstract']}}</p>
@@ -106,32 +106,32 @@
 
             <!-- Other options -->
             <div class="candidate">
-                % other_link = True
+                % other_link = None
                 % if candidates:
-                %   for res in [c.document for c in candidates]:
-                %     if link == res['id']:
-                %       other_link = False
+                %   for l in links:
+                %     if l != 'none':
+                %       if l not in [c.document['id'] for c in candidates]:
+                %         other_link = l
+                %         break
+                %       end
                 %     end
                 %   end
                 % end
-                % if link == 'none' or link == '':
-                %   other_link = False
-                % end
                 <p class="label">
-                    <input id="other_radio" type="radio" name="link" value="other"
+                    <input id="other_checkbox" type="checkbox" name="links" value="other"
                         {{!"checked" if other_link else ""}} />
                     <b>Other</b>
                 </p>
                 <p>Enter a DBpedia identifier not shown in the list above <br/>
-                    (e.g. http://dbpedia.org/resource/Ruskie_Business):</p>
+                    (e.g. http://nl.dbpedia.org/resource/Albert_Einstein):</p>
                 <input id="other_input" type="text" name="other_link"
-                    value="{{!link if other_link else ''}}"></input>
+                    value="{{!other_link if other_link else ''}}"></input>
             </div>
 
             <div class="candidate">
                 <p class="label">
-                    <input type="radio" name="link" value="none"
-                        {{!"checked" if (link == 'none' or link == '') else ""}} />
+                    <input type="checkbox" name="links" value="none"
+                        {{!"checked" if 'none' in links else ""}} />
                     <b>Not found</b>
                 </p>
                 <p>Select this option if no matching candidate can be found.</p>

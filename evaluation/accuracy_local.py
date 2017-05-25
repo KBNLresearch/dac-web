@@ -33,7 +33,7 @@ linker = dac.EntityLinker(debug=True)
 with open('../users/test/art.json') as fh:
     data = json.load(fh)
 
-keys = ['Id', 'Entity', 'Link', 'Prediction', 'Correct']
+keys = ['id', 'entity', 'links', 'prediction', 'correct']
 
 with open('results.csv', 'w') as fh:
     csv_writer = csv.writer(fh, delimiter='\t', encoding='utf-8')
@@ -42,14 +42,14 @@ with open('results.csv', 'w') as fh:
     # Get and evaluate results
     nr_instances = 0 # Total number of test examples
     nr_correct_instances = 0 # Number of correctly predicted examples
-    nr_links = 0 # Number of examples where correct answer is a link
+    nr_links = 0 # Number of examples where correct (or 'best') answer is a link
     nr_correct_links = 0 # Number of link examples that were predicted correctly
     nr_false_links = 0 # Number of examples where incorrect link was predicted
 
     for i in data['instances']:
 
         # Check if instance has been properly labeled
-        if i['link'] != '':
+        if i['links'] != []:
 
             print('Evaluating instance ' + str(nr_instances) + ': ' +
                 i['ne_string'].encode('utf-8'))
@@ -60,36 +60,31 @@ with open('results.csv', 'w') as fh:
             row = []
             row.append(str(nr_instances))
             row.append(i['ne_string'].encode('utf-8'))
-            row.append(i['link'].encode('utf-8'))
+            row.append(', '.join(i['links']).encode('utf-8'))
             row.append(result['link'].encode('utf-8') if 'link' in result
                 else result['reason'])
 
             # Evaluate result
-            # A link should be predicted
-            if i['link'] != 'none':
-                nr_links += 1
-                if 'link' in result:
-                    if result['link'] == i['link']:
-                        nr_correct_instances += 1
-                        nr_correct_links += 1
-                        row.append('1')
-                    else:
-                        nr_false_links += 1
-                        row.append('0')
-                else:
-                    row.append('0')
-            # A link should not be predicted
-            elif i['link'] == 'none':
-                if 'link' in result:
+            if 'link' in result: # Link was predicted
+                if result['link'] in i['links']: # Link is correct
+                    nr_correct_instances += 1
+                    nr_correct_links += 1
+                    row.append('1')
+                else: # Link is false
                     nr_false_links += 1
                     row.append('0')
-                else:
+            else: # No link was predicted
+                if 'none' in i['links']: # No link is correct
                     nr_correct_instances += 1
                     row.append('1')
+                else: # No link is false
+                    row.append('0')
 
             csv_writer.writerow(row)
 
             nr_instances += 1
+            if len([l for l in i['links'] if l != 'none']) >= 1:
+                nr_links += 1
 
 accuracy = nr_correct_instances / float(nr_instances)
 link_recall = nr_correct_links / float(nr_links)
