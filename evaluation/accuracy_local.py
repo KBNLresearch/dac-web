@@ -21,25 +21,24 @@
 
 import json
 import sys
+import unicodecsv as csv
 
 sys.path.insert(0, "../../dac")
 
 import dac
 
-import unicodecsv as csv
-
-linker = dac.EntityLinker(debug=True)
-
 with open('../users/test/art.json') as fh:
     data = json.load(fh)
 
-keys = ['id', 'entity', 'links', 'prediction', 'correct']
+linker = dac.EntityLinker(debug=True)
 
 with open('results.csv', 'w') as fh:
+
+    keys = ['id', 'entity', 'links', 'prediction', 'correct']
+
     csv_writer = csv.writer(fh, delimiter='\t', encoding='utf-8')
     csv_writer.writerow(keys)
 
-    # Get and evaluate results
     nr_instances = 0 # Total number of test examples
     nr_correct_instances = 0 # Number of correctly predicted examples
     max_nr_links = 0 # Max number of examples where correct (or 'best') answer is a link
@@ -87,15 +86,15 @@ with open('results.csv', 'w') as fh:
             if len([l for l in i['links'] if l != 'none']) >= 1:
                 max_nr_links += 1
             if 'none' not in i['links']:
-                max_nr_links += 1
+                min_nr_links += 1
 
 accuracy = nr_correct_instances / float(nr_instances)
 max_link_recall = nr_correct_links / float(min_nr_links)
 min_link_recall = nr_correct_links / float(max_nr_links)
 mean_link_recall = (max_link_recall + min_link_recall) / 2
 link_precision = nr_correct_links / float(nr_correct_links + nr_false_links)
-link_f_measure = 2 * ((link_precision * link_recall) / float(link_precision +
-        link_recall))
+link_f_measure = 2 * ((link_precision * mean_link_recall) / float(link_precision +
+    mean_link_recall))
 
 print '---'
 print 'Number of instances: ' + str(nr_instances)

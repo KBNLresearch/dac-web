@@ -1883,6 +1883,7 @@
             "ne_string": "De Bezige", 
             "ne_type": "other", 
             "links": [
+                "http://nl.dbpedia.org/resource/De_Bezige_Bij", 
                 "none"
             ], 
             "id": 207
