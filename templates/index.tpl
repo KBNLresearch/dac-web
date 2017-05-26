@@ -11,6 +11,10 @@
     <!-- Header -->
     <div id="heading">
         <h1>Training instance #{{instance_id}} <small>({{index}} of {{last_instance}})</small></h1>
+        <a class="link" href="javascript: document.getElementById('action').value='next_art';
+            document.forms['form'].submit();">next article</a>
+        <a class="link" href="javascript: document.getElementById('action').value='prev_art';
+            document.forms['form'].submit();">prev article</a>
         <a class="link" href="javascript: document.getElementById('action').value='last';
             document.forms['form'].submit();">last</a>
         <a class="link" href="javascript: document.getElementById('action').value='first';

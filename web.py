@@ -81,9 +81,9 @@ def show_candidates(name):
         index = int(request.query.index)
     else:
         # First instance that hasn't been linked yet
-        index = no_instances
+        index = 0
         for i in data['instances']:
-            if i['links'] == []:
+            if not i['links']:
                 index = data['instances'].index(i)
                 break
     if index >= no_instances:
@@ -142,24 +142,62 @@ def save_links(name):
 
     # Save json data to temp file
     with codecs.open(temp_file, 'w', 'utf-8') as fh:
-        json.dump(data, fh, indent=4, ensure_ascii=False)
+        json.dump(data, fh, indent=4, sort_keys=True, ensure_ascii=False)
 
     # Check temp file existence and size
     if os.path.exists(temp_file) and (abs(os.path.getsize(orig_file) -
             os.path.getsize(temp_file)) < 15000):
-        print 'found temp'
+
         os.chmod(temp_file, 0777)
         os.remove(orig_file)
         os.rename(temp_file, orig_file)
 
         # Redirect to next page
-        if action == 'last':
-            redirect('../' + name)
-        elif action == 'first':
-            redirect('../' + name + '?index=0')
-        else:
-            next_index = (index + 1) if action == 'next' else (index - 1)
-            redirect('../' + name + '?index=' + str(next_index))
+        redirect_url = '../' + name
+
+        if action == 'first':
+            redirect_url += '?index=0'
+
+        elif action == 'next_art':
+            next_index = 0
+            current_url = data['instances'][index]['url']
+            for i in data['instances'][index:]:
+                if i['url'] != current_url:
+                    next_index = data['instances'].index(i)
+                    break
+            redirect_url += '?index=' + str(next_index)
+
+        elif action == 'prev_art':
+            next_index = -1
+            current_url = data['instances'][index]['url']
+            prev_url = None
+            for i in reversed(data['instances'][:index]):
+                if i['url'] != current_url:
+                    prev_url = i['url']
+                    prev_index = data['instances'].index(i)
+                    next_index = 0
+                    for j in reversed(data['instances'][:prev_index]):
+                        if j['url'] != prev_url:
+                            next_index = data['instances'].index(j) + 1
+                            break
+                    break
+            if next_index == -1:
+                prev_url = data['instances'][-1]['url']
+                for i in data['instances'][::-1]:
+                    if i['url'] != prev_url:
+                        next_index = data['instances'].index(i) + 1
+                        break
+
+            redirect_url += '?index=' + str(next_index)
+
+        elif action == 'next':
+            redirect_url += '?index=' + str(index + 1)
+
+        elif action == 'prev':
+            redirect_url += '?index=' + str(index + -1)
+
+        redirect(redirect_url)
+
     else:
         abort(500, 'Error saving data.')
 
@@ -251,7 +289,7 @@ def update_training_set(name):
 
     # Save json data to temp file
     with codecs.open(temp_file, 'w', 'utf-8') as fh:
-        json.dump(data, fh, indent=4, ensure_ascii=False)
+        json.dump(data, fh, indent=4, sort_keys=True, ensure_ascii=False)
 
     # Check temp file existence and size
     if os.path.exists(temp_file) and (abs(os.path.getsize(orig_file) -
