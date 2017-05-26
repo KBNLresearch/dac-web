@@ -102,13 +102,15 @@ print 'Number of correct predictions: ' + str(nr_correct_instances)
 print 'Prediction accuracy: ' + str(accuracy)
 print '---'
 print 'Number of correct link predictions: ' + str(nr_correct_links)
-print '(Max) number of link instances: ' + str(max_nr_links)
 print '(Min) number of link instances: ' + str(min_nr_links)
+print '(Max) number of link instances: ' + str(max_nr_links)
+print '(Min) link recall: ' + str(min_link_recall)
+print '(Max) link recall: ' + str(max_link_recall)
 print '(Mean) link recall: ' + str(mean_link_recall)
 print '---'
 print 'Number of correct link predictions: ' + str(nr_correct_links)
 print 'Number of link predictions: ' + str(nr_correct_links + nr_false_links)
 print 'Link precision: ' + str(link_precision)
 print '---'
-print 'Link F1-measure: ' + str(link_f_measure)
+print '(Mean) link F1-measure: ' + str(link_f_measure)
 print '---'
