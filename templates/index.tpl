@@ -107,13 +107,11 @@
             <!-- Other options -->
             <div class="candidate">
                 % other_link = None
-                % if candidates:
-                %   for l in links:
-                %     if l != 'none':
-                %       if l not in [c.document['id'] for c in candidates]:
-                %         other_link = l
-                %         break
-                %       end
+                % for l in links:
+                %   if l != 'none':
+                %     if not candidates or l not in [c.document['id'] for c in candidates]:
+                %       other_link = l
+                %       break
                 %     end
                 %   end
                 % end
