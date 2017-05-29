@@ -18185,7 +18185,9 @@
         }, 
         {
             "id": 2020, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Noordzeekanaal"
+            ], 
             "ne_string": "Noordzee-kanaal", 
             "ne_type": "other", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
@@ -18199,14 +18201,18 @@
         }, 
         {
             "id": 2022, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Noordzee"
+            ], 
             "ne_string": "Noordzee", 
             "ne_type": "location", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2023, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Holland"
+            ], 
             "ne_string": "„ Holland", 
             "ne_type": "organisation", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
@@ -18227,49 +18233,64 @@
         }, 
         {
             "id": 2026, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "Urnuiden", 
             "ne_type": "location", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2027, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Kamer_van_Koophandel", 
+                "http://nl.dbpedia.org/resource/Kamer_van_Koophandel_(Nederland)"
+            ], 
             "ne_string": "Kamer van Koophandel", 
             "ne_type": "organisation", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2028, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Tweede_Kamer_der_Staten-Generaal"
+            ], 
             "ne_string": "Tweede Kamer", 
             "ne_type": "organisation", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2029, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "M. Geheel", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2030, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "Rijkskanaalgelden", 
             "ne_type": "other", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2031, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Gemeentebestuur"
+            ], 
             "ne_string": "Gemeentebestuur", 
             "ne_type": "organisation", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2032, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Johannes_Tak_van_Poortvliet"
+            ], 
             "ne_string": "Tak van Poortvliet", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
@@ -18283,14 +18304,18 @@
         }, 
         {
             "id": 2034, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "C. Van da Wall Bake", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2035, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "J. M. Telders", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
@@ -18311,70 +18336,90 @@
         }, 
         {
             "id": 2038, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rozenburg_(Zuid-Holland)"
+            ], 
             "ne_string": "Rozenburg", 
             "ne_type": "location", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2039, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "A. K. P. F. R. Van Hasselt", 
             "ne_type": "location", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2040, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "A. D. Zur Mühlen", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2041, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "Corn", 
             "ne_type": "organisation", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2042, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "Wessum", 
             "ne_type": "location", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2043, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "C. Dirksen", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2044, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Noordzeekanaal"
+            ], 
             "ne_string": "Noordzeekanaal", 
             "ne_type": "other", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2045, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "Regeling", 
             "ne_type": "organisation", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2046, 
-            "links": [], 
+            "links": [
+                "none"
+            ], 
             "ne_string": "commissie-Tak", 
             "ne_type": "other", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
         }, 
         {
             "id": 2047, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Johannes_Tak_van_Poortvliet"
+            ], 
             "ne_string": "Poortvliet", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010407698:mpeg21:a0001:ocr"
@@ -18535,28 +18580,36 @@
         }, 
         {
             "id": 2070, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Tianjin"
+            ], 
             "ne_string": "Tien-tsin", 
             "ne_type": "location", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:000014400:mpeg21:a0007:ocr"
         }, 
         {
             "id": 2071, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Peking"
+            ], 
             "ne_string": "Peking", 
             "ne_type": "location", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:000014400:mpeg21:a0007:ocr"
         }, 
         {
             "id": 2072, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/China"
+            ], 
             "ne_string": "Chinesche", 
             "ne_type": "other", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:000014400:mpeg21:a0007:ocr"
         }, 
         {
             "id": 2073, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Augustus_(maand)"
+            ], 
             "ne_string": "Augustus", 
             "ne_type": "organisation", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:000014400:mpeg21:a0007:ocr"
