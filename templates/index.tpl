@@ -53,6 +53,17 @@
 
         <div>
             <form id="form" method="post" action="">
+            <!-- Nothing found option -->
+            <div class="candidate">
+                <p class="label">
+                    <input type="checkbox" name="links" value="none"
+                        {{!"checked" if 'none' in links else ""}} />
+                    <b>Not found</b>
+                </p>
+                <p>Select this option if no matching candidate can be found.</p>
+            </div>
+
+            <!-- Regular Solr candidate options -->
             % if candidates:
             % i = 0
             % for res in [c.document for c in candidates]:
@@ -124,19 +135,9 @@
                         {{!"checked" if other_link else ""}} />
                     <b>Other</b>
                 </p>
-                <p>Enter a DBpedia identifier not shown in the list above <br/>
-                    (e.g. http://nl.dbpedia.org/resource/Albert_Einstein):</p>
+                <p>Enter a DBpedia identifier not shown in the list above:</p>
                 <input id="other_input" type="text" name="other_link"
                     value="{{!other_link if other_link else ''}}"></input>
-            </div>
-
-            <div class="candidate">
-                <p class="label">
-                    <input type="checkbox" name="links" value="none"
-                        {{!"checked" if 'none' in links else ""}} />
-                    <b>Not found</b>
-                </p>
-                <p>Select this option if no matching candidate can be found.</p>
             </div>
 
             <input type="hidden" name="index" value="{{index}}" />
