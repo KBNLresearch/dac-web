@@ -49,20 +49,26 @@ def load_csv():
 
     return data, labels
 
-def validate(data, labels):
+def load_model(data):
     '''
-    Ten-fold cross-validation with stratified sampling.
+    Load keras model.
     '''
     model = Sequential()
     model.add(Dense(64, activation='relu', input_dim=data.shape[1]))
     model.add(Dropout(0.5))
-    model.add(Dense(64, activation='relu'))
+    model.add(Dense(32, activation='relu'))
     model.add(Dropout(0.5))
     model.add(Dense(1, activation='sigmoid'))
 
-    model.compile(optimizer='rmsprop', loss='binary_crossentropy',
+    model.compile(optimizer='RMSprop', loss='binary_crossentropy',
         metrics=['accuracy'])
 
+    return model
+
+def validate(data, labels, model):
+    '''
+    Ten-fold cross-validation with stratified sampling.
+    '''
     accuracy_scores = []
     precision_scores = []
     recall_scores = []
@@ -88,20 +94,10 @@ def validate(data, labels):
     print('Recall', np.mean(recall_scores))
     print('F1-measure', np.mean(f1_scores))
 
-def train(data, labels):
+def train(data, labels, model):
     '''
     Train and save model.
     '''
-    model = Sequential()
-    model.add(Dense(64, activation='relu', input_dim=data.shape[1]))
-    model.add(Dropout(0.5))
-    model.add(Dense(64, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(1, activation='sigmoid'))
-
-    model.compile(optimizer='rmsprop', loss='binary_crossentropy',
-        metrics=['accuracy'])
-
     model.fit(data, labels, epochs=50, batch_size=128,
             class_weight=class_weight)
 
@@ -115,6 +111,6 @@ def predict(data):
 
 if __name__ == '__main__':
     data, labels = load_csv()
-    #validate(data, labels)
-    train(data, labels)
-    #predict(data)
+    model = load_model(data)
+    #validate(data, labels, model)
+    train(data, labels, model)

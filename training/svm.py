@@ -19,6 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import math
 import numpy as np
 import pandas as pd
 
@@ -31,9 +32,9 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
-class_weight = {0: 0.2, 1: 0.8}
+class_weight = {0: 0.3, 1: 0.7}
 clf = svm.SVC(kernel='linear', C=1.0, decision_function_shape='ovr',
-        class_weight=class_weight, probability=True)
+        class_weight=class_weight)
 
 def load_csv():
     '''
@@ -86,10 +87,23 @@ def train(data, labels):
 
     df = pd.read_csv('training.csv', sep='\t')
     df = df.ix[:, 6:-1]
-    for i, feature in enumerate(df.columns.values):
-        print(feature, clf.coef_[:, i][0])
+    #for i, feature in enumerate(df.columns.values):
+        #print(feature, clf.coef_[:, i][0])
+
+def predict(data):
+    examples = data[:50, :]
+    clf = joblib.load('model.pkl')
+
+    pred = clf.predict(examples)
+    #prob = clf.predict_proba(examples)
+    dec = clf.decision_function(examples)
+    conf = [1 / (1 + math.exp(d * -1)) for d in dec]
+
+    for i in range(len(examples)):
+        print pred[i], dec[i], conf[i]
 
 if __name__ == '__main__':
     data, labels = load_csv()
     #validate(data, labels)
     train(data, labels)
+    #predict(data)
