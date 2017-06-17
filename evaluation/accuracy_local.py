@@ -93,8 +93,10 @@ max_link_recall = nr_correct_links / float(min_nr_links)
 min_link_recall = nr_correct_links / float(max_nr_links)
 mean_link_recall = (max_link_recall + min_link_recall) / 2
 link_precision = nr_correct_links / float(nr_correct_links + nr_false_links)
-link_f_measure = 2 * ((link_precision * mean_link_recall) / float(link_precision +
+mean_link_f_measure = 2 * ((link_precision * mean_link_recall) / float(link_precision +
     mean_link_recall))
+max_link_f_measure = 2 * ((link_precision * max_link_recall) / float(link_precision +
+    max_link_recall))
 
 print '---'
 print 'Number of instances: ' + str(nr_instances)
@@ -105,12 +107,13 @@ print 'Number of correct link predictions: ' + str(nr_correct_links)
 print '(Min) number of link instances: ' + str(min_nr_links)
 print '(Max) number of link instances: ' + str(max_nr_links)
 print '(Min) link recall: ' + str(min_link_recall)
-print '(Max) link recall: ' + str(max_link_recall)
 print '(Mean) link recall: ' + str(mean_link_recall)
+print '(Max) link recall: ' + str(max_link_recall)
 print '---'
 print 'Number of correct link predictions: ' + str(nr_correct_links)
 print 'Number of link predictions: ' + str(nr_correct_links + nr_false_links)
 print 'Link precision: ' + str(link_precision)
 print '---'
-print '(Mean) link F1-measure: ' + str(link_f_measure)
+print '(Mean) link F1-measure: ' + str(mean_link_f_measure)
+print '(Max) link F1-measure: ' + str(max_link_f_measure)
 print '---'

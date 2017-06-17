@@ -87,8 +87,8 @@ def train(data, labels):
 
     df = pd.read_csv('training.csv', sep='\t')
     df = df.ix[:, 6:-1]
-    #for i, feature in enumerate(df.columns.values):
-        #print(feature, clf.coef_[:, i][0])
+    for i, feature in enumerate(df.columns.values):
+        print(feature, clf.coef_[:, i][0])
 
 def predict(data):
     examples = data[:50, :]
