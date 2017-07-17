@@ -25277,6 +25277,15 @@
             "ne_string": "Aneta", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0040:ocr"
+        }, 
+        {
+            "id": 2978, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011199812:mpeg21:a0082:ocr"
         }
     ]
 }
