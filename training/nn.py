@@ -41,7 +41,7 @@ def load_csv():
     '''
     df = pd.read_csv('training.csv', sep='\t')
 
-    data = df.ix[:, 6:-1].as_matrix()
+    data = df.ix[:, 5:-1].as_matrix()
     labels = df.ix[:, -1:].as_matrix()
 
     print('Data:', data.shape)
@@ -114,3 +114,4 @@ if __name__ == '__main__':
     model = load_model(data)
     #validate(data, labels, model)
     train(data, labels, model)
+

@@ -32,7 +32,7 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
-class_weight = {0: 0.3, 1: 0.7}
+class_weight = {0: 0.25, 1: 0.75}
 clf = svm.SVC(kernel='linear', C=1.0, decision_function_shape='ovr',
         class_weight=class_weight)
 
@@ -42,7 +42,7 @@ def load_csv():
     '''
     df = pd.read_csv('training.csv', sep='\t')
 
-    data = df.ix[:, 6:-1].as_matrix()
+    data = df.ix[:, 5:-1].as_matrix()
     labels = df.ix[:, -1:].as_matrix().reshape(-1)
 
     lb = preprocessing.LabelBinarizer()
@@ -107,3 +107,4 @@ if __name__ == '__main__':
     #validate(data, labels)
     train(data, labels)
     #predict(data)
+
