@@ -30,7 +30,7 @@ import dac
 with open('../users/test/art.json') as fh:
     data = json.load(fh)
 
-linker = dac.EntityLinker(debug=True)
+linker = dac.EntityLinker(debug=True, model='nn')
 
 with open('results.csv', 'w') as fh:
 
@@ -55,7 +55,8 @@ with open('results.csv', 'w') as fh:
                 i['ne_string'].encode('utf-8'))
 
             # Get result for current instance
-            result = linker.link(i['url'], i['ne_string'].encode('utf-8'))[0]
+            result = linker.link(i['url'], i['ne_string'].encode('utf-8'))
+            result = result['linkedNEs'][0]
 
             row = []
             row.append(str(nr_instances))

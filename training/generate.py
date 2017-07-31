@@ -41,7 +41,7 @@ features = [
     'vec_match', 'entity_match'
 ]
 
-metadata = ['entity_id', 'cand_id', 'url', 'ne', 'type', 'cand_uri']
+metadata = ['entity_id', 'cand_id', 'url', 'ne', 'cand_uri']
 label = ['label']
 
 def generate():
@@ -73,7 +73,7 @@ def generate():
                 if inst['url'] != url:
                     print('Getting result for url: ' + inst['url'])
                     url = inst['url']
-                    url_result = linker.link(inst['url'])
+                    url_result = linker.link(inst['url'])['linkedNEs']
 
                 result = [r for r in url_result
                     if r['text'] == inst['ne_string']]
@@ -95,7 +95,6 @@ def generate():
                         row.append(str(candidate_count))
                         row.append(inst['url'].encode('utf-8'))
                         row.append(inst['ne_string'].encode('utf-8'))
-                        row.append(inst['ne_type'].encode('utf-8'))
                         row.append(cand['id'].encode('utf-8'))
 
                         # Features
