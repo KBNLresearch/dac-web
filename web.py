@@ -251,7 +251,7 @@ def update_training_set(name):
             data['instances'].append(i)
         else:
             # Add article
-            tpta_file = urllib.urlopen(dac.TPTA_URL + url)
+            tpta_file = urllib.urlopen(dac.TPTA_URL + '?lang=nl&url=' + url)
             tpta_string = tpta_file.read()
             tpta_file.close()
 
@@ -308,8 +308,8 @@ def predict():
     Get the current DAC prediction.
     '''
     linker = dac.EntityLinker(debug=True, candidates=True, model='svm')
-    result = linker.link(request.query.url,
-        request.query.ne.encode('utf-8'))[0]
+    result = linker.link(request.query.url, request.query.ne.encode('utf-8'))
+    result = result['linkedNEs'][0]
     response.set_header('Content-Type', 'application/json')
     return result
 
