@@ -229,14 +229,16 @@ def update_training_set(name):
                     abort(500, 'Url and / or entity already part of data set.')
 
         # Check if article isn't included in another set
-        alt_name = 'tve' if name == 'test' else 'test'
-        alt_file = abs_path + '/users/' + alt_name + '/art.json'
-        with codecs.open(alt_file, 'r', 'utf-8') as fh:
-            alt_data = json.load(fh)
-            for i in alt_data['instances']:
-                if i['url'] == url:
-                    abort(500, 'Url ' + url +
-                        ' is already part of another data set.')
+        to_check = ['tve'] if name.startswith('test') else ['test', 'test-20',
+                'test-spotlight']
+        for f in to_check:
+            alt_file = abs_path + '/users/' + alt_name + '/art.json'
+            with codecs.open(alt_file, 'r', 'utf-8') as fh:
+                alt_data = json.load(fh)
+                for i in alt_data['instances']:
+                    if i['url'] == url:
+                        abort(500, 'Url ' + url +
+                            ' is already part of another data set.')
 
         next_id = data['instances'][-1]['id'] + 1
 
