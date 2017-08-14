@@ -232,7 +232,7 @@ def update_training_set(name):
         to_check = ['tve'] if name.startswith('test') else ['test', 'test-20',
                 'test-spotlight']
         for f in to_check:
-            alt_file = abs_path + '/users/' + alt_name + '/art.json'
+            alt_file = abs_path + '/users/' + f + '/art.json'
             with codecs.open(alt_file, 'r', 'utf-8') as fh:
                 alt_data = json.load(fh)
                 for i in alt_data['instances']:
