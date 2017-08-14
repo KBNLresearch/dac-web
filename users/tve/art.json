@@ -24675,10 +24675,207 @@
         }, 
         {
             "id": 3000, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Alfred_Einstein"
+            ], 
             "ne_string": "Einstein", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:110579003:mpeg21:a0349:ocr"
+        }, 
+        {
+            "id": 3001, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Flevoland"
+            ], 
+            "ne_string": "Flevoland", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010623282:mpeg21:a0277:ocr"
+        }, 
+        {
+            "id": 3002, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Laura Bouwmeester-den Broeder", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010623282:mpeg21:a0277:ocr"
+        }, 
+        {
+            "id": 3003, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Almere"
+            ], 
+            "ne_string": "Almere", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010623282:mpeg21:a0277:ocr"
+        }, 
+        {
+            "id": 3004, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Evert_Vermeer_(burgemeester)"
+            ], 
+            "ne_string": "Evert Vermeer", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010623282:mpeg21:a0277:ocr"
+        }, 
+        {
+            "id": 3005, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Heerhugowaard"
+            ], 
+            "ne_string": "Heerhugowaard", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010623282:mpeg21:a0277:ocr"
+        }, 
+        {
+            "id": 3006, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Laura Bouwmeester", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010623282:mpeg21:a0277:ocr"
+        }, 
+        {
+            "id": 3007, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Wim Revet", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010623282:mpeg21:a0277:ocr"
+        }, 
+        {
+            "id": 3008, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Biddinghuizen"
+            ], 
+            "ne_string": "Biddinghuizen", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010623282:mpeg21:a0277:ocr"
+        }, 
+        {
+            "id": 3009, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Minister Lieftinck", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010609665:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3010, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Washington_(staat)"
+            ], 
+            "ne_string": "Washington", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010609665:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3011, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010609665:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3012, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010863283:mpeg21:a0033:ocr"
+        }, 
+        {
+            "id": 3013, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010952677:mpeg21:a0002:ocr"
+        }, 
+        {
+            "id": 3014, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010478475:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3015, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010473264:mpeg21:a0017:ocr"
+        }, 
+        {
+            "id": 3016, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011219012:mpeg21:a0019:ocr"
+        }, 
+        {
+            "id": 3017, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010896238:mpeg21:a0021:ocr"
+        }, 
+        {
+            "id": 3018, 
+            "links": [], 
+            "ne_string": "Romme", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110637628:mpeg21:a0031:ocr"
+        }, 
+        {
+            "id": 3019, 
+            "links": [], 
+            "ne_string": "Zijlstra", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010625384:mpeg21:a0065:ocr"
+        }, 
+        {
+            "id": 3020, 
+            "links": [], 
+            "ne_string": "Oppenheimer", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110551545:mpeg21:a0203:ocr"
+        }, 
+        {
+            "id": 3021, 
+            "links": [], 
+            "ne_string": "Love Letters", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010611279:mpeg21:a0454:ocr"
+        }, 
+        {
+            "id": 3022, 
+            "links": [], 
+            "ne_string": "Eman", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010644773:mpeg21:a0097:ocr"
+        }, 
+        {
+            "id": 3023, 
+            "links": [], 
+            "ne_string": "LIEFTINCK", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010951273:mpeg21:a0168:ocr"
         }
     ]
 }
