@@ -121,7 +121,7 @@ def show_candidates(name):
 @post('/<name>')
 def save_links(name):
     '''
-    Save selected links for an entity to file.
+    Save selected links for an entity.
     '''
     index = int(request.forms.get('index'))
     links = request.forms.getall('links')
@@ -204,14 +204,23 @@ def save_links(name):
 @get('/<name>/edit')
 def update_training_set(name):
     '''
-    Add or delete an article.
+    Add or delete an entity or a full article.
     '''
     action = request.query.action
     url = request.query.url
     ne = request.query.ne
+    link = request.query.link
+    callback = request.query.callback
+
+    response.set_header('Content-Type', 'application/json')
+    result = {}
 
     if not action or action not in ['add', 'delete'] or not url:
-        abort(500, "Invoke with ?action=[add, delete]&url=[resolver_id]")
+        result['status'] = 'error'
+        result['message'] = 'Invoke with ?action=[add, delete]&url=[resolver_id]'
+        if callback:
+            result = callback + '(' + str(result) + ')'
+        return result
 
     orig_file = abs_path + '/users/' + name + '/art.json'
     temp_file = abs_path + '/users/' + name + '/temp.json'
@@ -226,7 +235,11 @@ def update_training_set(name):
         for i in data['instances']:
             if i['url'] == url:
                 if not ne or i['ne_string'] == ne:
-                    abort(500, 'Url and / or entity already part of data set.')
+                    result['status'] = 'error'
+                    result['message'] = 'Article or entity already part of data set'
+                    if callback:
+                        result = callback + '(' + str(result) + ')'
+                    return result
 
         # Check if article isn't included in another set
         to_check = ['tve'] if name.startswith('test') else ['test', 'test-20',
@@ -237,8 +250,11 @@ def update_training_set(name):
                 alt_data = json.load(fh)
                 for i in alt_data['instances']:
                     if i['url'] == url:
-                        abort(500, 'Url ' + url +
-                            ' is already part of another data set.')
+                        result['status'] = 'error'
+                        result['message'] = 'Article already part of another data set'
+                        if callback:
+                            result = callback + '(' + str(result) + ')'
+                        return result
 
         next_id = data['instances'][-1]['id'] + 1
 
@@ -248,7 +264,7 @@ def update_training_set(name):
             i['url'] = url
             i['ne_string'] = ne
             i['ne_type'] = None
-            i['links'] = []
+            i['links'] = [link] if link else []
             i['id'] = next_id
             data['instances'].append(i)
         else:
@@ -273,7 +289,11 @@ def update_training_set(name):
                         next_id += 1
                         data['instances'].append(i)
             else:
-                abort(500, 'No entities found for url ' + url + '.')
+                result['status'] = 'error'
+                result['message'] = 'No entities found for article'
+                if callback:
+                    result = callback + '(' + str(result) + ')'
+                return result
 
     # Delete article or NE
     if action == 'delete':
@@ -284,7 +304,11 @@ def update_training_set(name):
                 if not ne or i['ne_string'] == ne:
                     to_remove.append(i)
         if not to_remove:
-            abort(500, 'Url and / or entity not found in data set.')
+            result['status'] = 'error'
+            result['message'] = 'Article or entity not found in dataset'
+            if callback:
+                result = callback + '(' + str(result) + ')'
+            return result
         else:
             for i in to_remove:
                 data['instances'].remove(i)
@@ -300,9 +324,16 @@ def update_training_set(name):
         os.remove(orig_file)
         os.rename(temp_file, orig_file)
     else:
-        abort(500, 'Error saving data.')
+        result['status'] = 'error'
+        result['message'] = 'Error saving data'
+        if callback:
+            result = callback + '(' + str(result) + ')'
+        return result
 
-    return 'Success'
+    result['status'] = 'success'
+    if callback:
+        result = callback + '(' + str(result) + ')'
+    return result
 
 @get('/predict')
 def predict():
