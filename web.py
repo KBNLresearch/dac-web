@@ -219,7 +219,7 @@ def update_training_set(name):
         result['status'] = 'error'
         result['message'] = 'Invoke with ?action=[add, delete]&url=[resolver_id]'
         if callback:
-            result = callback + '(' + str(result) + ')'
+            result = unicode(callback) + u'(' + json.dumps(result) + u');'
         return result
 
     orig_file = abs_path + '/users/' + name + '/art.json'
@@ -238,7 +238,7 @@ def update_training_set(name):
                     result['status'] = 'error'
                     result['message'] = 'Article or entity already part of data set'
                     if callback:
-                        result = callback + '(' + str(result) + ')'
+                        result = unicode(callback) + u'(' + json.dumps(result) + u');'
                     return result
 
         # Check if article isn't included in another set
@@ -253,7 +253,7 @@ def update_training_set(name):
                         result['status'] = 'error'
                         result['message'] = 'Article already part of another data set'
                         if callback:
-                            result = callback + '(' + str(result) + ')'
+                            result = unicode(callback) + u'(' + json.dumps(result) + u');'
                         return result
 
         next_id = data['instances'][-1]['id'] + 1
@@ -292,7 +292,7 @@ def update_training_set(name):
                 result['status'] = 'error'
                 result['message'] = 'No entities found for article'
                 if callback:
-                    result = callback + '(' + str(result) + ')'
+                    result = unicode(callback) + u'(' + json.dumps(result) + u');'
                 return result
 
     # Delete article or NE
@@ -307,7 +307,7 @@ def update_training_set(name):
             result['status'] = 'error'
             result['message'] = 'Article or entity not found in dataset'
             if callback:
-                result = callback + '(' + str(result) + ')'
+                result = unicode(callback) + u'(' + json.dumps(result) + u');'
             return result
         else:
             for i in to_remove:
@@ -327,12 +327,12 @@ def update_training_set(name):
         result['status'] = 'error'
         result['message'] = 'Error saving data'
         if callback:
-            result = callback + '(' + str(result) + ')'
+            result = unicode(callback) + u'(' + json.dumps(result) + u');'
         return result
 
     result['status'] = 'success'
     if callback:
-        result = callback + '(' + str(result) + ')'
+        result = unicode(callback) + u'(' + json.dumps(result) + u');'
     return result
 
 @get('/predict')

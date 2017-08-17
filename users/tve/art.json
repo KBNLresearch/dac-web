@@ -24837,42 +24837,54 @@
         }, 
         {
             "id": 3018, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Carl_Romme"
+            ], 
             "ne_string": "Romme", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:110637628:mpeg21:a0031:ocr"
         }, 
         {
             "id": 3019, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jelle_Zijlstra"
+            ], 
             "ne_string": "Zijlstra", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010625384:mpeg21:a0065:ocr"
         }, 
         {
             "id": 3020, 
-            "links": [], 
+            "links": [
+                "http://dbpedia.org/resource/Ernest_Oppenheimer"
+            ], 
             "ne_string": "Oppenheimer", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:110551545:mpeg21:a0203:ocr"
         }, 
         {
             "id": 3021, 
-            "links": [], 
+            "links": [
+                "http://dbpedia.org/resource/Love_Letters_in_the_Sand"
+            ], 
             "ne_string": "Love Letters", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010611279:mpeg21:a0454:ocr"
         }, 
         {
             "id": 3022, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Mike_Eman"
+            ], 
             "ne_string": "Eman", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010644773:mpeg21:a0097:ocr"
         }, 
         {
             "id": 3023, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
             "ne_string": "LIEFTINCK", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010951273:mpeg21:a0168:ocr"
