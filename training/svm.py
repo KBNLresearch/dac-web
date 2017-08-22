@@ -86,7 +86,7 @@ def train(data, labels):
     joblib.dump(clf, 'model.pkl')
 
     df = pd.read_csv('training.csv', sep='\t')
-    df = df.ix[:, 6:-1]
+    df = df.ix[:, 5:-1]
     for i, feature in enumerate(df.columns.values):
         print(feature, clf.coef_[:, i][0])
 
