@@ -24888,6 +24888,141 @@
             "ne_string": "LIEFTINCK", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010951273:mpeg21:a0168:ocr"
+        }, 
+        {
+            "id": 3024, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010903321:mpeg21:a0032:ocr"
+        }, 
+        {
+            "id": 3025, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010897549:mpeg21:a0015:ocr"
+        }, 
+        {
+            "id": 3026, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110637628:mpeg21:a0031:ocr"
+        }, 
+        {
+            "id": 3027, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010734980:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3028, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Carl_Romme"
+            ], 
+            "ne_string": "Romme", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010734980:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3029, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jaap_Burger"
+            ], 
+            "ne_string": "Burger", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010896238:mpeg21:a0021:ocr"
+        }, 
+        {
+            "id": 3030, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Julian_Lennon"
+            ], 
+            "ne_string": "Julian", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010692156:mpeg21:a0391:ocr"
+        }, 
+        {
+            "id": 3031, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Yoko_Ono"
+            ], 
+            "ne_string": "Yoko", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010692156:mpeg21:a0391:ocr"
+        }, 
+        {
+            "id": 3032, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Partij_van_de_Arbeid_(Nederland)"
+            ], 
+            "ne_string": "PvdA", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=KBNRC01:000033371:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3033, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=MMDA03:000147849:mpeg21:a0127:ocr"
+        }, 
+        {
+            "id": 3034, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=MMDA03:000147849:mpeg21:a0003:ocr"
+        }, 
+        {
+            "id": 3035, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jan_Schouten_(politicus)"
+            ], 
+            "ne_string": "Schouten", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010613296:mpeg21:a0016:ocr"
+        }, 
+        {
+            "id": 3036, 
+            "links": [
+                "http://nl.dbpedia.org/resource/James_Drees"
+            ], 
+            "ne_string": "Drees", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110637431:mpeg21:a0043:ocr"
+        }, 
+        {
+            "id": 3037, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110637431:mpeg21:a0043:ocr"
+        }, 
+        {
+            "id": 3038, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Piet_Lieftinck"
+            ], 
+            "ne_string": "Lieftinck", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010851867:mpeg21:a0029:ocr"
         }
     ]
 }
