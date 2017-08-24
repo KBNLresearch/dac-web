@@ -25023,6 +25023,87 @@
             "ne_string": "Lieftinck", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010851867:mpeg21:a0029:ocr"
+        }, 
+        {
+            "id": 3039, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Willem_Drees"
+            ], 
+            "ne_string": "Drees", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010618691:mpeg21:a0287:ocr"
+        }, 
+        {
+            "id": 3040, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Carl_Romme"
+            ], 
+            "ne_string": "Romme", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010863283:mpeg21:a0033:ocr"
+        }, 
+        {
+            "id": 3041, 
+            "links": [
+                "http://nl.dbpedia.org/resource/H._E._Bates"
+            ], 
+            "ne_string": " H. E. Bates", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010955889:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 3042, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Willem_Drees"
+            ], 
+            "ne_string": "Drees", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010613296:mpeg21:a0016:ocr"
+        }, 
+        {
+            "id": 3043, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Carl_Romme"
+            ], 
+            "ne_string": "Romme", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010613296:mpeg21:a0016:ocr"
+        }, 
+        {
+            "id": 3044, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Carl_Romme"
+            ], 
+            "ne_string": "Romme", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010988274:mpeg21:a0049:ocr"
+        }, 
+        {
+            "id": 3045, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jan_Schokking"
+            ], 
+            "ne_string": "Schokking", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010734730:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3046, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rienk_van_Veen"
+            ], 
+            "ne_string": "Van Veen", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010734730:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3047, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jan_Ankerman_(politicus)"
+            ], 
+            "ne_string": "J. Ankerman", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010734730:mpeg21:a0099:ocr"
         }
     ]
 }
