@@ -25104,6 +25104,141 @@
             "ne_string": "J. Ankerman", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010734730:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3048, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Dirk_Jan_de_Geer"
+            ], 
+            "ne_string": "De Geer", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010734730:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3049, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Simon_Cool"
+            ], 
+            "ne_string": "S. Cool", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010253429:mpeg21:a0002:ocr"
+        }, 
+        {
+            "id": 3050, 
+            "links": [
+                "http://nl.dbpedia.org/resource/The_Beatles"
+            ], 
+            "ne_string": "Beatles", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010372171:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3051, 
+            "links": [
+                "http://nl.dbpedia.org/resource/The_Quarrymen"
+            ], 
+            "ne_string": "The Quarry Men", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010611279:mpeg21:a0454:ocr"
+        }, 
+        {
+            "id": 3052, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nancy_Reagan"
+            ], 
+            "ne_string": "Nancy", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010621607:mpeg21:a0168:ocr"
+        }, 
+        {
+            "id": 3053, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nancy_Reagan"
+            ], 
+            "ne_string": "Nancy", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010565410:mpeg21:a0229:ocr"
+        }, 
+        {
+            "id": 3054, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nancy_Reagan"
+            ], 
+            "ne_string": "Nancy", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010962772:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3055, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nancy_Reagan"
+            ], 
+            "ne_string": "Nancy", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010646025:mpeg21:a0687:ocr"
+        }, 
+        {
+            "id": 3056, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nancy_Reagan"
+            ], 
+            "ne_string": "Nancy", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010948981:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3057, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Elvis_Presley"
+            ], 
+            "ne_string": "Elvis", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010611279:mpeg21:a0454:ocr"
+        }, 
+        {
+            "id": 3058, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paul_McCartney"
+            ], 
+            "ne_string": "Beatle Paul McCartney", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010955207:mpeg21:a0347:ocr"
+        }, 
+        {
+            "id": 3059, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Mike_McGear"
+            ], 
+            "ne_string": "McGear", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010955207:mpeg21:a0347:ocr"
+        }, 
+        {
+            "id": 3060, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Cynthia_Powell"
+            ], 
+            "ne_string": "Cynthia", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010955207:mpeg21:a0347:ocr"
+        }, 
+        {
+            "id": 3061, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Alfred_Einstein"
+            ], 
+            "ne_string": "A. Einstein", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010027005:mpeg21:a0140:ocr"
+        }, 
+        {
+            "id": 3062, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nancy_Reagan"
+            ], 
+            "ne_string": "Nancy", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110609577:mpeg21:a0003:ocr"
         }
     ]
 }
