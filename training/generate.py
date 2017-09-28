@@ -28,18 +28,17 @@ import dac
 
 import unicodecsv as csv
 
-from pprint import pprint
 features = [
     'pref_label_exact_match', 'pref_label_end_match', 'pref_label_match',
     'alt_label_exact_match', 'alt_label_end_match', 'alt_label_match',
     'last_part_match', 'non_matching_labels', 'name_conflict', 'pref_lsr',
     'mean_lsr', 'date_match', 'query_id_0', 'query_id_1', 'query_id_2',
     'query_id_3', 'substitution', 'solr_position', 'solr_score', 'inlinks',
-    'inlinks_rel', 'outlinks', 'inlinks_newspapers', 'lang', 'ambig',
-    'quotes', 'type_match', 'role_match', 'spec_match', 'keyword_match',
-    'subject_match', 'entity_match', 'entity_similarity',
-    'entity_similarity_top', 'entity_similarity_mean', 'max_vec_sim',
-    'mean_vec_sim', 'vec_match'
+    'inlinks_rel', 'outlinks', 'outlinks_rel', 'inlinks_newspapers',
+    'inlinks_newspapers_rel', 'lang', 'ambig', 'quotes', 'type_match',
+    'role_match', 'spec_match', 'keyword_match', 'subject_match',
+    'entity_match', 'entity_similarity', 'entity_similarity_top',
+    'entity_similarity_mean', 'max_vec_sim', 'mean_vec_sim', 'vec_match'
 ]
 
 metadata = ['entity_id', 'cand_id', 'url', 'ne', 'cand_uri']
