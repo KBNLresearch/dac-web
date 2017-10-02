@@ -100,6 +100,7 @@ def show_candidates(name):
 
     # Get context
     context = dac.Context(url, dac.TPTA_URL)
+    context.get_publ_year()
     ocr = re.sub(
         '(?P<pf>(^|\W|:punct:))' + re.escape(ne) + '(?P<sf>(\W|$|:punct:))',
         '\g<pf>' + '<span style="background-color:yellow;">' + ne + '</span>' +
@@ -115,7 +116,7 @@ def show_candidates(name):
         candidates = []
 
     return template('index', last_instance=last_instance, index=index, url=url,
-            ne=ne, ne_type=ne_type, links=links, publ_date=context.publ_date,
+            ne=ne, ne_type=ne_type, links=links, publ_date=context.publ_year,
             ocr=ocr, candidates=candidates, instance_id=instance_id)
 
 @post('/<name>')
