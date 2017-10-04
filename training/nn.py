@@ -54,9 +54,7 @@ def load_model(data):
     Load keras model.
     '''
     model = Sequential()
-    model.add(Dense(64, activation='relu', input_dim=data.shape[1]))
-    model.add(Dropout(0.5))
-    model.add(Dense(32, activation='relu'))
+    model.add(Dense(32, activation='relu', input_dim=data.shape[1]))
     model.add(Dropout(0.5))
     model.add(Dense(16, activation='relu'))
     model.add(Dropout(0.5))
