@@ -25239,6 +25239,51 @@
             "ne_string": "Nancy", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:110609577:mpeg21:a0003:ocr"
+        }, 
+        {
+            "id": 3063, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Julian_Lennon"
+            ], 
+            "ne_string": "Julian", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011015786:mpeg21:a0190:ocr"
+        }, 
+        {
+            "id": 3064, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Julian_Lennon"
+            ], 
+            "ne_string": "Julian", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110609965:mpeg21:a0365:ocr"
+        }, 
+        {
+            "id": 3065, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Julian_Lennon"
+            ], 
+            "ne_string": "Julian", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010565114:mpeg21:a0244:ocr"
+        }, 
+        {
+            "id": 3066, 
+            "links": [
+                "http://nl.dbpedia.org/resource/The_Beatles"
+            ], 
+            "ne_string": "Beatle", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010565114:mpeg21:a0244:ocr"
+        }, 
+        {
+            "id": 3067, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Julian_Lennon"
+            ], 
+            "ne_string": "Julian", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011187278:mpeg21:a0044:ocr"
         }
     ]
 }
