@@ -39,6 +39,7 @@
         {
             "id": 4, 
             "links": [
+                "http://nl.dbpedia.org/resource/Bé_Nijenhuis", 
                 "http://dbpedia.org/resource/Bé Nijenhuis"
             ], 
             "ne_string": "Nijenhuis", 
@@ -25284,6 +25285,24 @@
             "ne_string": "Julian", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011187278:mpeg21:a0044:ocr"
+        }, 
+        {
+            "id": 3068, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Stuart_Sutcliffe"
+            ], 
+            "ne_string": "Sutcliffe", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010623406:mpeg21:a0422:ocr"
+        }, 
+        {
+            "id": 3069, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Singel_(Amsterdam)"
+            ], 
+            "ne_string": "Singel", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010161728:mpeg21:a0004:ocr"
         }
     ]
 }
