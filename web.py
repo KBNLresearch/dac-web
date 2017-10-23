@@ -34,6 +34,7 @@ bottle.TEMPLATE_PATH.insert(0, abs_path + '/templates')
 
 # Import DAC scripts
 import dac
+import models
 import solr
 import utilities
 
@@ -109,8 +110,10 @@ def show_candidates(name):
     # Get candidates
     solr_connection = solr.SolrConnection(dac.SOLR_URL)
     cluster = dac.Cluster([dac.Entity(ne, ne_type, context)])
+    model = models.Model()
     if cluster.entities[0].valid:
-        cand_list = dac.CandidateList(solr_connection, dac.SOLR_ROWS, cluster)
+        cand_list = dac.CandidateList(solr_connection, dac.SOLR_ROWS, cluster,
+                model)
         candidates = cand_list.candidates
     else:
         candidates = []
