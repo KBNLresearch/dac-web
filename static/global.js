@@ -36,7 +36,8 @@ function predict(url, ne) {
                         //console.log(data.candidates[res].id);
                         if (obj.id == data.candidates[res].id) {
                             console.log(obj.id);
-                            var str = JSON.stringify(data.candidates[res].features);
+                            var str = JSON.stringify(data.candidates[res].features,
+                                Object.keys(data.candidates[res].features).sort());
                             str = str.replace(/,/g, '<br/>')
                                 .replace(/:/g, ': ')
                                 .replace('{', '<p>')
