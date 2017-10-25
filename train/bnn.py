@@ -23,11 +23,12 @@ import json
 import pandas as pd
 import numpy as np
 
+from keras.layers import concatenate
 from keras.layers import Dense
 from keras.layers import Dropout
-from keras.layers import Merge
+from keras.layers import Input
 from keras.models import load_model
-from keras.models import Sequential
+from keras.models import Model
 
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
@@ -58,36 +59,32 @@ def load_csv(training_fn, features_fn):
 
     return data, labels
 
-def load_model(data):
+def create_model(data):
     '''
     Load keras model.
     '''
     # Entity branch
-    entity_branch = Sequential()
-    entity_branch.add(Dense(data[0].shape[1], activation='relu',
-        input_dim=data[0].shape[1]))
+    entity_inputs = Input(shape=(data[0].shape[1],))
+    entity_x = Dense(data[0].shape[1], activation='relu')(entity_inputs)
 
     # Candidate branch
-    candidate_branch = Sequential()
-    candidate_branch.add(Dense(data[1].shape[1], activation='relu',
-        input_dim=data[1].shape[1]))
+    candidate_inputs = Input(shape=(data[1].shape[1],))
+    candidate_x = Dense(data[1].shape[1], activation='relu')(candidate_inputs)
 
     # Match branch
-    match_branch = Sequential()
-    match_branch.add(Dense(data[2].shape[1], activation='relu',
-        input_dim=data[2].shape[1]))
+    match_inputs = Input(shape=(data[2].shape[1],))
 
     # Merge
-    model = Sequential()
-    model.add(Merge([entity_branch, candidate_branch, match_branch],
-        mode='concat'))
-    model.add(Dropout(0.5))
-    model.add(Dense(32, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(16, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(1, activation='sigmoid'))
+    x = concatenate([entity_x, candidate_x, match_inputs])
+    x = Dense(32, activation='relu')(x)
+    x = Dropout(0.5)(x)
+    x = Dense(16, activation='relu')(x)
+    x = Dropout(0.5)(x)
 
+    predictions = Dense(1, activation='sigmoid')(x)
+
+    model = Model(inputs=[entity_inputs, candidate_inputs, match_inputs],
+        outputs=predictions)
     model.compile(optimizer='RMSprop', loss='binary_crossentropy',
         metrics=['accuracy'])
 
@@ -135,12 +132,15 @@ def predict(data, model_fn):
     '''
     Classify a new example.
     '''
-    example = data[:1, :]
+    example = []
+    for d in data:
+        example.append(d[:1, :])
     model = load_model(model_fn)
     prob = model.predict(example, batch_size=1)
     print prob
 
 if __name__ == '__main__':
     data, labels = load_csv('training.csv', 'bnn.json')
-    model = load_model(data)
+    model = create_model(data)
     train(data, labels, model, 'bnn.h5')
+    predict(data, 'bnn.h5')
