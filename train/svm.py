@@ -37,13 +37,13 @@ class_weight = {0: 0.25, 1: 0.75}
 clf = svm.SVC(kernel='linear', C=1.0, decision_function_shape='ovr',
         class_weight=class_weight)
 
-def load_csv():
+def load_csv(training_fn, features_fn):
     '''
     Transform tabular data set into NumPy arrays.
     '''
-    df = pd.read_csv('training.csv', sep='\t')
+    df = pd.read_csv(training_fn, sep='\t')
 
-    features = json.load(open('svm.json'))['features']
+    features = json.load(open(features_fn))['features']
     data = df[features].as_matrix()
     print('Data:', data.shape)
 
@@ -79,24 +79,24 @@ def validate(data, labels):
     print('Recall', np.mean(recall_scores))
     print('F1-measure', np.mean(f1_scores))
 
-def train(data, labels):
+def train(data, labels, model_fn):
     '''
     Train and save model.
     '''
     clf.fit(data, labels)
-    joblib.dump(clf, 'model.pkl')
+    joblib.dump(clf, model_fn)
 
     df = pd.read_csv('training.csv', sep='\t')
     df = df.ix[:, 5:-1]
     for i, feature in enumerate(df.columns.values):
         print(feature, clf.coef_[:, i][0])
 
-def predict(data):
+def predict(data, model_fn):
     '''
     Classify a new example.
     '''
     examples = data[:50, :]
-    clf = joblib.load('model.pkl')
+    clf = joblib.load(model_fn)
 
     pred = clf.predict(examples)
     #prob = clf.predict_proba(examples)
@@ -107,7 +107,7 @@ def predict(data):
         print pred[i], dec[i], conf[i]
 
 if __name__ == '__main__':
-    data, labels = load_csv()
+    data, labels = load_csv('training.csv', 'svm.json')
     #validate(data, labels)
-    train(data, labels)
-    #predict(data)
+    train(data, labels, 'svm.pkl')
+    #predict(data, 'svm.pkl')

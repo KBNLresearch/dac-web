@@ -19,6 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import json
 import pandas as pd
 import numpy as np
 
@@ -35,16 +36,17 @@ from sklearn.model_selection import StratifiedShuffleSplit
 
 class_weight = {0: 0.25, 1: 0.75}
 
-def load_csv():
+def load_csv(training_fn, features_fn):
     '''
     Transform tabular data set into NumPy arrays.
     '''
-    df = pd.read_csv('training.csv', sep='\t')
+    df = pd.read_csv(training_fn, sep='\t')
 
-    data = df.ix[:, 5:-1].as_matrix()
-    labels = df.ix[:, -1:].as_matrix()
-
+    features = json.load(open(features_fn))['features']
+    data = df[features].as_matrix()
     print('Data:', data.shape)
+
+    labels = df[['label']].as_matrix()
     print('Labels:', labels.shape)
 
     return data, labels
@@ -94,24 +96,25 @@ def validate(data, labels, model):
     print('Recall', np.mean(recall_scores))
     print('F1-measure', np.mean(f1_scores))
 
-def train(data, labels, model):
+def train(data, labels, model, model_fn):
     '''
     Train and save model.
     '''
     model.fit(data, labels, epochs=50, batch_size=128,
             class_weight=class_weight)
 
-    model.save('model.h5')
+    model.save(model_fn)
 
-def predict(data):
+def predict(data, model_fn):
+    '''
+    Classify a new example.
+    '''
     example = data[:1, :]
-    model = load_model('model.h5')
+    model = load_model(model_fn)
     prob = model.predict(example, batch_size=1)
     print prob
 
 if __name__ == '__main__':
-    data, labels = load_csv()
+    data, labels = load_csv('training.csv', 'nn.json')
     model = load_model(data)
-    #validate(data, labels, model)
-    train(data, labels, model)
-
+    train(data, labels, model, 'nn.h5')
