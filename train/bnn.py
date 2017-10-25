@@ -141,6 +141,6 @@ def predict(data, model_fn):
     print prob
 
 if __name__ == '__main__':
-    data, labels = load_csv('training.csv', 'nnr.json')
+    data, labels = load_csv('training.csv', 'bnn.json')
     model = load_model(data)
-    train(data, labels, model, 'nnr.h5')
+    train(data, labels, model, 'bnn.h5')
