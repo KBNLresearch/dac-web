@@ -100,7 +100,7 @@ def train(data, labels, model, model_fn):
     '''
     Train and save model.
     '''
-    model.fit(data, labels, epochs=50, batch_size=128,
+    model.fit(data, labels, epochs=100, batch_size=128,
             class_weight=class_weight)
 
     model.save(model_fn)
