@@ -19,6 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import json
 import math
 import numpy as np
 import pandas as pd
@@ -42,13 +43,13 @@ def load_csv():
     '''
     df = pd.read_csv('training.csv', sep='\t')
 
-    data = df.ix[:, 5:-1].as_matrix()
-    labels = df.ix[:, -1:].as_matrix().reshape(-1)
+    features = json.load(open('svm.json'))['features']
+    data = df[features].as_matrix()
+    print('Data:', data.shape)
 
+    labels = df[['label']].as_matrix().reshape(-1)
     lb = preprocessing.LabelBinarizer()
     lb.fit(labels)
-
-    print('Data:', data.shape)
     print('Labels:', labels.shape)
 
     return data, labels
@@ -91,6 +92,9 @@ def train(data, labels):
         print(feature, clf.coef_[:, i][0])
 
 def predict(data):
+    '''
+    Classify a new example.
+    '''
     examples = data[:50, :]
     clf = joblib.load('model.pkl')
 
@@ -107,4 +111,3 @@ if __name__ == '__main__':
     #validate(data, labels)
     train(data, labels)
     #predict(data)
-
