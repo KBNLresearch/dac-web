@@ -21,52 +21,30 @@
 
 import json
 import sys
-
-sys.path.insert(0, '../../dac')
-
-import dac
-
 import unicodecsv as csv
 
-features = [
-    'pref_label_exact_match', 'pref_label_end_match', 'pref_label_match',
-    'alt_label_exact_match', 'alt_label_end_match', 'alt_label_match',
-    'last_part_match', 'first_part_match', 'non_matching_labels',
-    'name_conflict', 'pref_lsr', 'mean_lsr', 'wd_lsr', 'date_match',
-    'query_id_0', 'query_id_1', 'query_id_2', 'query_id_3', 'substitution',
-    'solr_position', 'solr_score', 'inlinks', 'inlinks_rel',
-    'inlinks_newspapers', 'inlinks_newspapers_rel', 'outlinks',
-    'outlinks_rel', 'lang', 'ambig', 'quotes', 'type_match', 'role_match',
-    'spec_match', 'keyword_match', 'subject_match', 'max_vec_sim',
-    'mean_vec_sim', 'top_vec_sim', 'entity_match', 'entity_match_newspapers',
-    'max_entity_vec_sim', 'mean_entity_vec_sim', 'top_entity_vec_sim'
-]
-
-metadata = ['entity_id', 'cand_id', 'url', 'ne', 'cand_uri']
-label = ['label']
+sys.path.insert(0, '../../dac')
+import dac
 
 def generate():
-    '''
-    Generate a training data set based on the manually labeled examples from
-    the training web interface.
-    '''
     with open('../users/tve/art.json') as fh:
         data = json.load(fh)
 
     with open('training.csv', 'w') as fh:
-        csv_writer = csv.writer(fh, delimiter='\t', encoding='utf-8')
-        csv_writer.writerow(metadata + features + label)
-
         linker = dac.EntityLinker(debug=True, candidates=True, train=True)
 
-        instance_count = 0
-        candidate_count = 0
+        metadata = ['entity_id', 'cand_id', 'url', 'ne', 'cand_uri']
+        label = ['label']
+
+        csv_writer = csv.writer(fh, delimiter='\t', encoding='utf-8')
+        csv_writer.writerow(metadata + linker.model.features + label)
 
         url = None
         url_result = None
+        candidate_count = 1
 
-        for inst in data['instances']:
-            print('Reviewing instance ' + str(instance_count) + ': ' +
+        for i, inst in enumerate(data['instances']):
+            print('Reviewing instance ' + str(i) + ': ' +
                 inst['ne_string'].encode('utf-8'))
 
             # Check if instance has been labeled
@@ -74,8 +52,6 @@ def generate():
                 if inst['url'] != url:
                     print('Getting result for url: ' + inst['url'])
                     url = inst['url']
-                    #print(linker.link(inst['url']))
-
                     url_result = linker.link(inst['url'])['linkedNEs']
 
                 result = [r for r in url_result
@@ -88,7 +64,6 @@ def generate():
 
                 # Check if DBpedia canadidates have been retrieved
                 if 'candidates' in result:
-
                     for cand in result['candidates']:
 
                         row = []
@@ -101,7 +76,7 @@ def generate():
                         row.append(cand['id'].encode('utf-8'))
 
                         # Features
-                        for f in features:
+                        for f in linker.model.features:
                             value = cand['features'][f]
                             row.append("{0:.3f}".format(float(value)))
 
@@ -112,16 +87,13 @@ def generate():
                             row.append(str(0))
 
                         # Exclude name and date conflicts
-                        if cand['features']['name_conflict'] == 1:
+                        if cand['features']['match_str_conflict'] == 1:
                             continue
-                        elif cand['features']['date_match'] == -1:
+                        elif cand['features']['match_txt_date'] == -1:
                             continue
                         else:
                             candidate_count += 1
                             csv_writer.writerow(row)
 
-            instance_count += 1
-
 if __name__ == '__main__':
     generate()
-
