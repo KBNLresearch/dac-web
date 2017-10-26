@@ -30,7 +30,7 @@ import dac
 with open('../users/test/art.json') as fh:
     data = json.load(fh)
 
-linker = dac.EntityLinker(debug=True, model='nn')
+linker = dac.EntityLinker(debug=True, model='bnn')
 
 with open('results.csv', 'w') as fh:
 
