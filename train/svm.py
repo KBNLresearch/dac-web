@@ -52,7 +52,7 @@ def load_csv(training_fn, features_fn):
     lb.fit(labels)
     print('Labels:', labels.shape)
 
-    return data, labels
+    return features, data, labels
 
 def validate(data, labels):
     '''
@@ -79,17 +79,15 @@ def validate(data, labels):
     print('Recall', np.mean(recall_scores))
     print('F1-measure', np.mean(f1_scores))
 
-def train(data, labels, model_fn):
+def train(features, data, labels, model_fn):
     '''
     Train and save model.
     '''
     clf.fit(data, labels)
     joblib.dump(clf, model_fn)
 
-    df = pd.read_csv('training.csv', sep='\t')
-    df = df.ix[:, 5:-1]
-    for i, feature in enumerate(df.columns.values):
-        print(feature, clf.coef_[:, i][0])
+    for i, f in enumerate(features):
+        print(f, clf.coef_[:, i][0])
 
 def predict(data, model_fn):
     '''
@@ -107,7 +105,8 @@ def predict(data, model_fn):
         print pred[i], dec[i], conf[i]
 
 if __name__ == '__main__':
-    data, labels = load_csv('training.csv', 'svm.json')
+    features, data, labels = load_csv('training.csv', 'svm.json')
     #validate(data, labels)
-    train(data, labels, 'svm.pkl')
+    train(features, data, labels, 'svm.pkl')
     #predict(data, 'svm.pkl')
+
