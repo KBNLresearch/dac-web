@@ -21,6 +21,7 @@
 
 import json
 import sys
+import time
 import unicodecsv as csv
 
 sys.path.insert(0, '../../dac')
@@ -50,9 +51,15 @@ def generate():
             # Check if instance has been labeled
             if inst['links']:
                 if inst['url'] != url:
-                    print('Getting result for url: ' + inst['url'])
+                    print('Getting linker result for url: ' + inst['url'])
                     url = inst['url']
-                    url_result = linker.link(inst['url'])['linkedNEs']
+                    while True:
+                        try:
+                            url_result = linker.link(inst['url'])['linkedNEs']
+                            break
+                        except:
+                            print('Could not get linker result, retrying.')
+                            time.sleep(3)
 
                 result = [r for r in url_result
                     if r['text'] == inst['ne_string']]
