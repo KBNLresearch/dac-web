@@ -25,6 +25,7 @@ import numpy as np
 
 from keras.layers import concatenate
 from keras.layers import Dense
+from keras.layers import dot
 from keras.layers import Dropout
 from keras.layers import Input
 from keras.models import load_model
@@ -36,7 +37,7 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
-class_weight = {0: 0.25, 1: 0.75}
+class_weight = {0: 0.2, 1: 0.8}
 
 def load_csv(training_fn, features_fn):
     '''
@@ -66,27 +67,37 @@ def create_model(data):
     # Entity branch
     entity_inputs = Input(shape=(data[0].shape[1],))
     entity_x = Dense(data[0].shape[1], activation='relu')(entity_inputs)
+    #entity_x = Dropout(0.25)(entity_x)
+    entity_x = Dense(5, activation='relu')(entity_x)
 
     # Candidate branch
     candidate_inputs = Input(shape=(data[1].shape[1],))
     candidate_x = Dense(data[1].shape[1], activation='relu')(candidate_inputs)
+    #candidate_x = Dropout(0.25)(candidate_x)
+    candidate_x = Dense(5, activation='relu')(candidate_x)
+
+    # Cosine proximity
+    cos_x = dot([entity_x, candidate_x], axes=1, normalize=False)
+    cos_output = Dense(1, activation='sigmoid')(cos_x)
 
     # Match branch
     match_inputs = Input(shape=(data[2].shape[1],))
 
     # Merge
-    x = concatenate([entity_x, candidate_x, match_inputs])
+    x = concatenate([cos_x, match_inputs])
     x = Dense(32, activation='relu')(x)
-    x = Dropout(0.5)(x)
+    #x = Dropout(0.5)(x)
     x = Dense(16, activation='relu')(x)
-    x = Dropout(0.5)(x)
+    #x = Dropout(0.5)(x)
 
     predictions = Dense(1, activation='sigmoid')(x)
 
     model = Model(inputs=[entity_inputs, candidate_inputs, match_inputs],
-        outputs=predictions)
-    model.compile(optimizer='RMSprop', loss='binary_crossentropy',
-        metrics=['accuracy'])
+        outputs=[predictions, cos_output])
+    model.compile(optimizer='RMSprop', loss='mean_squared_logarithmic_error',
+        metrics=['accuracy'], loss_weights=[1.0, 0.01])
+
+    print model.summary()
 
     return model
 
@@ -100,13 +111,18 @@ def validate(data, labels, model):
     f1_scores = []
 
     sss = StratifiedShuffleSplit(n_splits=10)
-    for train_index, test_index in sss.split(data, labels):
-        x_train, x_test = data[train_index], data[test_index]
+
+    for train_index, test_index in sss.split(data[0], labels):
+        x_train_0, x_test_0 = data[0][train_index], data[0][test_index]
+        x_train_1, x_test_1 = data[1][train_index], data[1][test_index]
+        x_train_2, x_test_2 = data[2][train_index], data[2][test_index]
+
         y_train, y_test = labels[train_index], labels[test_index]
 
-        model.fit(x_train, y_train, epochs=10, batch_size=128,
-            class_weight=class_weight)
-        y_pred = model.predict_classes(x_test, batch_size=128)
+        model.fit([x_train_0, x_train_1, x_train_2], [y_train, y_train],
+            epochs=10, batch_size=128, class_weight=class_weight)
+        y_pred = model.predict([x_test_0, x_test_1, x_test_2], batch_size=128)
+        y_pred = [1 if y[0] > 0.3 else 0 for y in y_pred[0]]
 
         accuracy_scores.append(accuracy_score(y_test, y_pred))
         precision_scores.append(precision_score(y_test, y_pred))
@@ -123,7 +139,7 @@ def train(data, labels, model, model_fn):
     '''
     Train and save model.
     '''
-    model.fit(data, labels, epochs=100, batch_size=128,
+    model.fit(data, [labels, labels], epochs=100, batch_size=128,
             class_weight=class_weight)
 
     model.save(model_fn)
@@ -142,5 +158,6 @@ def predict(data, model_fn):
 if __name__ == '__main__':
     data, labels = load_csv('training.csv', 'bnn.json')
     model = create_model(data)
-    train(data, labels, model, 'bnn.h5')
-    predict(data, 'bnn.h5')
+    validate(data, labels, model)
+    #train(data, labels, model, 'bnn.h5')
+    #predict(data, 'bnn.h5')
