@@ -23,6 +23,7 @@ import json
 import pandas as pd
 import numpy as np
 
+from keras.constraints import maxnorm
 from keras.layers import concatenate
 from keras.layers import Dense
 from keras.layers import dot
@@ -37,7 +38,8 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
-class_weight = {0: 0.2, 1: 0.8}
+np.random.seed(1337)
+class_weight = {0: 0.1, 1: 0.9}
 
 def load_csv(training_fn, features_fn):
     '''
@@ -66,18 +68,25 @@ def create_model(data):
     '''
     # Entity branch
     entity_inputs = Input(shape=(data[0].shape[1],))
-    entity_x = Dense(data[0].shape[1], activation='relu')(entity_inputs)
+    entity_x = Dense(data[0].shape[1], activation='relu',
+            kernel_constraint=maxnorm(3))(entity_inputs)
+    entity_x = Dropout(0.25)(entity_x)
+    #entity_x = Dense(50, activation='relu',
+    #        kernel_constraint=maxnorm(3))(entity_x)
     #entity_x = Dropout(0.25)(entity_x)
-    entity_x = Dense(50, activation='relu')(entity_x)
 
     # Candidate branch
     candidate_inputs = Input(shape=(data[1].shape[1],))
-    candidate_x = Dense(data[1].shape[1], activation='relu')(candidate_inputs)
+    candidate_x = Dense(data[1].shape[1], activation='relu',
+            kernel_constraint=maxnorm(3))(candidate_inputs)
+    candidate_x = Dropout(0.25)(candidate_x)
+    #candidate_x = Dense(50, activation='relu',
+    #        kernel_constraint=maxnorm(3))(candidate_x)
     #candidate_x = Dropout(0.25)(candidate_x)
-    candidate_x = Dense(50, activation='relu')(candidate_x)
 
     # Cosine proximity
-    cos_x = dot([entity_x, candidate_x], axes=1, normalize=False)
+    # cos_x = dot([entity_x, candidate_x], axes=1, normalize=False)
+    cos_x = concatenate([entity_x, candidate_x])
     cos_output = Dense(1, activation='sigmoid')(cos_x)
 
     # Match branch
@@ -85,21 +94,23 @@ def create_model(data):
 
     # Merge
     x = concatenate([cos_x, match_inputs])
-    x = Dense(32, activation='relu')(x)
-    #x = Dropout(0.5)(x)
-    x = Dense(16, activation='relu')(x)
-    #x = Dropout(0.5)(x)
+    x = Dense(64, activation='relu', kernel_constraint=maxnorm(3))(x)
+    x = Dropout(0.25)(x)
+    x = Dense(32, activation='relu', kernel_constraint=maxnorm(3))(x)
+    x = Dropout(0.25)(x)
+    x = Dense(16, activation='relu', kernel_constraint=maxnorm(3))(x)
+    x = Dropout(0.25)(x)
 
     predictions = Dense(1, activation='sigmoid')(x)
 
     model = Model(inputs=[entity_inputs, candidate_inputs, match_inputs],
         outputs=[predictions, cos_output])
-    model.compile(optimizer='RMSprop', loss='mean_squared_logarithmic_error',
-        metrics=['accuracy'], loss_weights=[1.0, 0.01])
+    model.compile(optimizer='RMSprop', loss='binary_crossentropy',
+        metrics=['accuracy'], loss_weights=[1.0, 0.2])
 
     return model
 
-def validate(data, labels, model):
+def validate(data, labels):
     '''
     Ten-fold cross-validation with stratified sampling.
     '''
@@ -117,8 +128,9 @@ def validate(data, labels, model):
 
         y_train, y_test = labels[train_index], labels[test_index]
 
+        model = create_model(data)
         model.fit([x_train_0, x_train_1, x_train_2], [y_train, y_train],
-            epochs=10, batch_size=128, class_weight=class_weight)
+            epochs=100, batch_size=128, class_weight=class_weight)
         y_pred = model.predict([x_test_0, x_test_1, x_test_2], batch_size=128)
         y_pred = [1 if y[0] > 0.5 else 0 for y in y_pred[0]]
 
@@ -133,10 +145,11 @@ def validate(data, labels, model):
     print('Recall', np.mean(recall_scores))
     print('F1-measure', np.mean(f1_scores))
 
-def train(data, labels, model, model_fn):
+def train(data, labels, model_fn):
     '''
     Train and save model.
     '''
+    model = create_model(data)
     model.fit(data, [labels, labels], epochs=100, batch_size=128,
             class_weight=class_weight)
 
@@ -155,8 +168,6 @@ def predict(data, model_fn):
 
 if __name__ == '__main__':
     data, labels = load_csv('training.csv', 'bnn.json')
-    model = create_model(data)
-    #print model.summary()
-    validate(data, labels, model)
-    #train(data, labels, model, 'bnn.h5')
+    validate(data, labels)
+    #train(data, labels, 'bnn.h5')
     #predict(data, 'bnn.h5')
