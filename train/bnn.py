@@ -68,13 +68,13 @@ def create_model(data):
     entity_inputs = Input(shape=(data[0].shape[1],))
     entity_x = Dense(data[0].shape[1], activation='relu')(entity_inputs)
     #entity_x = Dropout(0.25)(entity_x)
-    entity_x = Dense(5, activation='relu')(entity_x)
+    entity_x = Dense(50, activation='relu')(entity_x)
 
     # Candidate branch
     candidate_inputs = Input(shape=(data[1].shape[1],))
     candidate_x = Dense(data[1].shape[1], activation='relu')(candidate_inputs)
     #candidate_x = Dropout(0.25)(candidate_x)
-    candidate_x = Dense(5, activation='relu')(candidate_x)
+    candidate_x = Dense(50, activation='relu')(candidate_x)
 
     # Cosine proximity
     cos_x = dot([entity_x, candidate_x], axes=1, normalize=False)
@@ -96,8 +96,6 @@ def create_model(data):
         outputs=[predictions, cos_output])
     model.compile(optimizer='RMSprop', loss='mean_squared_logarithmic_error',
         metrics=['accuracy'], loss_weights=[1.0, 0.01])
-
-    print model.summary()
 
     return model
 
@@ -122,7 +120,7 @@ def validate(data, labels, model):
         model.fit([x_train_0, x_train_1, x_train_2], [y_train, y_train],
             epochs=10, batch_size=128, class_weight=class_weight)
         y_pred = model.predict([x_test_0, x_test_1, x_test_2], batch_size=128)
-        y_pred = [1 if y[0] > 0.3 else 0 for y in y_pred[0]]
+        y_pred = [1 if y[0] > 0.5 else 0 for y in y_pred[0]]
 
         accuracy_scores.append(accuracy_score(y_test, y_pred))
         precision_scores.append(precision_score(y_test, y_pred))
@@ -158,6 +156,7 @@ def predict(data, model_fn):
 if __name__ == '__main__':
     data, labels = load_csv('training.csv', 'bnn.json')
     model = create_model(data)
+    #print model.summary()
     validate(data, labels, model)
     #train(data, labels, model, 'bnn.h5')
     #predict(data, 'bnn.h5')

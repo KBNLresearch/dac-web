@@ -28,17 +28,18 @@ sys.path.insert(0, '../../dac')
 import dac
 
 def generate():
-    with open('../users/tve/art.json') as fh:
-        data = json.load(fh)
+    data = json.load(open('../users/tve/art.json'))
 
     with open('training.csv', 'w') as fh:
+
         linker = dac.EntityLinker(debug=True, candidates=True, train=True)
 
-        metadata = ['entity_id', 'cand_id', 'url', 'ne', 'cand_uri']
-        label = ['label']
+        header = ['entity_id', 'cand_id', 'url', 'ne', 'cand_uri']
+        header += linker.model.features
+        header += ['label']
 
         csv_writer = csv.writer(fh, delimiter='\t', encoding='utf-8')
-        csv_writer.writerow(metadata + linker.model.features + label)
+        csv_writer.writerow(header)
 
         url = None
         url_result = None
@@ -50,6 +51,8 @@ def generate():
 
             # Check if instance has been labeled
             if inst['links']:
+
+                # Get linker results for entire article (once once per article)
                 if inst['url'] != url:
                     print('Getting linker result for url: ' + inst['url'])
                     url = inst['url']
@@ -61,21 +64,22 @@ def generate():
                             print('Could not get linker result, retrying.')
                             time.sleep(3)
 
-                result = [r for r in url_result
-                    if r['text'] == inst['ne_string']]
+                # Select result for current instance
+                result = [r for r in url_result if
+                        r['text'] == inst['ne_string']]
+
                 if len(result) != 1:
                     print('No result for: ' + inst['ne_string'])
                     continue
                 else:
                     result = result[0]
 
-                # Check if DBpedia canadidates have been retrieved
+                # Loop through result candidates, if any
                 if 'candidates' in result:
                     for cand in result['candidates']:
 
-                        row = []
-
                         # Metadata
+                        row = []
                         row.append(str(inst['id']))
                         row.append(str(candidate_count))
                         row.append(inst['url'].encode('utf-8'))
@@ -85,7 +89,7 @@ def generate():
                         # Features
                         for f in linker.model.features:
                             value = cand['features'][f]
-                            row.append("{0:.3f}".format(float(value)))
+                            row.append("{0:.5f}".format(float(value)))
 
                         # Label
                         if cand['id'] in inst['links']:
@@ -93,7 +97,7 @@ def generate():
                         else:
                             row.append(str(0))
 
-                        # Exclude name and date conflicts
+                        # Exclude candidates with name or date conflict
                         if cand['features']['match_str_conflict'] == 1:
                             continue
                         elif cand['features']['match_txt_date'] == -1:

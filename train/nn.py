@@ -117,5 +117,5 @@ def predict(data, model_fn):
 if __name__ == '__main__':
     data, labels = load_csv('training.csv', 'nn.json')
     model = load_model(data)
-    validate(data, labels, model)
-    #train(data, labels, model, 'nn.h5')
+    #validate(data, labels, model)
+    train(data, labels, model, 'nn.h5')
