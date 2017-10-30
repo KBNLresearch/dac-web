@@ -23,6 +23,7 @@ import json
 import pandas as pd
 import numpy as np
 
+from keras.constraints import maxnorm
 from keras.layers import Dense
 from keras.layers import Dropout
 from keras.models import load_model
@@ -35,6 +36,7 @@ from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
 class_weight = {0: 0.25, 1: 0.75}
+np.random.seed(1337)
 
 def load_csv(training_fn, features_fn):
     '''
@@ -56,9 +58,12 @@ def load_model(data):
     Load keras model.
     '''
     model = Sequential()
-    model.add(Dense(32, activation='relu', input_dim=data.shape[1]))
+    model.add(Dense(32, activation='relu', input_dim=data.shape[1],
+        kernel_constraint=maxnorm(3)))
     model.add(Dropout(0.5))
-    model.add(Dense(16, activation='relu'))
+    model.add(Dense(16, activation='relu', kernel_constraint=maxnorm(3)))
+    model.add(Dropout(0.5))
+    model.add(Dense(8, activation='relu', kernel_constraint=maxnorm(3)))
     model.add(Dropout(0.5))
     model.add(Dense(1, activation='sigmoid'))
 
@@ -67,7 +72,7 @@ def load_model(data):
 
     return model
 
-def validate(data, labels, model):
+def validate(data, labels):
     '''
     Ten-fold cross-validation with stratified sampling.
     '''
@@ -81,7 +86,8 @@ def validate(data, labels, model):
         x_train, x_test = data[train_index], data[test_index]
         y_train, y_test = labels[train_index], labels[test_index]
 
-        model.fit(x_train, y_train, epochs=10, batch_size=128,
+        model = load_model(data)
+        model.fit(x_train, y_train, epochs=100, batch_size=128,
             class_weight=class_weight)
         y_pred = model.predict_classes(x_test, batch_size=128)
 
@@ -96,10 +102,11 @@ def validate(data, labels, model):
     print('Recall', np.mean(recall_scores))
     print('F1-measure', np.mean(f1_scores))
 
-def train(data, labels, model, model_fn):
+def train(data, labels, model_fn):
     '''
     Train and save model.
     '''
+    model = load_model(data)
     model.fit(data, labels, epochs=100, batch_size=128,
             class_weight=class_weight)
 
@@ -116,6 +123,6 @@ def predict(data, model_fn):
 
 if __name__ == '__main__':
     data, labels = load_csv('training.csv', 'nn.json')
-    model = load_model(data)
-    #validate(data, labels, model)
-    train(data, labels, model, 'nn.h5')
+    #validate(data, labels)
+    train(data, labels, 'nn.h5')
+
