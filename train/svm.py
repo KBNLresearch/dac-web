@@ -33,8 +33,9 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
+np.random.seed(1337)
 class_weight = {0: 0.25, 1: 0.75}
-clf = svm.SVC(kernel='linear', C=1.0, decision_function_shape='ovr',
+clf = svm.SVC(kernel='linear', C=1.5, decision_function_shape='ovr',
         class_weight=class_weight)
 
 def load_csv(training_fn, features_fn):
