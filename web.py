@@ -19,18 +19,17 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import codecs
+import json
 import os
+import re
+import requests
 import sys
+import urllib
 
 # Add DAC directory to the Python path
 abs_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, abs_path + '/../dac')
-
-import bottle
-
-# Add absolute path to the Bottle template path
-bottle.TEMPLATE_PATH.insert(0, abs_path)
-bottle.TEMPLATE_PATH.insert(0, abs_path + '/templates')
 
 # Import DAC scripts
 import dac
@@ -38,10 +37,10 @@ import models
 import solr
 import utilities
 
-import codecs
-import json
-import re
-import urllib
+# Add absolute path to the Bottle template path
+import bottle
+bottle.TEMPLATE_PATH.insert(0, abs_path)
+bottle.TEMPLATE_PATH.insert(0, abs_path + '/templates')
 
 import xml.etree.ElementTree as etree
 
@@ -273,11 +272,11 @@ def update_training_set(name):
             data['instances'].append(i)
         else:
             # Add article
-            tpta_file = urllib.urlopen(dac.TPTA_URL + '?lang=nl&url=' + url)
-            tpta_string = tpta_file.read()
-            tpta_file.close()
+            resp = requests.get(dac.TPTA_URL, params={'lang': 'nl', 'url': url})
 
-            root = etree.fromstring(tpta_string)
+            print(resp.text)
+
+            root = etree.fromstring(resp.content)
             if(len(root) > 0 and len(root[0]) > 0):
                 entities = []
                 next_id = data['instances'][-1]['id'] + 1
@@ -344,7 +343,7 @@ def predict():
     '''
     Get the current DAC prediction.
     '''
-    linker = dac.EntityLinker(debug=True, candidates=True, model='svm')
+    linker = dac.EntityLinker(debug=True, candidates=True)
     result = linker.link(request.query.url, request.query.ne.encode('utf-8'))
     result = result['linkedNEs'][0]
     response.set_header('Content-Type', 'application/json')
