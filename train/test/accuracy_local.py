@@ -32,7 +32,7 @@ with open('../users/test/art.json') as fh:
 
 linker = dac.EntityLinker(debug=True, model='bnn')
 
-with open('results.csv', 'w') as fh:
+with open('results-bnn.csv', 'w') as fh:
 
     keys = ['id', 'entity', 'links', 'prediction', 'correct']
 
