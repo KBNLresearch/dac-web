@@ -147,8 +147,8 @@
         {
             "id": 16, 
             "links": [
-                "http://nl.dbpedia.org/resource/Noord_(windstreek)", 
-                "none"
+                "none", 
+                "http://nl.dbpedia.org/resource/Noord_(windstreek)"
             ], 
             "ne_string": "Noord", 
             "ne_type": "location", 
@@ -184,9 +184,9 @@
         {
             "id": 20, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Sovjet", 
-                "http://nl.dbpedia.org/resource/Sovjet-Unie", 
-                "none"
+                "http://nl.dbpedia.org/resource/Sovjet-Unie"
             ], 
             "ne_string": "Sovjet", 
             "ne_type": "location", 
@@ -222,8 +222,8 @@
         {
             "id": 24, 
             "links": [
-                "http://nl.dbpedia.org/resource/Lambertus_van_Maastricht", 
-                "none"
+                "none", 
+                "http://nl.dbpedia.org/resource/Lambertus_van_Maastricht"
             ], 
             "ne_string": "St. Lambertus", 
             "ne_type": "location", 
@@ -2733,6 +2733,8 @@
         {
             "id": 301, 
             "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Anthony_Gerhard_Alexander_van_Rappard", 
                 "http://nl.dbpedia.org/resource/Frederik_van_Rappard"
             ], 
             "ne_string": "Rappard", 
