@@ -23,16 +23,15 @@ import json
 import sys
 import unicodecsv as csv
 
-sys.path.insert(0, "../../dac")
-
+sys.path.insert(0, "../../../dac")
 import dac
 
-with open('../users/test/art.json') as fh:
+with open('../../users/test-20/art.json') as fh:
     data = json.load(fh)
 
-linker = dac.EntityLinker(debug=True, model='bnn')
+linker = dac.EntityLinker(debug=True, model='nn')
 
-with open('results-bnn.csv', 'w') as fh:
+with open('results-nn-20.csv', 'w') as fh:
 
     keys = ['id', 'entity', 'links', 'prediction', 'correct']
 

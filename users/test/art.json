@@ -295,6 +295,7 @@
         {
             "id": 32, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Indië_(regio)", 
                 "http://nl.dbpedia.org/resource/Nederlands-Indië"
             ], 
@@ -341,6 +342,7 @@
         {
             "id": 37, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken", 
                 "http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken_(Nederland)"
             ], 
@@ -406,6 +408,7 @@
         {
             "id": 44, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Amerika_(continent)", 
                 "http://nl.dbpedia.org/resource/Verenigde_Staten"
             ], 
@@ -1963,7 +1966,8 @@
         {
             "id": 216, 
             "links": [
-                "none"
+                "none", 
+                "http://nl.dbpedia.org/resource/Vrije_Universiteit_Amsterdam"
             ], 
             "ne_string": "Amsterdamsche Universiteit", 
             "ne_type": "organisation", 
@@ -2071,6 +2075,7 @@
         {
             "id": 228, 
             "links": [
+                "http://nl.dbpedia.org/resource/Sorbonne_(gebouw)", 
                 "http://nl.dbpedia.org/resource/Universiteit_van_Parijs"
             ], 
             "ne_string": "Sorbonne", 
@@ -2614,6 +2619,7 @@
         {
             "id": 288, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Gouvernement_(bestuur)", 
                 "http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)"
             ], 
@@ -2633,6 +2639,7 @@
         {
             "id": 290, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Indië_(regio)", 
                 "http://nl.dbpedia.org/resource/Nederlands-Indië"
             ], 
@@ -2979,7 +2986,8 @@
         {
             "id": 328, 
             "links": [
-                "http://nl.dbpedia.org/resource/Mei"
+                "http://nl.dbpedia.org/resource/Mei", 
+                "http://nl.dbpedia.org/resource/1_mei"
             ], 
             "ne_string": "Mei", 
             "ne_type": "person", 

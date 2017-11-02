@@ -145,15 +145,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010463092:mpeg21:a0011:ocr"
         }, 
         {
-            "id": 18, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Philippe Lcmaire", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010463092:mpeg21:a0011:ocr"
-        }, 
-        {
             "id": 19, 
             "links": [
                 "none"
@@ -219,6 +210,7 @@
         {
             "id": 32, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Indië_(regio)", 
                 "http://nl.dbpedia.org/resource/Nederlands-Indië"
             ], 
@@ -265,6 +257,7 @@
         {
             "id": 37, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken", 
                 "http://nl.dbpedia.org/resource/Ministerie_van_Economische_Zaken_(Nederland)"
             ], 
@@ -330,6 +323,7 @@
         {
             "id": 44, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Amerika_(continent)", 
                 "http://nl.dbpedia.org/resource/Verenigde_Staten"
             ], 
@@ -1161,7 +1155,9 @@
         {
             "id": 216, 
             "links": [
-                "none"
+                "none", 
+                "http://nl.dbpedia.org/resource/Vrije_Universiteit_Amsterdam", 
+                "http://nl.dbpedia.org/resource/Universiteit_van_Amsterdam"
             ], 
             "ne_string": "Amsterdamsche Universiteit", 
             "ne_type": "organisation", 
@@ -1260,6 +1256,7 @@
         {
             "id": 228, 
             "links": [
+                "http://nl.dbpedia.org/resource/Sorbonne_(gebouw)", 
                 "http://nl.dbpedia.org/resource/Universiteit_van_Parijs"
             ], 
             "ne_string": "Sorbonne", 
@@ -1278,7 +1275,8 @@
         {
             "id": 249, 
             "links": [
-                "http://nl.dbpedia.org/resource/New_York_(stad)"
+                "http://nl.dbpedia.org/resource/New_York_(stad)", 
+                "http://nl.dbpedia.org/resource/New_York_(staat)"
             ], 
             "ne_string": "NEW YORK", 
             "ne_type": "person", 
@@ -1359,6 +1357,7 @@
         {
             "id": 288, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Gouvernement_(bestuur)", 
                 "http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)"
             ], 
@@ -1748,7 +1747,9 @@
         {
             "id": 445, 
             "links": [
-                "http://nl.dbpedia.org/resource/Korea"
+                "http://nl.dbpedia.org/resource/Korea", 
+                "http://nl.dbpedia.org/resource/Zuid-Korea", 
+                "http://nl.dbpedia.org/resource/Noord-Korea"
             ], 
             "ne_string": "Korea", 
             "ne_type": "location", 
@@ -1811,6 +1812,8 @@
         {
             "id": 456, 
             "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Marken_(Waterland)", 
                 "http://nl.dbpedia.org/resource/Marken_(Amsterdam)"
             ], 
             "ne_string": "Marken", 
@@ -2082,7 +2085,9 @@
         {
             "id": 492, 
             "links": [
-                "http://nl.dbpedia.org/resource/Huis_Oranje-Nassau"
+                "none", 
+                "http://nl.dbpedia.org/resource/Huis_Oranje-Nassau", 
+                "http://nl.dbpedia.org/resource/Prins_van_Oranje"
             ], 
             "ne_string": "Oranje", 
             "ne_type": "organisation", 
@@ -2091,6 +2096,7 @@
         {
             "id": 493, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Monarchie_in_Nederland"
             ], 
             "ne_string": "Oranjehuis", 
@@ -2163,6 +2169,7 @@
         {
             "id": 503, 
             "links": [
+                "http://nl.dbpedia.org/resource/Centraal_station", 
                 "http://nl.dbpedia.org/resource/Station_Amsterdam_Centraal"
             ], 
             "ne_string": "Centraal Station", 
@@ -3103,7 +3110,8 @@
         {
             "id": 629, 
             "links": [
-                "http://nl.dbpedia.org/resource/Wimbledon_(tennistoernooi)"
+                "http://nl.dbpedia.org/resource/Wimbledon_(tennistoernooi)", 
+                "http://nl.dbpedia.org/resource/Wimbledon_(Londen)"
             ], 
             "ne_string": "Wimbledon", 
             "ne_type": "location", 
@@ -3202,7 +3210,8 @@
         {
             "id": 641, 
             "links": [
-                "http://nl.dbpedia.org/resource/Eurovisie"
+                "http://nl.dbpedia.org/resource/Eurovisie", 
+                "http://nl.dbpedia.org/resource/Europese_Radio-unie"
             ], 
             "ne_string": "Eurovisie", 
             "ne_type": "person", 
@@ -3644,6 +3653,7 @@
         {
             "id": 705, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Ministerie_van_Buitenlandse_Zaken", 
                 "http://nl.dbpedia.org/resource/Ministerie_van_Buitenlandse_Zaken_(Nederland)"
             ], 
@@ -3852,7 +3862,11 @@
         {
             "id": 732, 
             "links": [
-                "http://nl.dbpedia.org/resource/Justitie"
+                "none", 
+                "http://nl.dbpedia.org/resource/Justitie", 
+                "http://nl.dbpedia.org/resource/Ministerie_van_Justitie", 
+                "http://nl.dbpedia.org/resource/Ministerie_van_Veiligheid_en_Justitie", 
+                "http://nl.dbpedia.org/resource/Departement_van_Justitie_(Den_Haag)"
             ], 
             "ne_string": "Justitie", 
             "ne_type": "organisation", 
@@ -3861,6 +3875,7 @@
         {
             "id": 733, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Defensie_(landsverdediging)", 
                 "http://nl.dbpedia.org/resource/Ministerie_van_Defensie_(Nederland)", 
                 "http://nl.dbpedia.org/resource/Ministerie_van_Defensie", 
@@ -3936,6 +3951,7 @@
         {
             "id": 742, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Paleis_van_Justitie_(Amsterdam)", 
                 "http://nl.dbpedia.org/resource/Gerechtsgebouw"
             ], 
