@@ -62,7 +62,8 @@ def show_candidates(name):
     Present an entity and its candidate links for selection.
     '''
     # Load json data from file
-    with codecs.open(abs_path + '/users/' + name + '/art.json', 'r', 'utf-8') as fh:
+    with codecs.open(abs_path + '/users/' + name + '/art.json',
+            'r', 'utf-8') as fh:
         data = json.load(fh)
 
     # Get instance index or id
@@ -99,7 +100,7 @@ def show_candidates(name):
     links = data['instances'][index]['links']
 
     # Get context
-    context = dac.Context(url, dac.TPTA_URL)
+    context = dac.Context(url)
     context.get_publ_year()
     ocr = re.sub(
         '(?P<pf>(^|\W|:punct:))' + re.escape(ne) + '(?P<sf>(\W|$|:punct:))',
@@ -108,11 +109,10 @@ def show_candidates(name):
 
     # Get candidates
     solr_connection = solr.SolrConnection(dac.SOLR_URL)
-    cluster = dac.Cluster([dac.Entity(ne, ne_type, context)])
+    cluster = dac.Cluster([dac.Entity(ne, ne_type, '', '', '', context)])
     model = models.Model()
     if cluster.entities[0].valid:
-        cand_list = dac.CandidateList(solr_connection, dac.SOLR_ROWS, cluster,
-                model)
+        cand_list = dac.CandidateList(cluster, solr_connection, model)
         candidates = cand_list.candidates
     else:
         candidates = []
