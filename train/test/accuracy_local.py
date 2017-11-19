@@ -29,9 +29,9 @@ import dac
 with open('../../users/test-20/art.json') as fh:
     data = json.load(fh)
 
-linker = dac.EntityLinker(debug=True, model='nn')
+linker = dac.EntityLinker(model='nn', debug=True)
 
-with open('results-nn-20.csv', 'w') as fh:
+with open('results.csv', 'w') as fh:
 
     keys = ['id', 'entity', 'links', 'prediction', 'correct']
 
@@ -48,7 +48,7 @@ with open('results-nn-20.csv', 'w') as fh:
     for i in data['instances']:
 
         # Check if instance has been properly labeled
-        if i['links'] != []:
+        if i['links']:
 
             print('Evaluating instance ' + str(nr_instances) + ': ' +
                 i['ne_string'].encode('utf-8'))
@@ -117,5 +117,4 @@ print '---'
 print '(Mean) link F1-measure: ' + str(mean_link_f_measure)
 print '(Max) link F1-measure: ' + str(max_link_f_measure)
 print '---'
-
 

@@ -32,7 +32,7 @@ def generate():
 
     with open('training.csv', 'w') as fh:
 
-        linker = dac.EntityLinker(debug=True, candidates=True, train=True)
+        linker = dac.EntityLinker(model='train', debug=True, candidates=True)
 
         header = ['entity_id', 'cand_id', 'url', 'ne', 'cand_uri']
         header += linker.model.features

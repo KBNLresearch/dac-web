@@ -3455,7 +3455,8 @@
         {
             "id": 678, 
             "links": [
-                "none"
+                "none", 
+                "http://nl.dbpedia.org/resource/Israël"
             ], 
             "ne_string": "Israëls", 
             "ne_type": "person", 
