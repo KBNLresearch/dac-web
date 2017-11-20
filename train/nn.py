@@ -35,7 +35,7 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
-class_weight = {0: 0.25, 1: 0.75}
+class_weight = {0: 0.2, 1: 0.8}
 np.random.seed(1337)
 
 def load_csv(training_fn, features_fn):

@@ -31,7 +31,7 @@ with open('../../users/test-20/art.json') as fh:
 
 linker = dac.EntityLinker(model='nn', debug=True)
 
-with open('results.csv', 'w') as fh:
+with open('results-nn.csv', 'w') as fh:
 
     keys = ['id', 'entity', 'links', 'prediction', 'correct']
 
