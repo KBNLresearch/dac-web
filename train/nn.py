@@ -63,8 +63,6 @@ def load_model(data):
     model.add(Dropout(0.5))
     model.add(Dense(16, activation='relu', kernel_constraint=maxnorm(3)))
     model.add(Dropout(0.5))
-    model.add(Dense(8, activation='relu', kernel_constraint=maxnorm(3)))
-    model.add(Dropout(0.5))
     model.add(Dense(1, activation='sigmoid'))
 
     model.compile(optimizer='RMSprop', loss='binary_crossentropy',
