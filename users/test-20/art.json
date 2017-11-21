@@ -82,15 +82,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011204993:mpeg21:a0595:ocr"
         }, 
         {
-            "id": 10, 
-            "links": [
-                "http://nl.dbpedia.org/resource/Juliette_Gréco"
-            ], 
-            "ne_string": "JULIETTE GRECO", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010463092:mpeg21:a0011:ocr"
-        }, 
-        {
             "id": 11, 
             "links": [
                 "http://nl.dbpedia.org/resource/Deutsche_Presse-Agentur"
@@ -567,24 +558,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010960108:mpeg21:a0320:ocr"
         }, 
         {
-            "id": 86, 
-            "links": [
-                "http://nl.dbpedia.org/resource/Wereldgezondheidsorganisatie"
-            ], 
-            "ne_string": "Wereldgezondheidsorganisatie", 
-            "ne_type": "other", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010628845:mpeg21:a0079:ocr"
-        }, 
-        {
-            "id": 87, 
-            "links": [
-                "http://nl.dbpedia.org/resource/Wereldgezondheidsorganisatie"
-            ], 
-            "ne_string": "WHO", 
-            "ne_type": "organisation", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010628845:mpeg21:a0079:ocr"
-        }, 
-        {
             "id": 89, 
             "links": [
                 "http://nl.dbpedia.org/resource/Hiv"
@@ -702,15 +675,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010628845:mpeg21:a0079:ocr"
         }, 
         {
-            "id": 103, 
-            "links": [
-                "http://dbpedia.org/resource/Rudolf_Seiters"
-            ], 
-            "ne_string": "Seiters", 
-            "ne_type": "other", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010560116:mpeg21:a0094:ocr"
-        }, 
-        {
             "id": 104, 
             "links": [
                 "http://nl.dbpedia.org/resource/Bonn"
@@ -753,24 +717,6 @@
             ], 
             "ne_string": "Duitsland", 
             "ne_type": "location", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010560116:mpeg21:a0094:ocr"
-        }, 
-        {
-            "id": 110, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "; Wehrsportgruppe Werwolf", 
-            "ne_type": "other", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010560116:mpeg21:a0094:ocr"
-        }, 
-        {
-            "id": 111, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Jagdeinheit Senftenberg", 
-            "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010560116:mpeg21:a0094:ocr"
         }, 
         {
@@ -1355,17 +1301,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011107193:mpeg21:a0155:ocr"
         }, 
         {
-            "id": 288, 
-            "links": [
-                "none", 
-                "http://nl.dbpedia.org/resource/Gouvernement_(bestuur)", 
-                "http://nl.dbpedia.org/resource/Gouvernement_(Nederlands-Indië)"
-            ], 
-            "ne_string": "Gouvernement", 
-            "ne_type": "organisation", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:011107193:mpeg21:a0155:ocr"
-        }, 
-        {
             "id": 291, 
             "links": [
                 "none"
@@ -1373,15 +1308,6 @@
             "ne_string": "Gouvernementslanden", 
             "ne_type": "location", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011107193:mpeg21:a0155:ocr"
-        }, 
-        {
-            "id": 331, 
-            "links": [
-                "http://nl.dbpedia.org/resource/Italianen"
-            ], 
-            "ne_string": "Italianen", 
-            "ne_type": "other", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:011200024:mpeg21:a0333:ocr"
         }, 
         {
             "id": 332, 
@@ -1801,15 +1727,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
         }, 
         {
-            "id": 453, 
-            "links": [
-                "http://nl.dbpedia.org/resource/Schreierstoren"
-            ], 
-            "ne_string": "Schreierstoren", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
-        }, 
-        {
             "id": 456, 
             "links": [
                 "none", 
@@ -1844,15 +1761,6 @@
                 "none"
             ], 
             "ne_string": "Realer-eilanden", 
-            "ne_type": "other", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
-        }, 
-        {
-            "id": 462, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Westelijke", 
             "ne_type": "other", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
         }, 
@@ -1944,24 +1852,6 @@
                 "none"
             ], 
             "ne_string": "N. Z. Voorburgwal", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
-        }, 
-        {
-            "id": 474, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Y", 
-            "ne_type": "other", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
-        }, 
-        {
-            "id": 476, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "De Laag", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
         }, 
@@ -2113,15 +2003,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
         }, 
         {
-            "id": 495, 
-            "links": [
-                "http://nl.dbpedia.org/resource/Willem_I_der_Nederlanden"
-            ], 
-            "ne_string": "Willem I", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
-        }, 
-        {
             "id": 496, 
             "links": [
                 "http://nl.dbpedia.org/resource/Amsterdam"
@@ -2158,15 +2039,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
         }, 
         {
-            "id": 501, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Westerhoofden", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
-        }, 
-        {
             "id": 503, 
             "links": [
                 "http://nl.dbpedia.org/resource/Centraal_station", 
@@ -2183,15 +2055,6 @@
             ], 
             "ne_string": "Stationseiland", 
             "ne_type": "location", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
-        }, 
-        {
-            "id": 505, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Y-front", 
-            "ne_type": "other", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011170220:mpeg21:a0002:ocr"
         }, 
         {
@@ -2494,15 +2357,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0033:ocr"
         }, 
         {
-            "id": 549, 
-            "links": [
-                "http://nl.dbpedia.org/resource/Jan_de_Quay"
-            ], 
-            "ne_string": "J. E. de Quay", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0033:ocr"
-        }, 
-        {
             "id": 550, 
             "links": [
                 "http://nl.dbpedia.org/resource/Joseph_Luns"
@@ -2675,15 +2529,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
         }, 
         {
-            "id": 576, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Forum", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
-        }, 
-        {
             "id": 577, 
             "links": [
                 "http://nl.dbpedia.org/resource/Oldenburg_(Nedersaksen)"
@@ -2780,15 +2625,6 @@
             ], 
             "ne_string": "Duitse", 
             "ne_type": "other", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
-        }, 
-        {
-            "id": 589, 
-            "links": [
-                "http://nl.dbpedia.org/resource/Oudejaarsavond"
-            ], 
-            "ne_string": "Oudejaarsavond", 
-            "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
         }, 
         {
@@ -3045,15 +2881,6 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
         }, 
         {
-            "id": 621, 
-            "links": [
-                "http://nl.dbpedia.org/resource/September"
-            ], 
-            "ne_string": "september", 
-            "ne_type": "location", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
-        }, 
-        {
             "id": 622, 
             "links": [
                 "none"
@@ -3142,15 +2969,6 @@
             ], 
             "ne_string": "Salomontrio", 
             "ne_type": "organisation", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
-        }, 
-        {
-            "id": 633, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Proefgebied Oristano", 
-            "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
         }, 
         {
@@ -3263,30 +3081,12 @@
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
         }, 
         {
-            "id": 653, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Die Woche", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
-        }, 
-        {
             "id": 655, 
             "links": [
                 "http://nl.dbpedia.org/resource/Norddeutscher_Rundfunk"
             ], 
             "ne_string": "NDR", 
             "ne_type": "organisation", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
-        }, 
-        {
-            "id": 656, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Nordschau", 
-            "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010678462:mpeg21:a0047:ocr"
         }, 
         {
@@ -3639,15 +3439,6 @@
                 "none"
             ], 
             "ne_string": "Jos van Noord", 
-            "ne_type": "person", 
-            "url": "http://resolver.kb.nl/resolve?urn=ddd:010646392:mpeg21:a1085:ocr"
-        }, 
-        {
-            "id": 704, 
-            "links": [
-                "none"
-            ], 
-            "ne_string": "Kees van Bemmelen", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010646392:mpeg21:a1085:ocr"
         }, 
@@ -4547,6 +4338,214 @@
             "ne_string": "Cadiz", 
             "ne_type": "location", 
             "url": "http://resolver.kb.nl/resolve?urn=MMSAEN01:000051301:mpeg21:a0020:ocr"
+        }, 
+        {
+            "id": 824, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Verenigde_Staten"
+            ], 
+            "ne_string": "Amerikaanse", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 825, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Gary_Wright"
+            ], 
+            "ne_string": "Gary Wright", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 828, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Gary_Wright"
+            ], 
+            "ne_string": "Wright", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 830, 
+            "links": [
+                "http://dbpedia.org/resource/Venetta_Fields"
+            ], 
+            "ne_string": "Venetta Fields", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 831, 
+            "links": [
+                "http://dbpedia.org/resource/Sherlie_Matthews"
+            ], 
+            "ne_string": "Sherlie Matthews", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 832, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Lorna Wright", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 833, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Spooky_Tooth"
+            ], 
+            "ne_string": "Spooky Tooth", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 834, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Berlijn"
+            ], 
+            "ne_string": "Berlijn", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 836, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Mason", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 837, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Beatle-nummer", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 838, 
+            "links": [
+                "http://dbpedia.org/resource/Mike_Harrison_(musician)"
+            ], 
+            "ne_string": "Mike Harrison", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 839, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Robert_Moog", 
+                "http://dbpedia.org/resource/Moog_synthesizer"
+            ], 
+            "ne_string": "Moog", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 840, 
+            "links": [
+                "http://dbpedia.org/resource/Oberheim_Electronics"
+            ], 
+            "ne_string": "Oberheim", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 841, 
+            "links": [
+                "http://nl.dbpedia.org/resource/The_Beatles"
+            ], 
+            "ne_string": "Beatles", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 853, 
+            "links": [
+                "http://nl.dbpedia.org/resource/The_Buzzcocks"
+            ], 
+            "ne_string": "Buzzcocks", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 854, 
+            "links": [
+                "http://nl.dbpedia.org/resource/VARA"
+            ], 
+            "ne_string": "VARA", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010376876:mpeg21:a0027:ocr"
+        }, 
+        {
+            "id": 859, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Roemenië"
+            ], 
+            "ne_string": "Roemenië", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010548636:mpeg21:a0025:ocr"
+        }, 
+        {
+            "id": 860, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Reuter", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010548636:mpeg21:a0025:ocr"
+        }, 
+        {
+            "id": 861, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Gheorghian", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010548636:mpeg21:a0025:ocr"
+        }, 
+        {
+            "id": 862, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Catulle_Mendès"
+            ], 
+            "ne_string": "Catulle Mendès", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010548636:mpeg21:a0036:ocr"
+        }, 
+        {
+            "id": 863, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Fransche", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010548636:mpeg21:a0036:ocr"
+        }, 
+        {
+            "id": 865, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bordeaux_(stad)"
+            ], 
+            "ne_string": "Bordeaux", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010548636:mpeg21:a0036:ocr"
+        }, 
+        {
+            "id": 866, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Émile_Zola"
+            ], 
+            "ne_string": "Emile Zola", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010548636:mpeg21:a0036:ocr"
         }
     ]
 }
