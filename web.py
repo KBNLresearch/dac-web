@@ -272,21 +272,21 @@ def update_training_set(name):
             data['instances'].append(i)
         else:
             # Add article
-            resp = requests.get(dac.TPTA_URL, params={'lang': 'nl', 'url': url})
+            resp = requests.get(dac.TPTA_URL, params={'url': url})
+            resp.encoding = 'utf-8'
+            ner_data = resp.json()
 
-            print(resp.text)
+            entities = []
+            next_id = data['instances'][-1]['id'] + 1
 
-            root = etree.fromstring(resp.content)
-            if(len(root) > 0 and len(root[0]) > 0):
-                entities = []
-                next_id = data['instances'][-1]['id'] + 1
-                for ent in root[0]:
-                    if ent.text not in entities:
-                        entities.append(ent.text)
+            if ner_data['entities']:
+                for e in ner_data['entities']:
+                    if e['ne'] not in entities:
+                        entities.append(e['ne'])
                         i = {}
                         i['url'] = url
-                        i['ne_string'] = ent.text
-                        i['ne_type'] = ent.tag
+                        i['ne_string'] = e['ne']
+                        i['ne_type'] = e['type']
                         i['links'] = []
                         i['id'] = next_id
                         next_id += 1
