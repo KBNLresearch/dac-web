@@ -29,9 +29,9 @@ import dac
 with open('../../users/test-20/art.json') as fh:
     data = json.load(fh)
 
-linker = dac.EntityLinker(model='nn', debug=True)
+linker = dac.EntityLinker(model='bnn', debug=True)
 
-with open('results-nn.csv', 'w') as fh:
+with open('results-bnn-60.csv', 'w') as fh:
 
     keys = ['id', 'entity', 'links', 'prediction', 'correct']
 
