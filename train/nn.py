@@ -35,7 +35,7 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
-class_weight = {0: 0.2, 1: 0.8}
+class_weight = {0: 0.25, 1: 0.75}
 np.random.seed(1337)
 
 def load_csv(training_fn, features_fn):
@@ -58,11 +58,11 @@ def load_model(data):
     Load keras model.
     '''
     model = Sequential()
-    model.add(Dense(32, activation='relu', input_dim=data.shape[1],
-        kernel_constraint=maxnorm(3)))
-    model.add(Dropout(0.5))
-    model.add(Dense(16, activation='relu', kernel_constraint=maxnorm(3)))
-    model.add(Dropout(0.5))
+    model.add(Dense(data.shape[1], activation='relu',
+        input_dim=data.shape[1], kernel_constraint=maxnorm(3)))
+    model.add(Dropout(0.25))
+    #model.add(Dense(16, activation='relu', kernel_constraint=maxnorm(3)))
+    #model.add(Dropout(0.25))
     model.add(Dense(1, activation='sigmoid'))
 
     model.compile(optimizer='RMSprop', loss='binary_crossentropy',
