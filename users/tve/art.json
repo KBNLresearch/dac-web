@@ -22876,6 +22876,15 @@
             "ne_string": "Spaanse", 
             "ne_type": "organisation", 
             "url": "http://resolver.kb.nl/resolve?urn=KBNRC01:000034055:mpeg21:a0158:ocr"
+        }, 
+        {
+            "id": 3622, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bogota_(stad)"
+            ], 
+            "ne_string": "bogota", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=KBNRC01:000030646:mpeg21:a0044:ocr"
         }
     ]
 }
