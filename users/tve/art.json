@@ -22885,6 +22885,15 @@
             "ne_string": "bogota", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=KBNRC01:000030646:mpeg21:a0044:ocr"
+        }, 
+        {
+            "id": 3623, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Albert_Einstein"
+            ], 
+            "ne_string": "EINSTEIN", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010213153:mpeg21:a0050:ocr"
         }
     ]
 }
