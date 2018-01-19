@@ -22894,6 +22894,33 @@
             "ne_string": "EINSTEIN", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010213153:mpeg21:a0050:ocr"
+        }, 
+        {
+            "id": 3624, 
+            "links": [
+                "http://dbpedia.org/resource/Robert_Howe_(tennis)"
+            ], 
+            "ne_string": "Bob Howe", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011204663:mpeg21:a0325:ocr"
+        }, 
+        {
+            "id": 3625, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Atlantic_City_(film)"
+            ], 
+            "ne_string": "Atlantic City", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011204663:mpeg21:a0333:ocr"
+        }, 
+        {
+            "id": 3626, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Koninklijke_Philips"
+            ], 
+            "ne_string": "Philips", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011204663:mpeg21:a0369:ocr"
         }
     ]
 }
