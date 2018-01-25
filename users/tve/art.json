@@ -22921,6 +22921,60 @@
             "ne_string": "Philips", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011204663:mpeg21:a0369:ocr"
+        }, 
+        {
+            "id": 3627, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Corky_de_Graauw"
+            ], 
+            "ne_string": "Graauw", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010960816:mpeg21:a0289:ocr"
+        }, 
+        {
+            "id": 3628, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Ted_Lenssen"
+            ], 
+            "ne_string": "Lenssen", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010960816:mpeg21:a0289:ocr"
+        }, 
+        {
+            "id": 3629, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Luxor_Theater_(Rotterdam)"
+            ], 
+            "ne_string": "Luxor", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=MMKB04:000193790:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3630, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nagasaki_(stad)"
+            ], 
+            "ne_string": "Nagasaki", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=KBNRC01:000026760:mpeg21:a0108:ocr"
+        }, 
+        {
+            "id": 3631, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nagasaki_(stad)"
+            ], 
+            "ne_string": "Nagasaki", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010847947:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 3632, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bram_Pais"
+            ], 
+            "ne_string": "A. Pais", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010612802:mpeg21:a0154:ocr"
         }
     ]
 }
