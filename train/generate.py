@@ -33,6 +33,9 @@ def generate():
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger(__name__)
 
+    logging.getLogger("requests").setLevel(logging.WARNING)
+    logging.getLogger("urllib3").setLevel(logging.WARNING)
+
     handler = logging.FileHandler('generate.log', mode='w')
     handler.setLevel(logging.ERROR)
 
