@@ -20,6 +20,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 import json
+import logging
 import sys
 import time
 import unicodecsv as csv
@@ -28,6 +29,18 @@ sys.path.insert(0, '../../dac')
 import dac
 
 def generate():
+
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger(__name__)
+
+    handler = logging.FileHandler('generate.log', mode='w')
+    handler.setLevel(logging.ERROR)
+
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+
+    logger.addHandler(handler)
+
     data = json.load(open('../users/tve/art.json'))
 
     with open('training.csv', 'w') as fh:
@@ -46,7 +59,7 @@ def generate():
         candidate_count = 1
 
         for i, inst in enumerate(data['instances']):
-            print('Reviewing instance ' + str(i) + ': ' +
+            logger.info('Reviewing instance ' + str(i) + ': ' +
                 inst['ne_string'].encode('utf-8'))
 
             # Check if instance has been labeled
@@ -54,22 +67,21 @@ def generate():
 
                 # Get linker results for entire article (once once per article)
                 if inst['url'] != url:
-                    print('Getting linker result for url: ' + inst['url'])
+                    logger.info('Getting linker result for url: ' + inst['url'])
+
                     url = inst['url']
-                    while True:
-                        try:
-                            url_result = linker.link(inst['url'])['linkedNEs']
-                            break
-                        except:
-                            print('Could not get linker result, retrying.')
-                            time.sleep(3)
+                    try:
+                        url_result = linker.link(inst['url'])['linkedNEs']
+                    except:
+                        logger.error('Could not get linker result, skipping url: ' + inst['url'])
+                        time.sleep(3)
 
                 # Select result for current instance
                 result = [r for r in url_result if
                         r['text'] == inst['ne_string']]
 
                 if len(result) != 1:
-                    print('No result for: ' + inst['ne_string'])
+                    logger.info('No result for: ' + inst['ne_string'])
                     continue
                 else:
                     result = result[0]
