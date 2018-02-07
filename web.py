@@ -101,7 +101,6 @@ def show_candidates(name):
 
     # Get context
     context = dac.Context(url)
-    context.get_publ_year()
     ocr = re.sub(
         '(?P<pf>(^|\W|:punct:))' + re.escape(ne) + '(?P<sf>(\W|$|:punct:))',
         '\g<pf>' + '<span style="background-color:yellow;">' + ne + '</span>' +
