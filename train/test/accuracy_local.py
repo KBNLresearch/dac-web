@@ -21,6 +21,7 @@
 
 import json
 import sys
+import time
 import unicodecsv as csv
 
 sys.path.insert(0, "../../../dac")
@@ -29,9 +30,9 @@ import dac
 with open('../../users/test-20/art.json') as fh:
     data = json.load(fh)
 
-linker = dac.EntityLinker(model='svm', debug=True)
+linker = dac.EntityLinker(model='bnn', debug=True)
 
-with open('results-svm-62.csv', 'w') as fh:
+with open('results-bnn-64.csv', 'w') as fh:
 
     keys = ['id', 'entity', 'links', 'prediction', 'correct']
 
@@ -54,8 +55,22 @@ with open('results-svm-62.csv', 'w') as fh:
                 i['ne_string'].encode('utf-8'))
 
             # Get result for current instance
-            result = linker.link(i['url'], i['ne_string'].encode('utf-8'))
-            result = result['linkedNEs'][0]
+            result = {}
+            success = False
+            retries = 0
+            while True:
+                if success or retries >= 10:
+                    break
+                try:
+                    result = linker.link(i['url'], i['ne_string'].encode('utf-8'))
+                    result = result['linkedNEs'][0]
+                    success = True
+                except Exception as e:
+                    print(e)
+                    if 'status' in result and result['status'] == 'error':
+                        print(result['message'])
+                    time.sleep(3)
+                retries += 1
 
             row = []
             row.append(str(nr_instances))
