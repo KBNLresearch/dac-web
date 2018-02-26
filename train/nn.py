@@ -60,7 +60,7 @@ def load_model(data):
     model = Sequential()
     model.add(Dense(data.shape[1], activation='relu',
         input_dim=data.shape[1], kernel_constraint=maxnorm(3)))
-    model.add(Dropout(0.25))
+    model.add(Dropout(0.5))
     #model.add(Dense(16, activation='relu', kernel_constraint=maxnorm(3)))
     #model.add(Dropout(0.25))
     model.add(Dense(1, activation='sigmoid'))
