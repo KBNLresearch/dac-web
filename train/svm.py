@@ -19,8 +19,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import argparse
 import json
 import math
+
 import numpy as np
 import pandas as pd
 
@@ -34,9 +36,10 @@ from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
 np.random.seed(1337)
-class_weight = {0: 0.25, 1: 0.75}
+
 clf = svm.SVC(kernel='linear', C=1.5, decision_function_shape='ovr',
-        class_weight=class_weight)
+              class_weight={0: 0.25, 1: 0.75})
+
 
 def load_csv(training_fn, features_fn):
     '''
@@ -69,6 +72,7 @@ def validate(data, labels):
         x_train, x_test = data[train_index], data[test_index]
         y_train, y_test = labels[train_index], labels[test_index]
         clf.fit(x_train, y_train)
+
         y_pred = clf.predict(x_test)
         accuracy_scores.append(accuracy_score(y_test, y_pred))
         precision_scores.append(precision_score(y_test, y_pred))
@@ -98,7 +102,7 @@ def predict(data, model_fn):
     clf = joblib.load(model_fn)
 
     pred = clf.predict(examples)
-    #prob = clf.predict_proba(examples)
+    # prob = clf.predict_proba(examples)
     dec = clf.decision_function(examples)
     conf = [1 / (1 + math.exp(d * -1)) for d in dec]
 
@@ -106,8 +110,30 @@ def predict(data, model_fn):
         print pred[i], dec[i], conf[i]
 
 if __name__ == '__main__':
-    features, data, labels = load_csv('training.csv', 'svm.json')
-    #validate(data, labels)
-    train(features, data, labels, 'svm.pkl')
-    #predict(data, 'svm.pkl')
+    parser = argparse.ArgumentParser()
 
+    parser.add_argument('-t', '--train', required=False, action='store_true',
+                        help='train and save new model')
+    parser.add_argument('-v', '--validate', required=False, action='store_true',
+                        help='train and cross-validate')
+    parser.add_argument('-p', '--predict', required=False, action='store_true',
+                        help='predict new example')
+
+    parser.add_argument('-i', '--input', required=False, type=str,
+                        default='training.csv', help='path to training file')
+    parser.add_argument('-o', '--output', required=False, type=str,
+                        default='svm.pkl', help='path to output model file')
+    parser.add_argument('-f', '--features', required=False, type=str,
+                        default='svm.json', help='path to features file')
+
+    args = parser.parse_args()
+
+    features, data, labels = load_csv(vars(args)['input'],
+                                      vars(args)['features'])
+
+    if vars(args)['validate']:
+        validate(data, labels)
+    if vars(args)['predict']:
+        predict(data, vars(args)['output'])
+    else:
+        train(features, data, labels, vars(args)['output'])

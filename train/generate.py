@@ -19,34 +19,44 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+# Standard library imports
+import argparse
 import json
 import logging
 import sys
 import time
+
+# External library imports
 import unicodecsv as csv
 
+# DAC imports
 sys.path.insert(0, '../../dac')
 import dac
 
-def generate():
+def generate(input_file, output_file):
+    '''
+    Generate a training set consisting of entity - DBpedia description
+    pairs (links and non-links) and associated feature values, based on the
+    set of artices with manually linked entities created with the DAC training
+    interface.
+    '''
 
     logging.basicConfig(level=logging.INFO)
-    logger = logging.getLogger(__name__)
+    logging.getLogger('requests').setLevel(logging.WARNING)
+    logging.getLogger('urllib3').setLevel(logging.WARNING)
 
-    logging.getLogger("requests").setLevel(logging.WARNING)
-    logging.getLogger("urllib3").setLevel(logging.WARNING)
+    formatter = logging.Formatter('%(asctime)s:%(levelname)s:%(message)s')
 
     handler = logging.FileHandler('generate.log', mode='w')
+    handler.setFormatter(formatter)
     handler.setLevel(logging.ERROR)
 
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    handler.setFormatter(formatter)
-
+    logger = logging.getLogger(__name__)
     logger.addHandler(handler)
 
-    data = json.load(open('../users/tve/art.json'))
+    data = json.load(open(input_file))
 
-    with open('training.csv', 'w') as fh:
+    with open(output_file, 'w') as fh:
 
         linker = dac.EntityLinker(model='train', debug=True, candidates=True)
 
@@ -76,7 +86,8 @@ def generate():
                     try:
                         url_result = linker.link(inst['url'])['linkedNEs']
                     except:
-                        logger.error('Could not get linker result, skipping url: ' + inst['url'])
+                        logger.error('No linker result, skipping url: '
+                            + inst['url'])
                         time.sleep(3)
 
                 # Select result for current instance
@@ -122,4 +133,13 @@ def generate():
                             csv_writer.writerow(row)
 
 if __name__ == '__main__':
-    generate()
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('-i', '--input', required=False, type=str,
+        default='../users/tve/art.json', help='path to input file')
+    parser.add_argument('-o', '--output', required=False, type=str,
+        default='training.csv', help='path to output file')
+
+    args = parser.parse_args()
+
+    generate(vars(args)['input'], vars(args)['output'])

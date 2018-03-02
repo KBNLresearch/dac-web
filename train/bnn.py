@@ -19,6 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import argparse
 import json
 import pandas as pd
 import numpy as np
@@ -38,8 +39,10 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
-np.random.seed(1337)
 class_weight = {0: 0.25, 1: 0.75}
+
+np.random.seed(1337)
+
 
 def load_csv(training_fn, features_fn):
     '''
@@ -172,8 +175,29 @@ def predict(data, model_fn):
     print prob
 
 if __name__ == '__main__':
-    data, labels = load_csv('training.csv', 'bnn.json')
-    #validate(data, labels)
-    train(data, labels, 'bnn.h5')
-    #predict(data, 'bnn.h5')
+    parser = argparse.ArgumentParser()
 
+    parser.add_argument('-t', '--train', required=False, action='store_true',
+                        help='train and save new model')
+    parser.add_argument('-v', '--validate', required=False, action='store_true',
+                        help='train and cross-validate')
+    parser.add_argument('-p', '--predict', required=False, action='store_true',
+                        help='predict new example')
+
+    parser.add_argument('-i', '--input', required=False, type=str,
+                        default='training.csv', help='path to training file')
+    parser.add_argument('-o', '--output', required=False, type=str,
+                        default='bnn.h5', help='path to output model file')
+    parser.add_argument('-f', '--features', required=False, type=str,
+                        default='bnn.json', help='path to features file')
+
+    args = parser.parse_args()
+
+    data, labels = load_csv(vars(args)['input'], vars(args)['features'])
+
+    if vars(args)['validate']:
+        validate(data, labels)
+    if vars(args)['predict']:
+        predict(data, vars(args)['output'])
+    else:
+        train(data, labels, vars(args)['output'])

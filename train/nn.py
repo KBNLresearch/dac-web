@@ -19,7 +19,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import argparse
 import json
+
 import pandas as pd
 import numpy as np
 
@@ -35,8 +37,10 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.model_selection import StratifiedShuffleSplit
 
-class_weight = {0: 0.25, 1: 0.75}
 np.random.seed(1337)
+
+class_weight = {0: 0.25, 1: 0.75}
+
 
 def load_csv(training_fn, features_fn):
     '''
@@ -59,14 +63,14 @@ def load_model(data):
     '''
     model = Sequential()
     model.add(Dense(data.shape[1], activation='relu',
-        input_dim=data.shape[1], kernel_constraint=maxnorm(3)))
+                    input_dim=data.shape[1], kernel_constraint=maxnorm(3)))
     model.add(Dropout(0.5))
     #model.add(Dense(16, activation='relu', kernel_constraint=maxnorm(3)))
     #model.add(Dropout(0.25))
     model.add(Dense(1, activation='sigmoid'))
 
     model.compile(optimizer='RMSprop', loss='binary_crossentropy',
-        metrics=['accuracy'])
+                  metrics=['accuracy'])
 
     return model
 
@@ -86,7 +90,7 @@ def validate(data, labels):
 
         model = load_model(data)
         model.fit(x_train, y_train, epochs=100, batch_size=128,
-            class_weight=class_weight)
+                  class_weight=class_weight)
         y_pred = model.predict_classes(x_test, batch_size=128)
 
         accuracy_scores.append(accuracy_score(y_test, y_pred))
@@ -106,7 +110,7 @@ def train(data, labels, model_fn):
     '''
     model = load_model(data)
     model.fit(data, labels, epochs=100, batch_size=128,
-            class_weight=class_weight)
+              class_weight=class_weight)
 
     model.save(model_fn)
 
@@ -120,7 +124,29 @@ def predict(data, model_fn):
     print prob
 
 if __name__ == '__main__':
-    data, labels = load_csv('training.csv', 'nn.json')
-    #validate(data, labels)
-    train(data, labels, 'nn.h5')
+    parser = argparse.ArgumentParser()
 
+    parser.add_argument('-t', '--train', required=False, action='store_true',
+                        help='train and save new model')
+    parser.add_argument('-v', '--validate', required=False, action='store_true',
+                        help='train and cross-validate')
+    parser.add_argument('-p', '--predict', required=False, action='store_true',
+                        help='predict new example')
+
+    parser.add_argument('-i', '--input', required=False, type=str,
+                        default='training.csv', help='path to training file')
+    parser.add_argument('-o', '--output', required=False, type=str,
+                        default='nn.h5', help='path to output model file')
+    parser.add_argument('-f', '--features', required=False, type=str,
+                        default='nn.json', help='path to features file')
+
+    args = parser.parse_args()
+
+    data, labels = load_csv(vars(args)['input'], vars(args)['features'])
+
+    if vars(args)['validate']:
+        validate(data, labels)
+    if vars(args)['predict']:
+        predict(data, vars(args)['output'])
+    else:
+        train(data, labels, vars(args)['output'])
