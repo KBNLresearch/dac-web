@@ -19,29 +19,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+# Standard library imports
 import codecs
 import json
 import os
 import re
-import requests
 import sys
-import urllib
 
-# Add DAC directory to the Python path
-abs_path = os.path.dirname(os.path.realpath(__file__))
-sys.path.insert(0, abs_path + '/../dac')
-
-# Import DAC scripts
-import dac
-import models
-import solr
-import utilities
-
-# Add absolute path to the Bottle template path
-import bottle
-bottle.TEMPLATE_PATH.insert(0, abs_path)
-bottle.TEMPLATE_PATH.insert(0, abs_path + '/templates')
-
+# External library imports
+import requests
 import xml.etree.ElementTree as etree
 
 from bottle import abort
@@ -56,15 +42,27 @@ from bottle import route
 from bottle import run
 from bottle import static_file
 
+# Add absolute path to the Bottle template path
+import bottle
+abs_path = os.path.dirname(os.path.realpath(__file__))
+bottle.TEMPLATE_PATH.insert(0, os.path.join(abs_path, 'templates'))
+bottle.TEMPLATE_PATH.insert(0, abs_path)
+
+# DAC imports
+sys.path.insert(0, os.path.join(*[abs_path, '..', 'dac', 'dac']))
+import dac
+import models
+import solr
+
+
 @get('/<name>')
 def show_candidates(name):
     '''
-    Present an entity and its candidate links for selection.
+    Present an entity and its candidate links for annotation.
     '''
     # Load json data from file
-    with codecs.open(abs_path + '/users/' + name + '/art.json',
-            'r', 'utf-8') as fh:
-        data = json.load(fh)
+    path = os.path.join(*[abs_path, 'users', name, 'art.json'])
+    data = json.load(codecs.open(path, 'r', 'utf-8'))
 
     # Get instance index or id
     no_instances = len(data['instances'])
@@ -99,27 +97,41 @@ def show_candidates(name):
     ne_type = data['instances'][index]['ne_type']
     links = data['instances'][index]['links']
 
-    # Get context
+    # Get OCR and publication year
     context = dac.Context(url)
-    ocr = re.sub(
-        '(?P<pf>(^|\W|:punct:))' + re.escape(ne) + '(?P<sf>(\W|$|:punct:))',
-        '\g<pf>' + '<span style="background-color:yellow;">' + ne + '</span>' +
-        '\g<sf>', context.ocr)
+    ocr = re.sub('(?P<pf>(^|\W|:punct:))' + re.escape(ne) +
+                 '(?P<sf>(\W|$|:punct:))', '\g<pf>' +
+                 '<span style="background-color:yellow;">' +
+                 ne + '</span>' + '\g<sf>', context.ocr)
 
     # Get candidates
-    solr_connection = solr.SolrConnection(dac.SOLR_URL)
-    cluster = dac.Cluster([dac.Entity(ne, 0, ne_type, 0, 0, '', '', '',
-        context)])
-    model = models.Model()
+    cluster = dac.Cluster([dac.Entity(ne, tpta_type=ne_type, context=context)])
+
     if cluster.entities[0].valid:
+        model = models.BaseModel()
+        solr_connection = solr.SolrConnection(dac.SOLR_URL)
         cand_list = dac.CandidateList(cluster, solr_connection, model)
         candidates = cand_list.candidates
     else:
         candidates = []
 
-    return template('index', last_instance=last_instance, index=index, url=url,
-            ne=ne, ne_type=ne_type, links=links, publ_date=context.publ_year,
-            ocr=ocr, candidates=candidates, instance_id=instance_id)
+    return template('index', last_instance=last_instance, index=index,
+                    instance_id=instance_id, url=url, ne=ne, ne_type=ne_type,
+                    publ_date=context.publ_year, ocr=ocr, links=links,
+                    candidates=candidates)
+
+
+@get('/predict')
+def predict():
+    '''
+    Get the current DAC prediction.
+    '''
+    linker = dac.EntityLinker(debug=True, candidates=True)
+    result = linker.link(request.query.url, request.query.ne.encode('utf-8'))
+    result = result['linkedNEs'][0]
+    response.set_header('Content-Type', 'application/json')
+    return result
+
 
 @post('/<name>')
 def save_links(name):
@@ -128,17 +140,17 @@ def save_links(name):
     '''
     index = int(request.forms.get('index'))
     links = request.forms.getall('links')
+
     if 'other' in links:
         links = [l for l in links if l != 'other']
         links.append(request.forms.get('other_link'))
     action = request.forms.get('action')
 
-    orig_file = abs_path + '/users/' + name + '/art.json'
-    temp_file = abs_path + '/users/' + name + '/temp.json'
+    orig_file = os.path.join(*[abs_path, 'users', name, 'art.json'])
+    temp_file = os.path.join(*[abs_path, 'users', name, 'temp.json'])
 
     # Load json data from file
-    with open(orig_file) as fh:
-        data = json.load(fh)
+    data = json.load(open(orig_file))
 
     # Set new link value
     data['instances'][index]['links'] = [l.decode('utf-8') for l in links]
@@ -149,14 +161,13 @@ def save_links(name):
 
     # Check temp file existence and size
     if os.path.exists(temp_file) and (abs(os.path.getsize(orig_file) -
-            os.path.getsize(temp_file)) < 15000):
-
+                                          os.path.getsize(temp_file)) < 15000):
         os.chmod(temp_file, 0777)
         os.remove(orig_file)
         os.rename(temp_file, orig_file)
 
         # Redirect to next page
-        redirect_url = '../' + name
+        redirect_url = '../{}'.format(name)
 
         if action == 'first':
             redirect_url += '?index=0'
@@ -168,7 +179,7 @@ def save_links(name):
                 if i['url'] != current_url:
                     next_index = data['instances'].index(i)
                     break
-            redirect_url += '?index=' + str(next_index)
+            redirect_url += '?index={}'.format(next_index)
 
         elif action == 'prev_art':
             next_index = -1
@@ -191,23 +202,24 @@ def save_links(name):
                         next_index = data['instances'].index(i) + 1
                         break
 
-            redirect_url += '?index=' + str(next_index)
+            redirect_url += '?index={}'.format(next_index)
 
         elif action == 'next':
-            redirect_url += '?index=' + str(index + 1)
+            redirect_url += '?index={}'.format(index + 1)
 
         elif action == 'prev':
-            redirect_url += '?index=' + str(index + -1)
+            redirect_url += '?index={}'.format(index - 1)
 
         redirect(redirect_url)
 
     else:
         abort(500, 'Error saving data.')
 
+
 @get('/<name>/edit')
 def update_training_set(name):
     '''
-    Add or delete an entity or a full article.
+    Add or delete an entity or an article.
     '''
     action = request.query.action
     url = request.query.url
@@ -220,43 +232,46 @@ def update_training_set(name):
 
     if not action or action not in ['add', 'delete'] or not url:
         result['status'] = 'error'
-        result['message'] = 'Invoke with ?action=[add, delete]&url=[resolver_id]'
+        result['message'] = 'Invoke with ?action=[add|delete]&url=[url]'
         if callback:
             result = unicode(callback) + u'(' + json.dumps(result) + u');'
         return result
 
-    orig_file = abs_path + '/users/' + name + '/art.json'
-    temp_file = abs_path + '/users/' + name + '/temp.json'
+    orig_file = os.path.join(*[abs_path, 'users', name, 'art.json'])
+    temp_file = os.path.join(*[abs_path, 'users', name, 'temp.json'])
 
     # Load json data from file
-    with codecs.open(orig_file, 'r', 'utf-8') as fh:
-        data = json.load(fh)
+    data = json.load(codecs.open(orig_file, 'r', 'utf-8'))
 
     # Add article or NE
     if action == 'add':
         # Check if article and / or NE isn't included already in current set
         for i in data['instances']:
             if i['url'] == url:
+                print('found url in this set')
                 if not ne or i['ne_string'] == ne:
                     result['status'] = 'error'
-                    result['message'] = 'Article or entity already part of data set'
+                    result['message'] = 'Article or entity already in data set'
                     if callback:
-                        result = unicode(callback) + u'(' + json.dumps(result) + u');'
+                        result = (unicode(callback) + u'(' +
+                                  json.dumps(result) + u');')
                     return result
 
         # Check if article isn't included in another set
-        to_check = ['tve'] if name.startswith('test') else ['test', 'test-20',
-                'test-spotlight']
+        to_check = (['tve'] if name.startswith('test') else
+                    ['test', 'test-clean', 'test-spotlight'])
         for f in to_check:
-            alt_file = abs_path + '/users/' + f + '/art.json'
+            alt_file = os.path.join(*[abs_path, 'users', f, 'art.json'])
             with codecs.open(alt_file, 'r', 'utf-8') as fh:
                 alt_data = json.load(fh)
                 for i in alt_data['instances']:
                     if i['url'] == url:
+                        print('found url in other set')
                         result['status'] = 'error'
-                        result['message'] = 'Article already part of another data set'
+                        result['message'] = 'Article already in other data set'
                         if callback:
-                            result = unicode(callback) + u'(' + json.dumps(result) + u');'
+                            result = (unicode(callback) + u'(' +
+                                      json.dumps(result) + u');')
                         return result
 
         next_id = data['instances'][-1]['id'] + 1
@@ -295,7 +310,8 @@ def update_training_set(name):
                 result['status'] = 'error'
                 result['message'] = 'No entities found for article'
                 if callback:
-                    result = unicode(callback) + u'(' + json.dumps(result) + u');'
+                    result = (unicode(callback) + u'(' +
+                              json.dumps(result) + u');')
                 return result
 
     # Delete article or NE
@@ -306,6 +322,7 @@ def update_training_set(name):
             if i['url'] == url:
                 if not ne or i['ne_string'] == ne:
                     to_remove.append(i)
+
         if not to_remove:
             result['status'] = 'error'
             result['message'] = 'Article or entity not found in dataset'
@@ -322,7 +339,7 @@ def update_training_set(name):
 
     # Check temp file existence and size
     if os.path.exists(temp_file) and (abs(os.path.getsize(orig_file) -
-            os.path.getsize(temp_file)) < 50000):
+                                      os.path.getsize(temp_file)) < 50000):
         os.chmod(temp_file, 0777)
         os.remove(orig_file)
         os.rename(temp_file, orig_file)
@@ -336,18 +353,9 @@ def update_training_set(name):
     result['status'] = 'success'
     if callback:
         result = unicode(callback) + u'(' + json.dumps(result) + u');'
+    print(result)
     return result
 
-@get('/predict')
-def predict():
-    '''
-    Get the current DAC prediction.
-    '''
-    linker = dac.EntityLinker(debug=True, candidates=True)
-    result = linker.link(request.query.url, request.query.ne.encode('utf-8'))
-    result = result['linkedNEs'][0]
-    response.set_header('Content-Type', 'application/json')
-    return result
 
 @route('/static/<filename:path>')
 def static(filename):
@@ -355,6 +363,7 @@ def static(filename):
     Load static css, js files.
     '''
     return static_file(filename, root=abs_path + '/static')
+
 
 if __name__ == '__main__':
     run(host='localhost', port=5001)
