@@ -32,7 +32,7 @@
             % dac_url = 'http://www.kbresearch.nl/dac/?debug=1&url=' + url
             <p><b>Url</b>: <a href={{dac_url}} target="_blank">{{url}}</a></p>
             <p><b>Date</b>: {{publ_date}}</p>
-            <p><b>Type</b>: {{ne_type if ne_type else ''}}</p>
+            <p><b>Type</b>: {{ne_type if ne_type else 'unknown'}}</p>
             <p><b>Entity</b>: {{ne}}</p>
         </div>
         <div>
