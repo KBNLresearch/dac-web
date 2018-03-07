@@ -22362,9 +22362,72 @@
         {
             "id": 3640, 
             "links": [
-                "http://nl.dbpedia.org/resource/Prima_Porta"
+                "http://nl.dbpedia.org/resource/Europa_(werelddeel)"
+            ], 
+            "ne_string": "EUROPA", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110588858:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3641, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rome_(stad)"
+            ], 
+            "ne_string": "ROME", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110588858:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3642, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Italië"
+            ], 
+            "ne_string": "Italië", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110588858:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3643, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Oostenrijk"
+            ], 
+            "ne_string": "Oostenrijk", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110588858:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3644, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rome_(stad)"
+            ], 
+            "ne_string": "Rome", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110588858:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3645, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paus_Paulus_VI"
+            ], 
+            "ne_string": "Paus Paulus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110588858:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3647, 
+            "links": [
+                "http://dbpedia.org/resource/Prima_Porta"
             ], 
             "ne_string": "Prima Porta", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110588858:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3648, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paus_Paulus_VI"
+            ], 
+            "ne_string": "Paulus", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:110588858:mpeg21:a0099:ocr"
         }
