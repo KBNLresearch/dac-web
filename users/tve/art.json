@@ -22430,6 +22430,15 @@
             "ne_string": "Paulus", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:110588858:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 3649, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Gerrit_Bolkestein"
+            ], 
+            "ne_string": "Bolkestein", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=KBNRC01:000029688:mpeg21:a0009:ocr"
         }
     ]
 }
