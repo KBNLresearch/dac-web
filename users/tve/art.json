@@ -2515,7 +2515,7 @@
         {
             "id": 298, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Nederland"
             ], 
             "ne_string": "Ned", 
             "ne_type": "other", 
@@ -3444,7 +3444,8 @@
         {
             "id": 441, 
             "links": [
-                "none"
+                "none", 
+                "http://nl.dbpedia.org/resource/Paul_Julius_Reuter"
             ], 
             "ne_string": "Reuter", 
             "ne_type": "person", 
@@ -3831,7 +3832,8 @@
         {
             "id": 498, 
             "links": [
-                "http://nl.dbpedia.org/resource/Batavia_(Nederlands-Indië)"
+                "http://nl.dbpedia.org/resource/Batavia_(Nederlands-Indië)", 
+                "http://nl.dbpedia.org/resource/Jakarta"
             ], 
             "ne_string": "Batavia", 
             "ne_type": "person", 
@@ -4537,7 +4539,7 @@
         {
             "id": 684, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Dirk"
             ], 
             "ne_string": "Dirk", 
             "ne_type": "person", 
@@ -6770,7 +6772,7 @@
         {
             "id": 1206, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Ordnungspolizei"
             ], 
             "ne_string": "Ordnungsoolizei", 
             "ne_type": "organisation", 
@@ -7197,7 +7199,8 @@
         {
             "id": 1356, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Regering", 
+                "http://nl.dbpedia.org/resource/Nederlandse_regering"
             ], 
             "ne_string": "Regeering", 
             "ne_type": "organisation", 
@@ -8292,8 +8295,7 @@
         {
             "id": 1526, 
             "links": [
-                "none", 
-                "http://nl.dbpedia.org/resource/Goodbye,_Mr._Chips"
+                "http://nl.dbpedia.org/resource/Goodbye,_Mr._Chips_(1939)"
             ], 
             "ne_string": "Ooodbye Mr Chips", 
             "ne_type": "other", 
@@ -8320,7 +8322,7 @@
         {
             "id": 1529, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Luise_Rainer"
             ], 
             "ne_string": "Luise Ralner", 
             "ne_type": "other", 
@@ -8985,7 +8987,6 @@
         {
             "id": 1602, 
             "links": [
-                "http://nl.dbpedia.org/resource/Neptunus_(mythologie)", 
                 "http://nl.dbpedia.org/resource/Neptunus_(honkbal)"
             ], 
             "ne_string": "Neptunus", 
@@ -10298,7 +10299,7 @@
         {
             "id": 1823, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Smallingerland"
             ], 
             "ne_string": "Smalllngerland", 
             "ne_type": "location", 
@@ -10461,7 +10462,8 @@
         {
             "id": 1872, 
             "links": [
-                "none"
+                "none", 
+                "http://nl.dbpedia.org/resource/Indochina"
             ], 
             "ne_string": "China", 
             "ne_type": "location", 
@@ -11599,7 +11601,8 @@
         {
             "id": 2062, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Regering", 
+                "http://nl.dbpedia.org/resource/Nederlandse_regering"
             ], 
             "ne_string": "Regïering", 
             "ne_type": "organisation", 
@@ -11646,7 +11649,8 @@
         {
             "id": 2067, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Regering", 
+                "http://nl.dbpedia.org/resource/Nederlandse_regering"
             ], 
             "ne_string": "Regeering", 
             "ne_type": "organisation", 
@@ -11709,8 +11713,7 @@
         {
             "id": 2074, 
             "links": [
-                "none", 
-                " http://nl.dbpedia.org/Shanghai"
+                "http://nl.dbpedia.org/resource/Shanghai"
             ], 
             "ne_string": "Shanghay", 
             "ne_type": "person", 
@@ -11811,7 +11814,7 @@
         {
             "id": 2085, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/New_York_(stad)"
             ], 
             "ne_string": "New Vork", 
             "ne_type": "location", 
@@ -12588,7 +12591,8 @@
         {
             "id": 2506, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/New_York_(stad)", 
+                "http://nl.dbpedia.org/resource/New_York_(staat)"
             ], 
             "ne_string": "New Vork", 
             "ne_type": "location", 
@@ -12906,7 +12910,7 @@
         {
             "id": 2568, 
             "links": [
-                "none"
+                "http://dbpedia.org/resource/Cortile_del_Belvedere"
             ], 
             "ne_string": "Cortile della Pigna", 
             "ne_type": "organisation", 
@@ -13032,7 +13036,7 @@
         {
             "id": 2582, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Esperanto"
             ], 
             "ne_string": "Eaperanto", 
             "ne_type": "other", 
@@ -13858,7 +13862,7 @@
         {
             "id": 2673, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Kabouter"
             ], 
             "ne_string": "„ Kabonter", 
             "ne_type": "other", 
@@ -13958,8 +13962,7 @@
         {
             "id": 2684, 
             "links": [
-                "none", 
-                "http://nl.dbpedia.org/resource/Hiroshima"
+                "http://nl.dbpedia.org/resource/Hiroshima_(stad)"
             ], 
             "ne_string": "Hirosjima", 
             "ne_type": "person", 
@@ -14849,7 +14852,7 @@
         {
             "id": 2782, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/New_York_(stad)"
             ], 
             "ne_string": "New Vork", 
             "ne_type": "location", 
@@ -15816,7 +15819,7 @@
         {
             "id": 2889, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Berlijn"
             ], 
             "ne_string": "Betlijn", 
             "ne_type": "other", 
@@ -15915,7 +15918,7 @@
         {
             "id": 2900, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Babelsberg"
             ], 
             "ne_string": "Bibelsberg", 
             "ne_type": "location", 
@@ -17677,7 +17680,7 @@
         {
             "id": 3123, 
             "links": [
-                "none"
+                "http://dbpedia.org/resource/Astrid_Kirchherr"
             ], 
             "ne_string": "Astrid Kircherr", 
             "ne_type": "person", 
@@ -18283,7 +18286,7 @@
         {
             "id": 3190, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Steve_Wozniak"
             ], 
             "ne_string": "Steve Wozniac", 
             "ne_type": "person", 
@@ -18382,7 +18385,7 @@
         {
             "id": 3201, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Steve_Wozniak"
             ], 
             "ne_string": "Steve Wozniac", 
             "ne_type": "person", 

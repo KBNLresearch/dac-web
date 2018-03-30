@@ -1267,7 +1267,7 @@
         {
             "id": 256, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Lockheed_Martin"
             ], 
             "ne_string": "Lockheted", 
             "ne_type": "location", 
@@ -2125,7 +2125,7 @@
         {
             "id": 518, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Cité"
             ], 
             "ne_string": "Cité", 
             "ne_type": "other", 
@@ -4020,7 +4020,7 @@
         {
             "id": 775, 
             "links": [
-                "none"
+                "http://nl.dbpedia.org/resource/Karpaten"
             ], 
             "ne_string": "Karpatië", 
             "ne_type": "location", 
@@ -4409,7 +4409,8 @@
         {
             "id": 860, 
             "links": [
-                "none"
+                "none", 
+                "http://nl.dbpedia.org/resource/Paul_Julius_Reuter"
             ], 
             "ne_string": "Reuter", 
             "ne_type": "person", 
