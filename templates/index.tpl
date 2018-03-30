@@ -79,33 +79,17 @@
                         <a href="javascript:toggle('descr_panel_{{i}}');">Description</a>
                     </p>
                     <div id="descr_panel_{{i}}" style="display: none;" class="panel">
-                        <p>"id": {{res['id']}}<br/>
-                        % if 'last_part' in res:
-                        "last_part": {{res['last_part']}}<br/>
+                        <p>
+                        % for key in sorted(res):
+                        % if '_str' not in key:
+                        % if type(res[key]) is list:
+                        "{{key}}": {{', '.join(res[key])}}<br/>
+                        % else:
+                        "{{key}}": {{res[key]}}<br/>
                         % end
-                        % if 'alt_label' in res:
-                        "alt_label": {{', '.join(res['alt_label'])}}<br/>
                         % end
-                        % if 'spec' in res:
-                        "spec": {{res['spec']}}<br/>
                         % end
-                        % if 'schema_type' in res:
-                        "schema_type": {{', '.join(res['schema_type'])}}<br/>
-                        % end
-                        % if 'dbo_type' in res:
-                        "dbo_type": {{', '.join(res['dbo_type'])}}<br/>
-                        % end
-                        % if 'keyword' in res:
-                        "keyword": {{', '.join(res['keyword'])}}<br/>
-                        % end
-                        % if 'birth_year' in res:
-                        "birth_year": {{res['birth_year']}}<br/>
-                        % end
-                        % if 'death_year' in res:
-                        "death_year": {{res['death_year']}}<br/>
-                        % end
-                        "inlinks": {{res['inlinks']}}<br/>
-                        "score": {{res['score']}}</p>
+                        </p>
                     </div>
 
                     <p class="panel_header">
