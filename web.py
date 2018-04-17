@@ -109,8 +109,7 @@ def show_candidates(name):
 
     if cluster.entities[0].valid:
         model = models.BaseModel()
-        solr_connection = solr.SolrConnection(dac.SOLR_URL)
-        cand_list = dac.CandidateList(cluster, solr_connection, model)
+        cand_list = dac.CandidateList(cluster, model)
         candidates = cand_list.candidates
     else:
         candidates = []
