@@ -22461,6 +22461,454 @@
             "ne_string": "David Hirst", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011235729:mpeg21:a0141:ocr"
+        }, 
+        {
+            "id": 3652, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Nieuws ONDHEIDKUNDIGE VONDSTEN OP SICILIË", 
+            "ne_type": "other", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3653, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Sicilië"
+            ], 
+            "ne_string": "SICILIË", 
+            "ne_type": "location", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3654, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Palermo_(stad)"
+            ], 
+            "ne_string": "Palermo", 
+            "ne_type": "location", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3655, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Etna_(vulkaan)"
+            ], 
+            "ne_string": "Etna", 
+            "ne_type": "location", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3656, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Centuripe"
+            ], 
+            "ne_string": "Centuripae", 
+            "ne_type": "location", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3657, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Marcus_Tullius_Cicero"
+            ], 
+            "ne_string": "Cicero", 
+            "ne_type": "person", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3658, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Grieksche", 
+            "ne_type": "other", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3659, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Corinthische", 
+            "ne_type": "other", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3660, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Ceres_(godin)"
+            ], 
+            "ne_string": "Ceres", 
+            "ne_type": "location", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3661, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Sicilië"
+            ], 
+            "ne_string": "Sicilië", 
+            "ne_type": "location", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3662, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Centuripe"
+            ], 
+            "ne_string": "Centorbi", 
+            "ne_type": "person", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3663, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hadrianus"
+            ], 
+            "ne_string": "Hadrianus", 
+            "ne_type": "person", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3664, 
+            "links": [
+                "none", 
+                "http://dbpedia.org/resource/Tiberius_(praenomen)", 
+                "http://nl.dbpedia.org/resource/Tiberius_Iulius_Caesar_Augustus"
+            ], 
+            "ne_string": "Tiberius", 
+            "ne_type": "person", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3665, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Totius Siciliae", 
+            "ne_type": "person", 
+            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+        }, 
+        {
+            "id": 3666, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jeruzalem"
+            ], 
+            "ne_string": "JERUZALEM", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3667, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Radio-Urdoniye fi Amman", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3668, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amman_(stad)"
+            ], 
+            "ne_string": "Amman", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3669, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jordanië"
+            ], 
+            "ne_string": "Jordanië", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3670, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jeruzalem"
+            ], 
+            "ne_string": "Jeruzalem", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3671, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Al-Kuts", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3672, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Kuts", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3673, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Arabisch"
+            ], 
+            "ne_string": "Arabisch", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3674, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Islam"
+            ], 
+            "ne_string": "Islam", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3675, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nebukadnezar_II", 
+                "http://nl.dbpedia.org/resource/Nebukadnezar_I", 
+                "http://nl.dbpedia.org/resource/Nebukadnezar_IV", 
+                "http://nl.dbpedia.org/resource/Nebukadnezar_III"
+            ], 
+            "ne_string": "Nebukadnezar", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3676, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Godfried_van_Bouillon"
+            ], 
+            "ne_string": "Godfried van Bouillon", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3677, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Saladin"
+            ], 
+            "ne_string": "Saladin", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3678, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Titus_(keizer)"
+            ], 
+            "ne_string": "Titus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3679, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hadrianus"
+            ], 
+            "ne_string": "Hadrianus", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3680, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Arabieren"
+            ], 
+            "ne_string": "Arabieren", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3681, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Romeinen_(volk)"
+            ], 
+            "ne_string": "Romeinen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3682, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Israëlisch", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010869646:mpeg21:a0285:ocr"
+        }, 
+        {
+            "id": 3683, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Kolonie_(staatkundig)"
+            ], 
+            "ne_string": "Kolonie", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3684, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Fraters", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3685, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "St. Thomas-College", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3686, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Thomas", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3687, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Eerw", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3688, 
+            "links": [
+                "none", 
+                "http://dbpedia.org/resource/Hermenegild_(given_name)"
+            ], 
+            "ne_string": "Hermenigild", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3689, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Holland"
+            ], 
+            "ne_string": "Holland", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3690, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Frater Radulphus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3691, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "St. Thomas-college", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3692, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Aruba"
+            ], 
+            "ne_string": "Aruba", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3693, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Franciscus a Paula", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3694, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bonaire"
+            ], 
+            "ne_string": "Bonaire", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3695, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Lucius", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3696, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Scherpenheuvel", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3697, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Maxentius", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3698, 
+            "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Gescheiden_onderwijs"
+            ], 
+            "ne_string": "Jongensschool", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3699, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Pietermaai"
+            ], 
+            "ne_string": "Pietermaai", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3700, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Frater Hadrianus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
         }
     ]
 }
