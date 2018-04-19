@@ -81,7 +81,7 @@
                     <div id="descr_panel_{{i}}" style="display: none;" class="panel">
                         <p>
                         % for key in sorted(res):
-                        % if '_str' not in key:
+                        % if '_str' not in key and 'vector' not in key:
                         % if type(res[key]) is list:
                         "{{key}}": {{', '.join(res[key])}}<br/>
                         % else:
