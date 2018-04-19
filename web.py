@@ -52,7 +52,6 @@ bottle.TEMPLATE_PATH.insert(0, abs_path)
 sys.path.insert(0, os.path.join(*[abs_path, '..', 'dac', 'dac']))
 import dac
 import models
-import solr
 
 
 @get('/<name>')
