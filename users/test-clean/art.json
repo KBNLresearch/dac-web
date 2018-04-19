@@ -3205,6 +3205,7 @@
         {
             "id": 672, 
             "links": [
+                "none", 
                 "http://nl.dbpedia.org/resource/Yitzhak_Navon"
             ], 
             "ne_string": "Jitschak Navon", 
