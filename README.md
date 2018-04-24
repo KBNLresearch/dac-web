@@ -43,3 +43,14 @@ Removing an article from the set:
 ```
 http://localhost:5001/tve/edit?action=delete&url=http://resolver.kb.nl/resolve?urn=ddd:010734861:mpeg21:a0002:ocr
 ```
+
+## Adding a new set
+
+All datasets are stored as an `art.json` file in a folder with the dataset name within the `users` folder. To create a new, empty dataset named `foo`:
+
+```
+$ mkdir users/foo
+$ echo '{"instances": []}' > users/foo/art.json
+```
+
+The `art.json` file has to be writeable by the web application and is expected to contain at least an empty list of instances.
