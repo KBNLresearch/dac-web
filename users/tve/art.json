@@ -22469,7 +22469,7 @@
             ], 
             "ne_string": "Nieuws ONDHEIDKUNDIGE VONDSTEN OP SICILIË", 
             "ne_type": "other", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3653, 
@@ -22478,7 +22478,7 @@
             ], 
             "ne_string": "SICILIË", 
             "ne_type": "location", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3654, 
@@ -22487,7 +22487,7 @@
             ], 
             "ne_string": "Palermo", 
             "ne_type": "location", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3655, 
@@ -22496,7 +22496,7 @@
             ], 
             "ne_string": "Etna", 
             "ne_type": "location", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3656, 
@@ -22505,7 +22505,7 @@
             ], 
             "ne_string": "Centuripae", 
             "ne_type": "location", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3657, 
@@ -22514,7 +22514,7 @@
             ], 
             "ne_string": "Cicero", 
             "ne_type": "person", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3658, 
@@ -22523,7 +22523,7 @@
             ], 
             "ne_string": "Grieksche", 
             "ne_type": "other", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3659, 
@@ -22532,7 +22532,7 @@
             ], 
             "ne_string": "Corinthische", 
             "ne_type": "other", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3660, 
@@ -22541,7 +22541,7 @@
             ], 
             "ne_string": "Ceres", 
             "ne_type": "location", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3661, 
@@ -22550,7 +22550,7 @@
             ], 
             "ne_string": "Sicilië", 
             "ne_type": "location", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3662, 
@@ -22559,7 +22559,7 @@
             ], 
             "ne_string": "Centorbi", 
             "ne_type": "person", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3663, 
@@ -22568,7 +22568,7 @@
             ], 
             "ne_string": "Hadrianus", 
             "ne_type": "person", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3664, 
@@ -22579,7 +22579,7 @@
             ], 
             "ne_string": "Tiberius", 
             "ne_type": "person", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3665, 
@@ -22588,7 +22588,7 @@
             ], 
             "ne_string": "Totius Siciliae", 
             "ne_type": "person", 
-            "url": "https://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010855349:mpeg21:a0134:ocr"
         }, 
         {
             "id": 3666, 
@@ -22909,6 +22909,4894 @@
             "ne_string": "Frater Hadrianus", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:010281219:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3701, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Middelburg_(Zeeland)"
+            ], 
+            "ne_string": "MIDDELBURG", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010119862:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3702, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Koorkerk"
+            ], 
+            "ne_string": "Koorkerk", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010119862:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3703, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Nederlandscheii", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010119862:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3704, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hadrianus_Junius"
+            ], 
+            "ne_string": "Hadrianus Junius", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010119862:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3705, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "XVI Eeuw", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010119862:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3706, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Boom_(gemeente)"
+            ], 
+            "ne_string": "Boom", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010119862:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3707, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Kerkgebouw"
+            ], 
+            "ne_string": "Kerkgebouw", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010119862:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3708, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lugdunum_Batavorum"
+            ], 
+            "ne_string": "Lugdunum Batavorum", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3709, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Leiden"
+            ], 
+            "ne_string": "Leiden", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3710, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Historische_vereniging_Oud_Leiden"
+            ], 
+            "ne_string": "Oud-Leiden", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3711, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "J. C. Overvoorde.Prof", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3712, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Petrus_Johannes_Blok"
+            ], 
+            "ne_string": "P. J. Blok", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3713, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lugdunum_Batavorum"
+            ], 
+            "ne_string": "Lugdunu", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3714, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Batavorum Leiden", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3715, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Romeinsohe", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3716, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Romeinsoh", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3717, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Middeleeuwen"
+            ], 
+            "ne_string": "Middeleeuwsch", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3718, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Ile", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3719, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lugdunum_Batavorum"
+            ], 
+            "ne_string": "Lugdunun", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3720, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lugdunum_Batavorum"
+            ], 
+            "ne_string": "Batavorum", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3721, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Grieksoh-Bomeinsch", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3722, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Christus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3723, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Rijnkasteelen van Drusus", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3724, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rijnmond"
+            ], 
+            "ne_string": "Rijnmond", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3725, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Westelijk", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3726, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Britten", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3727, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "« Brit", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3728, 
+            "links": [
+                "http://dbpedia.org/resource/Arx_(Roman)"
+            ], 
+            "ne_string": "Arx", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3729, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Brittenburg"
+            ], 
+            "ne_string": "Brittenburg", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3730, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Katwijk_(Zuid-Holland)"
+            ], 
+            "ne_string": "Katwijk", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3731, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Noordwestenstorm", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3732, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hadrianus_Junius"
+            ], 
+            "ne_string": "Hadrianus Junius", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3733, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Haagsche", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3734, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Van_Wassenaer"
+            ], 
+            "ne_string": "Van Wassenaar", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3735, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Kasteel_Duivenvoorde"
+            ], 
+            "ne_string": "Duivenvoorde", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3736, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Leidsohe Museum van Oudheden", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3737, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Abraham_Ortelius"
+            ], 
+            "ne_string": "Ortelius", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3738, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Petrus_Scriverius"
+            ], 
+            "ne_string": "Scriverius", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3739, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Adriaan_Pars"
+            ], 
+            "ne_string": "Pars", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3740, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Le Francy", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3741, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Johannes_le_Francq_van_Berkhey"
+            ], 
+            "ne_string": "Berkhey", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3742, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Franken_(volk)"
+            ], 
+            "ne_string": "Franken", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3743, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Leiden"
+            ], 
+            "ne_string": "Leiden —", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3744, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Middeleeuwen"
+            ], 
+            "ne_string": "Middeneeuwen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3745, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Leythen", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3746, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Leiden"
+            ], 
+            "ne_string": "Leyden", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3747, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Leydae", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3748, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Leida", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3749, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Lugdimum Batavorum", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3750, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Douza", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3751, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lugdunum_Batavorum"
+            ], 
+            "ne_string": "Lngdunum Batavorum", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3752, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Romeinsch", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3753, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Academiestad", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3754, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Robert_Fruin_(historicus)"
+            ], 
+            "ne_string": "Fruin", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010128486:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3755, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Aneta-Haag", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0023:ocr"
+        }, 
+        {
+            "id": 3756, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "J. de Vlieger", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0023:ocr"
+        }, 
+        {
+            "id": 3757, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "E. V.", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0023:ocr"
+        }, 
+        {
+            "id": 3758, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Nederland A.", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0023:ocr"
+        }, 
+        {
+            "id": 3759, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "A. de Wolft", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0023:ocr"
+        }, 
+        {
+            "id": 3760, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "O. Engelberts", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0023:ocr"
+        }, 
+        {
+            "id": 3761, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Merapi Groote", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3762, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Aneta_Persbureau"
+            ], 
+            "ne_string": "Aneta", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3763, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Semarang_(stad)"
+            ], 
+            "ne_string": "Semarang", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3764, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Stehn", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3765, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Merapi"
+            ], 
+            "ne_string": "Merapi", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3766, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Worotop", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3767, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Lavadom", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3768, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Apoeravijn", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3769, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Diengplateau", 
+                "http://nl.dbpedia.org/resource/Dieng-vulkaancomplex"
+            ], 
+            "ne_string": "Diëng", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011123023:mpeg21:a0024:ocr"
+        }, 
+        {
+            "id": 3770, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Macau"
+            ], 
+            "ne_string": "Macau", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3771, 
+            "links": [
+                "http://nl.dbpedia.org/resource/China"
+            ], 
+            "ne_string": "China", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3772, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lissabon"
+            ], 
+            "ne_string": "LISSABON", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3773, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Peking"
+            ], 
+            "ne_string": "PEKING", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3774, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Agence_France-Presse"
+            ], 
+            "ne_string": "AFP", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3775, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Portugal"
+            ], 
+            "ne_string": "Portugal", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3776, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Portugal"
+            ], 
+            "ne_string": "Portugese", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3777, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Chinees", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3778, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Portugees", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3779, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lissabon"
+            ], 
+            "ne_string": "Lissabon", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3780, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Peking"
+            ], 
+            "ne_string": "Peking", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3781, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Groot-Brittannië"
+            ], 
+            "ne_string": "Britse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3782, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hongkong"
+            ], 
+            "ne_string": "Hongkong", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3783, 
+            "links": [
+                "http://nl.dbpedia.org/resource/China"
+            ], 
+            "ne_string": "Chinese", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3784, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Portugezen"
+            ], 
+            "ne_string": "Portugezen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3785, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Peking Rui Medina", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3786, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Deng_Xiaoping"
+            ], 
+            "ne_string": "Deng Xiaoping", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010562399:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 3787, 
+            "links": [
+                "http://dbpedia.org/resource/Henry_de_Jouvenel", 
+                "http://nl.dbpedia.org/resource/Bertrand_de_Jouvenel"
+            ], 
+            "ne_string": "Jouvenel", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010466279:mpeg21:a0045:ocr"
+        }, 
+        {
+            "id": 3788, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Theater_Frascati"
+            ], 
+            "ne_string": "Frascati-schouwburg", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010466279:mpeg21:a0111:ocr"
+        }, 
+        {
+            "id": 3789, 
+            "links": [
+                "http://dbpedia.org/resource/Finn_Malmgren", 
+                "http://nl.dbpedia.org/resource/Finn_Malmgren"
+            ], 
+            "ne_string": "Malmgren", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010466279:mpeg21:a0121:ocr"
+        }, 
+        {
+            "id": 3790, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Dagens_Nyheter"
+            ], 
+            "ne_string": "Degens Nyheter", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010466279:mpeg21:a0121:ocr"
+        }, 
+        {
+            "id": 3791, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lohengrin"
+            ], 
+            "ne_string": "Fantasie „Lohengrin", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010466279:mpeg21:a0106:ocr"
+        }, 
+        {
+            "id": 3792, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Les_saltimbanques"
+            ], 
+            "ne_string": "Fantasie „Les Saltimbanques", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010466279:mpeg21:a0106:ocr"
+        }, 
+        {
+            "id": 3793, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Aristophanes_(blijspeldichter)"
+            ], 
+            "ne_string": "Aristophanus", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010466280:mpeg21:a0046:ocr"
+        }, 
+        {
+            "id": 3794, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Françoise_Adret"
+            ], 
+            "ne_string": "Francalse Francoise Adret", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011234152:mpeg21:a0142:ocr"
+        }, 
+        {
+            "id": 3795, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jimmy_Carter"
+            ], 
+            "ne_string": "Carter", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3796, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Knesset"
+            ], 
+            "ne_string": "Knesset", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3797, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Israël"
+            ], 
+            "ne_string": "Israëlische", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3798, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Menachem_Begin"
+            ], 
+            "ne_string": "Begin", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3799, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jimmy_Carter"
+            ], 
+            "ne_string": "President Carter", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3800, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Egypte_(land)"
+            ], 
+            "ne_string": "Egyptische", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3801, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Verenigde_Staten"
+            ], 
+            "ne_string": "Amerikaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3802, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Cyrus_Vance"
+            ], 
+            "ne_string": "Vance", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3803, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Caïro_(stad)"
+            ], 
+            "ne_string": "Cairo", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3804, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jimmy_Carter"
+            ], 
+            "ne_string": "Carters", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3805, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Israël"
+            ], 
+            "ne_string": "Israël", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3806, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Egypte_(land)"
+            ], 
+            "ne_string": "Egypte", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3807, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Israëlisch-Egyptisch", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3808, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Egyptisch", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3809, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Westeliy ke Jordaanoever", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3810, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Gaza"
+            ], 
+            "ne_string": "Gaza", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3811, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Sinaïwoestijn.Het Engelstalige Israëlisch", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3812, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Israëlisch dagblad The Jerusalem Post", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3813, 
+            "links": [
+                "http://nl.dbpedia.org/resource/The_Jerusalem_Post"
+            ], 
+            "ne_string": "The Jerusalem Post", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3814, 
+            "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Palestijnse_Autoriteit"
+            ], 
+            "ne_string": "Palestijnse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3815, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Gazastrook"
+            ], 
+            "ne_string": "Gaza-strook", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3816, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Westelijke_Jordaanoever"
+            ], 
+            "ne_string": "Westoever", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3817, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Palestina_(regio)"
+            ], 
+            "ne_string": "Palestijns", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3818, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Westelijke_Jordaanoever"
+            ], 
+            "ne_string": "Westelijke Jordaanoever", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 3819, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "AZ-PSV", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3820, 
+            "links": [
+                "http://nl.dbpedia.org/resource/PSV_(voetbalclub)"
+            ], 
+            "ne_string": "PSV", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3821, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Arabische_wereld"
+            ], 
+            "ne_string": "Arabische", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3822, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frankrijk"
+            ], 
+            "ne_string": "Franse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3823, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Groningen_(stad)", 
+                "http://nl.dbpedia.org/resource/Groningen_(provincie)", 
+                "http://nl.dbpedia.org/resource/Groningen_(gemeente)", 
+                "http://nl.dbpedia.org/resource/FC_Groningen"
+            ], 
+            "ne_string": "Groningen", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3824, 
+            "links": [
+                "http://nl.dbpedia.org/resource/PEC_Zwolle"
+            ], 
+            "ne_string": "PEC", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3825, 
+            "links": [
+                "http://nl.dbpedia.org/resource/FC_Twente"
+            ], 
+            "ne_string": "Twente", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3826, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Joop_Zoetemelk"
+            ], 
+            "ne_string": "Zoetemelk", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3827, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Post-ploeg", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3828, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Harm_Wiersma"
+            ], 
+            "ne_string": "Wiersma", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3829, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "KEES FENS 2 FEUILLETON", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3830, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Ruitertop", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3831, 
+            "links": [
+                "http://dbpedia.org/resource/Karin_Krog"
+            ], 
+            "ne_string": "Karin Krog", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 3832, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Irwin", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3833, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Jack Hassard", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3834, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Noordierse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3835, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "IRA-praktijken", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3836, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Raadslid Hassard", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3837, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Hassard", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3838, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amnesty_International"
+            ], 
+            "ne_string": "Amnesty International", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3839, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amnesty_International"
+            ], 
+            "ne_string": "Amnesty", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3840, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Bennen", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3841, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Europees Hof voor Mensenrechten", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3842, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Straatsburg Groot-Brittannië", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0005:ocr"
+        }, 
+        {
+            "id": 3843, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Israël"
+            ], 
+            "ne_string": "Israëlische", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3844, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Eddo_Rosenthal"
+            ], 
+            "ne_string": "EDDO ROSENTHAL", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3845, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jeruzalem"
+            ], 
+            "ne_string": "JERUZALEM", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3846, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jimmy_Carter"
+            ], 
+            "ne_string": "Carters", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3847, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Midden-Oosten"
+            ], 
+            "ne_string": "Midden-Oosten", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3848, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Israël"
+            ], 
+            "ne_string": "Israël", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3849, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Egypte_(land)"
+            ], 
+            "ne_string": "Egypte", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3850, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jimmy_Carter"
+            ], 
+            "ne_string": "Carter", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3851, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Golda_Meïr"
+            ], 
+            "ne_string": "Golda Meir", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3852, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Theodor_Herzl"
+            ], 
+            "ne_string": "Herzl", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3853, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jeruzalem"
+            ], 
+            "ne_string": "Jeruzalem", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3854, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Caïro_(stad)"
+            ], 
+            "ne_string": "Cairo", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0006:ocr"
+        }, 
+        {
+            "id": 3855, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Israël"
+            ], 
+            "ne_string": "Israëlische", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3856, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jeruzalem"
+            ], 
+            "ne_string": "Jeruzalem", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3857, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Israël"
+            ], 
+            "ne_string": "Israël", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3858, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Egypte_(land)"
+            ], 
+            "ne_string": "Egypte", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3859, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Goesj Emoniembeweging", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3860, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jimmy_Carter"
+            ], 
+            "ne_string": "Carters", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3861, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Goesj Emon", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0007:ocr"
+        }, 
+        {
+            "id": 3862, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Politie Ulster", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3863, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Peter_Brusse"
+            ], 
+            "ne_string": "Peter Brusse", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3864, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Londen"
+            ], 
+            "ne_string": "LONDEN", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3865, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Noordlerland", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3866, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Robert Irwin", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3867, 
+            "links": [
+                "http://dbpedia.org/resource/Weekend_World"
+            ], 
+            "ne_string": "Weekend World", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3868, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Groot-Brittannië"
+            ], 
+            "ne_string": "Britse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3869, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Mason", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3870, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Noordierse Zaken", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3871, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Noordierse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3872, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Newman", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3873, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Dr Irwin", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3874, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Irwin", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3875, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Castlereagh_(district)"
+            ], 
+            "ne_string": "Castlereagh", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3876, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Belfast"
+            ], 
+            "ne_string": "Belfast", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0008:ocr"
+        }, 
+        {
+            "id": 3877, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Luitenant-kolonel"
+            ], 
+            "ne_string": "Luitenant-kolonel", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0009:ocr"
+        }, 
+        {
+            "id": 3878, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Lensink", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0009:ocr"
+        }, 
+        {
+            "id": 3879, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Beiroet"
+            ], 
+            "ne_string": "Beiroet", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0009:ocr"
+        }, 
+        {
+            "id": 3880, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederland"
+            ], 
+            "ne_string": "Nederlandse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0009:ocr"
+        }, 
+        {
+            "id": 3881, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Unifilcommandant", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0009:ocr"
+        }, 
+        {
+            "id": 3882, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Erskine", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0009:ocr"
+        }, 
+        {
+            "id": 3883, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Libanon"
+            ], 
+            "ne_string": "Libanon", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0009:ocr"
+        }, 
+        {
+            "id": 3884, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Croin", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0009:ocr"
+        }, 
+        {
+            "id": 3885, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Tjassens", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0009:ocr"
+        }, 
+        {
+            "id": 3886, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "GIF TOEGEDIEND IN EMMELOORD Fout", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3887, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Den_Haag"
+            ], 
+            "ne_string": "HAAG", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3888, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Dokter J. H. Jansen-ziekenhuis", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3889, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Emmeloord"
+            ], 
+            "ne_string": "Emmeloord", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3890, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "A. van der Hoeven", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3891, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Emmeloordse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3892, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "dr. Van der Hoeven", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3893, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Emmeloerdse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3894, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amsterdam"
+            ], 
+            "ne_string": "Amsterdamse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3895, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Van der Hoeven", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3896, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Wilhelmina_Gasthuis"
+            ], 
+            "ne_string": "Wilhelmina Gasthuis", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3897, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Binnengasthuis_(Amsterdam)"
+            ], 
+            "ne_string": "Binnengasthuis", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0010:ocr"
+        }, 
+        {
+            "id": 3898, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Tweede_Kamer_der_Staten-Generaal"
+            ], 
+            "ne_string": "Kamer", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3899, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Vijf-guldenplan", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3900, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Algemeen_Nederlands_Persbureau"
+            ], 
+            "ne_string": "ANP", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3901, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Els_Veder-Smit"
+            ], 
+            "ne_string": "Veder-Smit", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3902, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Els_Veder-Smit"
+            ], 
+            "ne_string": "Smit", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3903, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Tweede_Kamer_der_Staten-Generaal"
+            ], 
+            "ne_string": "Tweede Kamer", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3904, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Kamerdebat"
+            ], 
+            "ne_string": "Kamerdebat", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0011:ocr"
+        }, 
+        {
+            "id": 3905, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Van der Hoeven.Er", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0012:ocr"
+        }, 
+        {
+            "id": 3906, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Rijksinstituut voor d Volksgezondheid", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0012:ocr"
+        }, 
+        {
+            "id": 3907, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Rijksins", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0012:ocr"
+        }, 
+        {
+            "id": 3908, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Leiden"
+            ], 
+            "ne_string": "Leiden", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0012:ocr"
+        }, 
+        {
+            "id": 3909, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amsterdam"
+            ], 
+            "ne_string": "Amsterdamse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0013:ocr"
+        }, 
+        {
+            "id": 3910, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Van der Hoeven", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0013:ocr"
+        }, 
+        {
+            "id": 3911, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Emmeloord"
+            ], 
+            "ne_string": "Emmeloord", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0013:ocr"
+        }, 
+        {
+            "id": 3912, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rome_(stad)"
+            ], 
+            "ne_string": "ROME _", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0014:ocr"
+        }, 
+        {
+            "id": 3913, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Sint-Pietersplein"
+            ], 
+            "ne_string": "Sint Pietersplein", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0014:ocr"
+        }, 
+        {
+            "id": 3914, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paus_Johannes_Paulus_II"
+            ], 
+            "ne_string": "Johannes Paulus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0014:ocr"
+        }, 
+        {
+            "id": 3915, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Krakau"
+            ], 
+            "ne_string": "Krakau", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0014:ocr"
+        }, 
+        {
+            "id": 3916, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Anwar_Sadat"
+            ], 
+            "ne_string": "Sadat", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3917, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Egypte_(land)"
+            ], 
+            "ne_string": "Egyptes", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3918, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Arabisme", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3919, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Egypte_(land)"
+            ], 
+            "ne_string": "Egypte", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3920, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Arabische_wereld"
+            ], 
+            "ne_string": "Arabische", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3921, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Egypte_(land)"
+            ], 
+            "ne_string": "Egyptische", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3922, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Israël"
+            ], 
+            "ne_string": "Israël", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3923, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Palestijnse_Autoriteit"
+            ], 
+            "ne_string": "Palestijnse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3924, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Palestijnse Bevrijdingsorganisatie PLO", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3925, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Yasser_Arafat"
+            ], 
+            "ne_string": "Jasser Arafat", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3926, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Verenigde_Staten"
+            ], 
+            "ne_string": "Amerikaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3927, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Syrië"
+            ], 
+            "ne_string": "Syrië", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3928, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Saoedi-Arabië"
+            ], 
+            "ne_string": "Saoedi-Arabië", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3929, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jimmy_Carter"
+            ], 
+            "ne_string": "Carter", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3930, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jimmy_Carter"
+            ], 
+            "ne_string": "Carters", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0060:ocr"
+        }, 
+        {
+            "id": 3931, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Chevron The Hague", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3932, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Neelie_Kroes"
+            ], 
+            "ne_string": "Smit-Kroes", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3933, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Neelie_Kroes"
+            ], 
+            "ne_string": "Kroes", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3934, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Ministerie_van_Verkeer_en_Waterstaat"
+            ], 
+            "ne_string": "Verkeer en Waterstaat", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3935, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Ministerie_van_Verkeer_en_Waterstaat"
+            ], 
+            "ne_string": "Waterstaat", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3936, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederland"
+            ], 
+            "ne_string": "Nederlandse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3937, 
+            "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Chevron_Corporation"
+            ], 
+            "ne_string": "Chevron", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3938, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Italië"
+            ], 
+            "ne_string": "Italiaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3939, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Chevrontankers", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3940, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederlanders"
+            ], 
+            "ne_string": "Nederlanders", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3941, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Chevron-officieren", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3942, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Koninklijke_Nederlandse_Stoomboot-Maatschappij"
+            ], 
+            "ne_string": "KNSM", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0061:ocr"
+        }, 
+        {
+            "id": 3943, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jimmy_Carter"
+            ], 
+            "ne_string": "Carter", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3944, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Anwar_Sadat"
+            ], 
+            "ne_string": "Sadat", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3945, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Palestijnse_Autoriteit"
+            ], 
+            "ne_string": "Palestijnse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3946, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Egypte_(land)"
+            ], 
+            "ne_string": "Egyptenaren", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3947, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Verenigde_Staten"
+            ], 
+            "ne_string": "Amerikanen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3948, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Westelijke_Jordaanoever"
+            ], 
+            "ne_string": "Westelijke Jordaanoever", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3949, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Gazastrook"
+            ], 
+            "ne_string": "Gaza-strook", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3950, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Verenigde_Staten"
+            ], 
+            "ne_string": "Amerikaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3951, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Egypte_(land)"
+            ], 
+            "ne_string": "Egyptische", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3952, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Al Goemhoeriya", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3953, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Camp_Davidakkoorden"
+            ], 
+            "ne_string": "Camp David-akkoorden", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3954, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Israël"
+            ], 
+            "ne_string": "Israël", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3955, 
+            "links": [
+                "http://dbpedia.org/resource/Anis_Mansour"
+            ], 
+            "ne_string": "Anis Mansour", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3956, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Camp_David"
+            ], 
+            "ne_string": "Camp David", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3957, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Menachem_Begin"
+            ], 
+            "ne_string": "Begin", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3958, 
+            "links": [
+                "http://dbpedia.org/resource/Anis_Mansour"
+            ], 
+            "ne_string": "Mansour", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0062:ocr"
+        }, 
+        {
+            "id": 3959, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Oeganda"
+            ], 
+            "ne_string": "Oeganda", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3960, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nairobi"
+            ], 
+            "ne_string": "NAIROBI", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3961, 
+            "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Paul_Julius_Reuter"
+            ], 
+            "ne_string": "Reuter", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3962, 
+            "links": [
+                "http://nl.dbpedia.org/resource/United_Press_International"
+            ], 
+            "ne_string": "UPI", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3963, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Oegandese", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3964, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Tanzaniaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3965, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Idi_Amin"
+            ], 
+            "ne_string": "Amin", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3966, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Keniase", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3967, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nairobi"
+            ], 
+            "ne_string": "Nairobi", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3968, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Kampala"
+            ], 
+            "ne_string": "Kampala", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3969, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Loekaya", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3970, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Libië"
+            ], 
+            "ne_string": "Libië", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3971, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Libië"
+            ], 
+            "ne_string": "Libische", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3972, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Entebbe"
+            ], 
+            "ne_string": "Entebbe", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0063:ocr"
+        }, 
+        {
+            "id": 3973, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Corsica"
+            ], 
+            "ne_string": "Corsica", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0064:ocr"
+        }, 
+        {
+            "id": 3974, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bastia"
+            ], 
+            "ne_string": "BASTIA", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0064:ocr"
+        }, 
+        {
+            "id": 3975, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Agence_France-Presse"
+            ], 
+            "ne_string": "AFP", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0064:ocr"
+        }, 
+        {
+            "id": 3976, 
+            "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Paul_Julius_Reuter"
+            ], 
+            "ne_string": "Reuter", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0064:ocr"
+        }, 
+        {
+            "id": 3977, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frankrijk"
+            ], 
+            "ne_string": "Franse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0064:ocr"
+        }, 
+        {
+            "id": 3978, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bastia"
+            ], 
+            "ne_string": "Bastia", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0064:ocr"
+        }, 
+        {
+            "id": 3979, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amsterdam"
+            ], 
+            "ne_string": "Amsterdam", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0065:ocr"
+        }, 
+        {
+            "id": 3980, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Ton_Lutz"
+            ], 
+            "ne_string": "Ton Lutz", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0065:ocr"
+        }, 
+        {
+            "id": 3981, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Stadsschouwburg_Amsterdam"
+            ], 
+            "ne_string": "Amsterdamse Schouwburg", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0065:ocr"
+        }, 
+        {
+            "id": 3982, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Joost_van_den_Vondel"
+            ], 
+            "ne_string": "Vondel", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0065:ocr"
+        }, 
+        {
+            "id": 3983, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lucifer_(toneelstuk)"
+            ], 
+            "ne_string": "Lucifer", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0065:ocr"
+        }, 
+        {
+            "id": 3984, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Reigenoten", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0065:ocr"
+        }, 
+        {
+            "id": 3985, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Herengracht_(Amsterdam)"
+            ], 
+            "ne_string": "Herengracht", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0065:ocr"
+        }, 
+        {
+            "id": 3986, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Beesterzwaag wae de Vondelherdenking", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0065:ocr"
+        }, 
+        {
+            "id": 3987, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Zaak-Bhoetto", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0066:ocr"
+        }, 
+        {
+            "id": 3988, 
+            "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Paul_Julius_Reuter"
+            ], 
+            "ne_string": "Reuter", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0066:ocr"
+        }, 
+        {
+            "id": 3989, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Agence_France-Presse"
+            ], 
+            "ne_string": "AFP", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0066:ocr"
+        }, 
+        {
+            "id": 3990, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Pakistan"
+            ], 
+            "ne_string": "Pakistaanse", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0066:ocr"
+        }, 
+        {
+            "id": 3991, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Zulfikar"
+            ], 
+            "ne_string": "Zulfikar", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0066:ocr"
+        }, 
+        {
+            "id": 3992, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "AH Bhoetto", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0066:ocr"
+        }, 
+        {
+            "id": 3993, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Bhoetto", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0066:ocr"
+        }, 
+        {
+            "id": 3994, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amsterdam"
+            ], 
+            "ne_string": "Amsterdam", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 3995, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Joost_van_den_Vondel"
+            ], 
+            "ne_string": "Joost", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 3996, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Joost_van_den_Vondel"
+            ], 
+            "ne_string": "Vondel", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 3997, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Toneelmuseum", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 3998, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amsterdam"
+            ], 
+            "ne_string": "Amsterdamse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 3999, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Herengracht_(Amsterdam)"
+            ], 
+            "ne_string": "Herengracht", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4000, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Beetsterzwaag"
+            ], 
+            "ne_string": "Beesterzwaag", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4001, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Godfried_Bomans"
+            ], 
+            "ne_string": "Bomans", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4002, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "De Vondelherdenking", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4003, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Joost_van_den_Vondel"
+            ], 
+            "ne_string": "Vondels", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4004, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Vondels Werken", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4005, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Vondeltentoonstelling", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4006, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "„ Inwydinghe", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4007, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Joost_van_den_Vondel"
+            ], 
+            "ne_string": "Joost van den Vondel", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4008, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lucifer_(toneelstuk)"
+            ], 
+            "ne_string": "Lucifer", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4009, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Gemeentehuis"
+            ], 
+            "ne_string": "Stadhuis", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4010, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amsterdam_Museum"
+            ], 
+            "ne_string": "Amsterdams Historisch Museum", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4011, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Gijsbrecht-voorstellingen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0067:ocr"
+        }, 
+        {
+            "id": 4012, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Orlando", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0068:ocr"
+        }, 
+        {
+            "id": 4013, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Louis_Couperus"
+            ], 
+            "ne_string": "Couperus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0068:ocr"
+        }, 
+        {
+            "id": 4014, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Orlando Orlandini", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0068:ocr"
+        }, 
+        {
+            "id": 4015, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Karel_Reijnders"
+            ], 
+            "ne_string": "Karel Reijnders", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0068:ocr"
+        }, 
+        {
+            "id": 4016, 
+            "links": [], 
+            "ne_string": "Frédéric Bastet", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0068:ocr"
+        }, 
+        {
+            "id": 4017, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Giulio Lodomez", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0068:ocr"
+        }, 
+        {
+            "id": 4018, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frédéric_Bastet"
+            ], 
+            "ne_string": "Bastet", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0068:ocr"
+        }, 
+        {
+            "id": 4019, 
+            "links": [
+                "http://nl.dbpedia.org/resource/De_Revisor_(halfjaarboek)"
+            ], 
+            "ne_string": "De Revisor", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0068:ocr"
+        }, 
+        {
+            "id": 4020, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amsterdam"
+            ], 
+            "ne_string": "Amsterdam", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0069:ocr"
+        }, 
+        {
+            "id": 4021, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amsterdam"
+            ], 
+            "ne_string": "Amsterdam", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4022, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Heroïne-centrun", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4023, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Kloveniersburgwal"
+            ], 
+            "ne_string": "Kloveniersburgwal", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4024, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Suriname"
+            ], 
+            "ne_string": "Surinaamse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4025, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "SOSA-gebouwl", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4026, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Herengracht_(Amsterdam)"
+            ], 
+            "ne_string": "Herengracht", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4027, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Bewonersraad Nieuwmarkt", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4028, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lastage"
+            ], 
+            "ne_string": "Nieuwmarktbuurt", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4029, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Doelenpand", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4030, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "A", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0070:ocr"
+        }, 
+        {
+            "id": 4031, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "On Difficulty", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0071:ocr"
+        }, 
+        {
+            "id": 4032, 
+            "links": [
+                "http://nl.dbpedia.org/resource/George_Steiner"
+            ], 
+            "ne_string": "George Steiner", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0071:ocr"
+        }, 
+        {
+            "id": 4033, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Language and Silence", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0071:ocr"
+        }, 
+        {
+            "id": 4034, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Nederlandse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0071:ocr"
+        }, 
+        {
+            "id": 4035, 
+            "links": [
+                "http://nl.dbpedia.org/resource/George_Steiner"
+            ], 
+            "ne_string": "Steiner", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0071:ocr"
+        }, 
+        {
+            "id": 4036, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hans_Plomp"
+            ], 
+            "ne_string": "Hans Plomp", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0071:ocr"
+        }, 
+        {
+            "id": 4037, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Athenaeum_-_Polak_&_Van_Gennep"
+            ], 
+            "ne_string": "Athenaeum-Polak", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0071:ocr"
+        }, 
+        {
+            "id": 4038, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Athenaeum_-_Polak_&_Van_Gennep"
+            ], 
+            "ne_string": "Van Gennep", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0071:ocr"
+        }, 
+        {
+            "id": 4039, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Amsterdam.KEES FENS", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0071:ocr"
+        }, 
+        {
+            "id": 4040, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Haifa"
+            ], 
+            "ne_string": "Haifa", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4041, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Beiroet"
+            ], 
+            "ne_string": "Beiroet", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4042, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Israël"
+            ], 
+            "ne_string": "Israël", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4043, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederland"
+            ], 
+            "ne_string": "Nederlandse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4044, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Verenigde_Naties"
+            ], 
+            "ne_string": "UN", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4045, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Fransen"
+            ], 
+            "ne_string": "Fransen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4046, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederlanders"
+            ], 
+            "ne_string": "Nederlander", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4047, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frankrijk"
+            ], 
+            "ne_string": "Franse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4048, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Nederlands-Israëlische", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4049, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Nederlandse UNIFIL-mannen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4050, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "pro-Israëlische", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4051, 
+            "links": [
+                "http://dbpedia.org/resource/Saad_Haddad"
+            ], 
+            "ne_string": "Haddad", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4052, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederlanders"
+            ], 
+            "ne_string": "Nederlanders", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4053, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "UNIFIL-opperbevelhebber Ernskine", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4054, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Ernskine", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0074:ocr"
+        }, 
+        {
+            "id": 4055, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Erskine", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0075:ocr"
+        }, 
+        {
+            "id": 4056, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Palestijnen"
+            ], 
+            "ne_string": "Palestijnen", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0075:ocr"
+        }, 
+        {
+            "id": 4057, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Lensink", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0075:ocr"
+        }, 
+        {
+            "id": 4058, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "VN-eenheden", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0075:ocr"
+        }, 
+        {
+            "id": 4059, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederland"
+            ], 
+            "ne_string": "Nederlandse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0075:ocr"
+        }, 
+        {
+            "id": 4060, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "KLM-jumbo", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0075:ocr"
+        }, 
+        {
+            "id": 4061, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Beiroet"
+            ], 
+            "ne_string": "Beiroet", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0075:ocr"
+        }, 
+        {
+            "id": 4062, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Ersmine", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0075:ocr"
+        }, 
+        {
+            "id": 4063, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Bloemkoole-lied", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0075:ocr"
+        }, 
+        {
+            "id": 4064, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Halfweg", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4065, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Libanon"
+            ], 
+            "ne_string": "Libanon", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4066, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Unifil-baretten", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4067, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Hollands", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4068, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Legervoorlichtingsdienst", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4069, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Italië"
+            ], 
+            "ne_string": "Italië", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4070, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Zuidlaren"
+            ], 
+            "ne_string": "Zuidlaren", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4071, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Jan", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4072, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Pieter of Kees", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4073, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Lie-bah-non", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4074, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Honderdnegenendertig", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4075, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Henriette_Roland_Holst"
+            ], 
+            "ne_string": "Henriëtte Roland-Holst", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4076, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Scholten", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4077, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederland"
+            ], 
+            "ne_string": "Nederlandse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4078, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "C. de Jager", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4079, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Wilhelmus"
+            ], 
+            "ne_string": "Wilhelmus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0077:ocr"
+        }, 
+        {
+            "id": 4080, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Eerste Chinezen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4081, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Vietnam"
+            ], 
+            "ne_string": "Vietnam", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4082, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bangkok"
+            ], 
+            "ne_string": "BANGKOK", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4083, 
+            "links": [
+                "http://nl.dbpedia.org/resource/United_Press_International"
+            ], 
+            "ne_string": "UPI", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4084, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Agence_France-Presse"
+            ], 
+            "ne_string": "AFP", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4085, 
+            "links": [
+                "http://nl.dbpedia.org/resource/China"
+            ], 
+            "ne_string": "Chinese", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4086, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bangkok"
+            ], 
+            "ne_string": "Bangkok", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4087, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Deng_Xiaoping"
+            ], 
+            "ne_string": "Teng Hsiao Ping", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4088, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hanoi"
+            ], 
+            "ne_string": "Hanoi", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4089, 
+            "links": [
+                "http://nl.dbpedia.org/resource/China"
+            ], 
+            "ne_string": "China", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4090, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Han-Chinezen"
+            ], 
+            "ne_string": "Chinezen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4091, 
+            "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Vietnamees"
+            ], 
+            "ne_string": "Vietnamese", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0078:ocr"
+        }, 
+        {
+            "id": 4092, 
+            "links": [
+                "http://nl.dbpedia.org/resource/China"
+            ], 
+            "ne_string": "China", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4093, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Vietnam"
+            ], 
+            "ne_string": "Vietnam", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4094, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Han-Chinezen"
+            ], 
+            "ne_string": "Chinezen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4095, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frankrijk"
+            ], 
+            "ne_string": "Frankrijk", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4096, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Indochina"
+            ], 
+            "ne_string": "Indochina", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4097, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rode_Kruis"
+            ], 
+            "ne_string": "Rode Kruis", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4098, 
+            "links": [
+                "http://nl.dbpedia.org/resource/China"
+            ], 
+            "ne_string": "Chinese", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4099, 
+            "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Vietnamees"
+            ], 
+            "ne_string": "Vietnamese", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4100, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hanoi"
+            ], 
+            "ne_string": "Hanoi", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4101, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Teng", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4102, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lạng_Sơn_(stad)"
+            ], 
+            "ne_string": "Lang Son", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0079:ocr"
+        }, 
+        {
+            "id": 4103, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Algemeen_Nederlands_Persbureau"
+            ], 
+            "ne_string": "ANP", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0080:ocr"
+        }, 
+        {
+            "id": 4104, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "W. H.", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0080:ocr"
+        }, 
+        {
+            "id": 4105, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Utrechtse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0080:ocr"
+        }, 
+        {
+            "id": 4106, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Huizenga", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0080:ocr"
+        }, 
+        {
+            "id": 4107, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "H.", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0080:ocr"
+        }, 
+        {
+            "id": 4108, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "MARTIN RUYTER", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4109, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Luchthaven_Schiphol"
+            ], 
+            "ne_string": "SCHIPHOL", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4110, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Libanon"
+            ], 
+            "ne_string": "Libanon", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4111, 
+            "links": [
+                "none", 
+                "http://nl.dbpedia.org/resource/Willem_Scholten_(politicus)"
+            ], 
+            "ne_string": "Defensie Scholten", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4112, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Luchthaven_Schiphol"
+            ], 
+            "ne_string": "Schiphol", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4113, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Ouder"
+            ], 
+            "ne_string": "Ouders", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4114, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Boeing"
+            ], 
+            "ne_string": "Boeing", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4115, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Unifil-detachement", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4116, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Libanon-ganger", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4117, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Beiroet"
+            ], 
+            "ne_string": "Beiroet", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0081:ocr"
+        }, 
+        {
+            "id": 4118, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Vertoon", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4119, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Adidas-tas", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4120, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Albert", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4121, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Kees", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4122, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Willem", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4123, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bilthoven"
+            ], 
+            "ne_string": "Bilthoven", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4124, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Tiel"
+            ], 
+            "ne_string": "Tiel", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4125, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederland"
+            ], 
+            "ne_string": "Nederland", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4126, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Libanon"
+            ], 
+            "ne_string": "Libanon", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4127, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Libanees", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4128, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Nederlands-Arabisch", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4129, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Palestijnen"
+            ], 
+            "ne_string": "Palestijn", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4130, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Wereldomroep"
+            ], 
+            "ne_string": "Wereldomroep", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0082:ocr"
+        }, 
+        {
+            "id": 4131, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Man", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 4132, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Doetinchemse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 4133, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "J. B.", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 4134, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "W. van der Flist", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 4135, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "J. van der Vlist-Velsen", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 4136, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Velsen", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 4137, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Nijmeegse Radboudziekenhuis", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 4138, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Doetinchem_(stad)"
+            ], 
+            "ne_string": "Doetinchems", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 4139, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "B.", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0083:ocr"
+        }, 
+        {
+            "id": 4140, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Algerije"
+            ], 
+            "ne_string": "Algerije", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0085:ocr"
+        }, 
+        {
+            "id": 4141, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Arthur P.", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0085:ocr"
+        }, 
+        {
+            "id": 4142, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Algiers"
+            ], 
+            "ne_string": "Algiers", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0085:ocr"
+        }, 
+        {
+            "id": 4143, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederland"
+            ], 
+            "ne_string": "Nederland", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0085:ocr"
+        }, 
+        {
+            "id": 4144, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Nederlanders K. J.", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0085:ocr"
+        }, 
+        {
+            "id": 4145, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "E. J. B.", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0085:ocr"
+        }, 
+        {
+            "id": 4146, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Vaticaan Van", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4147, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rome_(stad)"
+            ], 
+            "ne_string": "ROME", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4148, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jean-Marie_Villot"
+            ], 
+            "ne_string": "Kardinaal Jean Villot", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4149, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Saint-Amant-Tallende"
+            ], 
+            "ne_string": "Saint-Amant-Tallende", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4150, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Tallende in de", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4151, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frankrijk"
+            ], 
+            "ne_string": "Franse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4152, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Clermont-Ferrard", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4153, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Clermont-Ferrand"
+            ], 
+            "ne_string": "Clermont-Ferrand", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4154, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Lyon"
+            ], 
+            "ne_string": "Lyon", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4155, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jean-Marie_Villot"
+            ], 
+            "ne_string": "Villot", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4156, 
+            "links": [], 
+            "ne_string": "Feltin van Parijs", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4157, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Parijs", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4158, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paus_Paulus_VI"
+            ], 
+            "ne_string": "Paulus VI", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4159, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rome_(stad)"
+            ], 
+            "ne_string": "Rome", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4160, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Vaticaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4161, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Italianen"
+            ], 
+            "ne_string": "Italianen", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4162, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jean-Marie_Villot"
+            ], 
+            "ne_string": "Kardinaal Villot", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4163, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Italië"
+            ], 
+            "ne_string": "Italiaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4164, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Giovanni Benelli.JEAN VILLOT", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0086:ocr"
+        }, 
+        {
+            "id": 4165, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Waddenvereniging"
+            ], 
+            "ne_string": "Waddenvereniging", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0087:ocr"
+        }, 
+        {
+            "id": 4166, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Utrecht_(stad)"
+            ], 
+            "ne_string": "UTRECHT", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0087:ocr"
+        }, 
+        {
+            "id": 4167, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Landelijke Vereniging", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0087:ocr"
+        }, 
+        {
+            "id": 4168, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Waddenzee"
+            ], 
+            "ne_string": "Waddenzee", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0087:ocr"
+        }, 
+        {
+            "id": 4169, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Utrecht_(stad)"
+            ], 
+            "ne_string": "Utrecht", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0087:ocr"
+        }, 
+        {
+            "id": 4170, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "J. Dogterom", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0087:ocr"
+        }, 
+        {
+            "id": 4171, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Waddenzee"
+            ], 
+            "ne_string": "Waddengebied", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0087:ocr"
+        }, 
+        {
+            "id": 4172, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Dogterom", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0088:ocr"
+        }, 
+        {
+            "id": 4173, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Waddenzee"
+            ], 
+            "ne_string": "Waddenzee", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0088:ocr"
+        }, 
+        {
+            "id": 4174, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Landelijke Vereniging", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0088:ocr"
+        }, 
+        {
+            "id": 4175, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Vaticaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0089:ocr"
+        }, 
+        {
+            "id": 4176, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Giovanni_Benelli"
+            ], 
+            "ne_string": "Benelli", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0089:ocr"
+        }, 
+        {
+            "id": 4177, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "kardinaal ViÜot", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0089:ocr"
+        }, 
+        {
+            "id": 4178, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paus_Paulus_VI"
+            ], 
+            "ne_string": "Paulus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0089:ocr"
+        }, 
+        {
+            "id": 4179, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Italië"
+            ], 
+            "ne_string": "Italiaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0089:ocr"
+        }, 
+        {
+            "id": 4180, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Vaticaan", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0089:ocr"
+        }, 
+        {
+            "id": 4181, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jean-Marie_Villot"
+            ], 
+            "ne_string": "Villot", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0089:ocr"
+        }, 
+        {
+            "id": 4182, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jean-Marie_Villot"
+            ], 
+            "ne_string": "Villot", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0090:ocr"
+        }, 
+        {
+            "id": 4183, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Vaticaanse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0090:ocr"
+        }, 
+        {
+            "id": 4184, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paus_Paulus_VI"
+            ], 
+            "ne_string": "paus Paulus VI", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0090:ocr"
+        }, 
+        {
+            "id": 4185, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paus_Paulus_VI"
+            ], 
+            "ne_string": "Paulus VI", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0090:ocr"
+        }, 
+        {
+            "id": 4186, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paus_Johannes_Paulus_I"
+            ], 
+            "ne_string": "Johannes Paulus I", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0090:ocr"
+        }, 
+        {
+            "id": 4187, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "RADIO Goede documentaires", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4188, 
+            "links": [
+                "http://nl.dbpedia.org/resource/VPRO"
+            ], 
+            "ne_string": "VPRO", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4189, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Jan van Hillo", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4190, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "De Illusie", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4191, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Hillo", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4192, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Brusselse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4193, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Piron", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4194, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Klaas_Rusticus"
+            ], 
+            "ne_string": "Klaas Rusticus", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4195, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Mat_van_Hensbergen"
+            ], 
+            "ne_string": "Mat van Hensbergen", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4196, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Wim_Noordhoek"
+            ], 
+            "ne_string": "Wim Noordhoek", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4197, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Wim_Noordhoek"
+            ], 
+            "ne_string": "Noordhoek", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4198, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Kitsch"
+            ], 
+            "ne_string": "Kitsch", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4199, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Brandpunt_(televisieprogramma)"
+            ], 
+            "ne_string": "Brandpunt", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4200, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederland"
+            ], 
+            "ne_string": "Nederlandse", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4201, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Cyproteronacetaat"
+            ], 
+            "ne_string": "Androcur", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4202, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Wafelbakker", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4203, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Dries_van_Agt"
+            ], 
+            "ne_string": "Premier Van Agt", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4204, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hans_Sleeuwenhoek"
+            ], 
+            "ne_string": "Hans Sleeuwenhoek", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4205, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Joseph_Luns"
+            ], 
+            "ne_string": "Luns", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4206, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "NSB-lidmaatschap", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4207, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Noord-Atlantische_Verdragsorganisatie"
+            ], 
+            "ne_string": "NATO", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4208, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hans_Sleeuwenhoek"
+            ], 
+            "ne_string": "Sleeuwenhoek", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4209, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Joop_van_Tijn"
+            ], 
+            "ne_string": "Joop van Tijn", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4210, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Dries_van_Agt"
+            ], 
+            "ne_string": "Van Agt", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4211, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frits_Abrahams"
+            ], 
+            "ne_string": "FRITS ABRAHAMS", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0091:ocr"
+        }, 
+        {
+            "id": 4212, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rotterdam"
+            ], 
+            "ne_string": "ROTTERDAM _", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4213, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederlandse_Politiebond"
+            ], 
+            "ne_string": "Nederlandse Politiebond", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4214, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rotterdam"
+            ], 
+            "ne_string": "Rotterdam", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4215, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Joke de Vries", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4216, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Beek_(Limburg)"
+            ], 
+            "ne_string": "Beek", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4217, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Limburg_(Nederland)"
+            ], 
+            "ne_string": "Limburg", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4218, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Tweede_Kamer_der_Staten-Generaal"
+            ], 
+            "ne_string": "Tweede Kamer", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4219, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "De Vries", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4220, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "L. van der Linden", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4221, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "N. Feenstra", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4222, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Arnhem"
+            ], 
+            "ne_string": "Arnhem", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4223, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Amerika_(continent)"
+            ], 
+            "ne_string": "Amerika", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4224, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Europa_(werelddeel)"
+            ], 
+            "ne_string": "Europese", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0093:ocr"
+        }, 
+        {
+            "id": 4225, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Eindhoven"
+            ], 
+            "ne_string": "EINDHOVEN", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0093:ocr"
+        }, 
+        {
+            "id": 4226, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Ruud_Nijhof"
+            ], 
+            "ne_string": "Nijhof", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0093:ocr"
+        }, 
+        {
+            "id": 4227, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Politiek Manifest", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0093:ocr"
+        }, 
+        {
+            "id": 4228, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "CDA-WD-kabinet", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0093:ocr"
+        }, 
+        {
+            "id": 4229, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "WD", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0093:ocr"
+        }, 
+        {
+            "id": 4230, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Partij_van_de_Arbeid_(Nederland)"
+            ], 
+            "ne_string": "PvdA", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0093:ocr"
+        }, 
+        {
+            "id": 4231, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Dries_van_Agt"
+            ], 
+            "ne_string": "Van Agt", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0093:ocr"
+        }, 
+        {
+            "id": 4232, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frans_Drabbe"
+            ], 
+            "ne_string": "Drabbe", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0098:ocr"
+        }, 
+        {
+            "id": 4233, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Deeltijd"
+            ], 
+            "ne_string": "Deeltijdarbeid", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0098:ocr"
+        }, 
+        {
+            "id": 4234, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "De Galan", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0098:ocr"
+        }, 
+        {
+            "id": 4235, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Partij_van_de_Arbeid_(Nederland)"
+            ], 
+            "ne_string": "PvdA", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0098:ocr"
+        }, 
+        {
+            "id": 4236, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "De Galan", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 4237, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Boerboom", 
+            "ne_type": "location", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 4238, 
+            "links": [
+                "none"
+            ], 
+            "ne_string": "Tilburgs", 
+            "ne_type": "other", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 4239, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Partij_van_de_Arbeid_(Nederland)"
+            ], 
+            "ne_string": "PvdA", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 4240, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hedy_d'Ancona"
+            ], 
+            "ne_string": "Eerste-Kamerlid d'Ancona", 
+            "ne_type": "person", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 4241, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hedy_d'Ancona"
+            ], 
+            "ne_string": "Kamerlid d'Ancona", 
+            "ne_type": "organisation", 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0099:ocr"
+        }, 
+        {
+            "id": 4242, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jawaharlal_Nehru"
+            ], 
+            "ne_string": "Nehroe", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011234152:mpeg21:a0001:ocr"
         }
     ]
 }
