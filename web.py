@@ -53,7 +53,6 @@ sys.path.insert(0, os.path.join(*[abs_path, '..', 'dac', 'dac']))
 import dac
 import models
 
-
 @get('/<name>')
 def show_candidates(name):
     '''

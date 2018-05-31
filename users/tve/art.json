@@ -25758,7 +25758,9 @@
         }, 
         {
             "id": 4016, 
-            "links": [], 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frédéric_Bastet"
+            ], 
             "ne_string": "Frédéric Bastet", 
             "ne_type": "person", 
             "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010882071:mpeg21:a0068:ocr"
@@ -27797,6 +27799,285 @@
             "ne_string": "Nehroe", 
             "ne_type": null, 
             "url": "http://resolver.kb.nl/resolve?urn=ddd:011234152:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 4243, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Thomas_Allsop"
+            ], 
+            "ne_string": "Allsop", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:000011729:mpeg21:a0002:ocr"
+        }, 
+        {
+            "id": 4244, 
+            "links": [
+                "http://nl.dbpedia.org/resource/A_Hard_Days_Night_(nummer)"
+            ], 
+            "ne_string": "A Hard Days Night", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010611279:mpeg21:a0454:ocr"
+        }, 
+        {
+            "id": 4245, 
+            "links": [
+                "http://nl.dbpedia.org/resource/The_Pretty_Things"
+            ], 
+            "ne_string": "Pretty Things", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010824495:mpeg21:a0294:ocr"
+        }, 
+        {
+            "id": 4246, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Peter,_Paul_and_Mary"
+            ], 
+            "ne_string": "Paul", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010541309:mpeg21:a0436:ocr"
+        }, 
+        {
+            "id": 4247, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Peter,_Paul_and_Mary"
+            ], 
+            "ne_string": "Paul", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011001121:mpeg21:a0192:ocr"
+        }, 
+        {
+            "id": 4248, 
+            "links": [
+                "http://nl.dbpedia.org/resource/The_Pretty_Things"
+            ], 
+            "ne_string": "The Pretty Things", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010820090:mpeg21:a0095:ocr"
+        }, 
+        {
+            "id": 4249, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Dimensión_Latina"
+            ], 
+            "ne_string": "DIMENSION LATINA", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010998529:mpeg21:a0141:ocr"
+        }, 
+        {
+            "id": 4250, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Pierre_Blanchar"
+            ], 
+            "ne_string": "Pierre Blanchard", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010406832:mpeg21:a0128:ocr"
+        }, 
+        {
+            "id": 4251, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jean-Charles_Pichegru"
+            ], 
+            "ne_string": "Generaal Pichegru", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010718664:mpeg21:a0001:ocr"
+        }, 
+        {
+            "id": 4252, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jean-Charles_Pichegru"
+            ], 
+            "ne_string": "Pichegru", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=MMKB04:000142437:mpeg21:a0168:ocr"
+        }, 
+        {
+            "id": 4253, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Jean-Charles_Pichegru"
+            ], 
+            "ne_string": "Pichegru", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=KBNRC01:000030026:mpeg21:a0183:ocr"
+        }, 
+        {
+            "id": 4254, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Kreuzburg"
+            ], 
+            "ne_string": "Krenstrarg", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010551492:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 4255, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Racibórz"
+            ], 
+            "ne_string": "Ratihor", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010551492:mpeg21:a0004:ocr"
+        }, 
+        {
+            "id": 4256, 
+            "links": [
+                "http://nl.dbpedia.org/resource/De_Bezige_Bij"
+            ], 
+            "ne_string": "Bezige Bij", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010857202:mpeg21:a0322:ocr"
+        }, 
+        {
+            "id": 4257, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Boudewijn_van_Houten"
+            ], 
+            "ne_string": "Houten", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010857202:mpeg21:a0322:ocr"
+        }, 
+        {
+            "id": 4258, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Willem_Frederik_Hermans"
+            ], 
+            "ne_string": "Hermans", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010857202:mpeg21:a0322:ocr"
+        }, 
+        {
+            "id": 4259, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Ludwig_Wittgenstein"
+            ], 
+            "ne_string": "Van Wittgenstein", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:011016648:mpeg21:a0039:ocr"
+        }, 
+        {
+            "id": 4260, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Ad_rem"
+            ], 
+            "ne_string": "rem", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010849172:mpeg21:a0143:ocr"
+        }, 
+        {
+            "id": 4261, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Anna_Blaman_Huis"
+            ], 
+            "ne_string": "Anna Blamanhuis", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010566327:mpeg21:a0326:ocr"
+        }, 
+        {
+            "id": 4262, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Paul_de_Wispelaere"
+            ], 
+            "ne_string": "Paul de Wispelaere", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010867277:mpeg21:a0160:ocr"
+        }, 
+        {
+            "id": 4263, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hans_van_Mierlo_(D66)"
+            ], 
+            "ne_string": "Hans van Mierlo", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010867277:mpeg21:a0160:ocr"
+        }, 
+        {
+            "id": 4264, 
+            "links": [
+                "http://nl.dbpedia.org/resource/A.F.Th._van_der_Heijden"
+            ], 
+            "ne_string": "Heijden", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010867277:mpeg21:a0160:ocr"
+        }, 
+        {
+            "id": 4265, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Hella_Haasse"
+            ], 
+            "ne_string": "Hella Haasse", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010867277:mpeg21:a0160:ocr"
+        }, 
+        {
+            "id": 4266, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Adriaan_van_Dis"
+            ], 
+            "ne_string": "Adriaan van Dis", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010867277:mpeg21:a0160:ocr"
+        }, 
+        {
+            "id": 4267, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Frits_Bolkestein"
+            ], 
+            "ne_string": "Bolkestein", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010867277:mpeg21:a0160:ocr"
+        }, 
+        {
+            "id": 4268, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Wam_de_Moor"
+            ], 
+            "ne_string": "Wam de Moor", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010867277:mpeg21:a0160:ocr"
+        }, 
+        {
+            "id": 4269, 
+            "links": [
+                "http://nl.dbpedia.org/resource/J.J._Peereboom"
+            ], 
+            "ne_string": "J.J. Peereboom", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010867277:mpeg21:a0160:ocr"
+        }, 
+        {
+            "id": 4270, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Bibliotheektheater_Rotterdam"
+            ], 
+            "ne_string": "Bibliotheektheater", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:010963402:mpeg21:a0187:ocr"
+        }, 
+        {
+            "id": 4271, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Nederlands-Indië"
+            ], 
+            "ne_string": "Nederlands-Indiè", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010878446:mpeg21:a0092:ocr"
+        }, 
+        {
+            "id": 4272, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Michail_Gorbatsjov"
+            ], 
+            "ne_string": "Gorbatsjow", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ABCDDD:010824536:mpeg21:a0002:ocr"
+        }, 
+        {
+            "id": 4273, 
+            "links": [
+                "http://nl.dbpedia.org/resource/Rommert_Casimir"
+            ], 
+            "ne_string": "R. Casimir", 
+            "ne_type": null, 
+            "url": "http://resolver.kb.nl/resolve?urn=ddd:110576685:mpeg21:a0242:ocr"
         }
     ]
 }
